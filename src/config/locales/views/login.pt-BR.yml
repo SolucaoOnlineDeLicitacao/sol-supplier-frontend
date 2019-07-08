@@ -1,0 +1,33 @@
+pt-BR:
+  login:
+    heading: Solução Online de Licitação
+
+    fields:
+      username:
+        label: E-mail
+        placeholder: Seu e-mail
+      password:
+        label: Senha
+        placeholder: Sua senha
+
+    forgot_password_instructions: Digite seu e-mail cadastrado na plataforma e uma mensagem será enviada para você com as instruções de troca de senha.
+
+
+    button:
+      submit: Acessar
+      submitting: Acessando...
+
+      submitForgotPassword: Enviar
+      submittingForgotPassword: Enviando...
+
+      new: Novo no SOL? Cadastre-se agora!
+      forgot_password: Esqueci minha senha
+
+    notifications:
+      login:
+        failure: E-mail ou senha inválidos. Tente novamente
+        blocked: Usuário bloqueado. Entre em contato com os administradores da plataforma.
+
+      password:
+        failure: Erro ao tentar enviar o e-mail. E-mail inválido ou não encontrado.
+        success: "Você receberá as instruções para mudança de senha no e-mail informado. Ao segui-las, poderá acessar novamente a plataforma."

@@ -1,0 +1,9 @@
+label {
+  &.disabled {
+    color: gray;
+  }
+}
+
+input + label {
+  margin-left: 5px;
+}

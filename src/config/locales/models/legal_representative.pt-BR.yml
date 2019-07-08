@@ -1,0 +1,19 @@
+pt-BR:
+  models:
+    legal_representative:
+      one: Representante Legal (dados para contrato)
+      other: Representantes Legais (dados para contrato)
+
+      attributes:
+        name: Nome
+        nationality: Nacionalidade
+        civilState: Estado civil
+        rg: RG
+        cpf: CPF
+        validUntil: Data de vigência
+        civil_states:
+          single: Solteiro(a)
+          married: Casado(a)
+          divorced: Divorciado(a)
+          widower: Viúvo(a)
+          separated: Separado(a)

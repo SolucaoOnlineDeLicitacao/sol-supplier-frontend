@@ -1,0 +1,30 @@
+pt-BR:
+  models:
+    lot:
+      one: Lote
+      other: Lotes
+
+      attributes:
+        id: Código (ID)
+        name: Nome do lote
+        status: Situação
+        deadline: Prazo para entrega (dias)
+        address: Local de entrega
+
+        statuses:
+          waiting: Em andamento
+          triage: Em análise
+          accepted: Adjudicado
+          failure: Fracassado
+          draft: Rascunho
+          desert: Deserto
+          canceled: Cancelado
+
+      errors:
+        name:
+          missing: Nome não pode ficar em branco
+
+        lot_group_items:
+          invalid: É necessário adicionar pelo menos um item
+
+        file: Não pode ficar em branco

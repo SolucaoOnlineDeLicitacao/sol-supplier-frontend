@@ -1,0 +1,6 @@
+pt-BR:
+  components:
+    not-found:
+      heading: '404'
+      content: Página não encontrada
+      backToHome: Voltar ao início

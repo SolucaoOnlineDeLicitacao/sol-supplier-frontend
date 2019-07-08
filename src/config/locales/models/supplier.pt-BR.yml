@@ -1,0 +1,30 @@
+pt-BR:
+  models:
+    supplier:
+      one: Usuário
+      other: Usuários
+
+      attributes:
+        id: Código (ID)
+        name: Nome
+        email: E-mail
+        cpf: CPF
+        phone: Telefone
+        providerId: Fornecedor
+        providerName: Fornecedor
+        passwordConfirmation: Confirmação da senha
+
+      errors:
+        supplier:
+          not_found: E-mail não cadastrado
+        name:
+          missing: Nome não pode ficar em branco
+        cpf:
+          missing: CPF não pode ficar em branco
+          invalid: CPF não é válido (000.000.000-00)
+        phone:
+          missing: Telefone não pode ficar em branco
+          invalid: 'Telefone não é válido. Formato: (00) 00000-0000'
+        provider:
+          missing: Fornecedor não pode ficar em branco
+

@@ -1,0 +1,32 @@
+pt-BR:
+  biddings:
+    proposals:
+      new:
+        title: Nova proposta
+
+        button:
+          submit: Enviar proposta
+          submitting: Enviando proposta...
+
+        notifications:
+          failure: Não foi possível enviar a proposta
+          success: Proposta enviada com sucesso
+
+      edit:
+        title: Atualizar proposta
+
+        button:
+          submit: Atualizar proposta
+          submitting: Atualizando proposta...
+
+        notifications:
+          failure: Não foi possível atualizar a proposta
+          success: Proposta atualizada com sucesso
+
+      index:
+        title: Propostas
+        empty: Nenhuma proposta recebida
+        cant_see: As propostas serão liberadas para visualização após a conclusão da licitação.
+        lot_group_items_count: 'Itens: %{value}'
+        total: 'Valor total: R$ %{value}'
+

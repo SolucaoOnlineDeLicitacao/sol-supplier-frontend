@@ -1,0 +1,12 @@
+pt-BR:
+  profile:
+    edit:
+      title: Editar perfil
+
+      button:
+        submit: Editar
+        submitting: Editando...
+
+      notifications:
+        success: Perfil editado com sucesso!
+        failure: Houve um erro ao editar o perfil.

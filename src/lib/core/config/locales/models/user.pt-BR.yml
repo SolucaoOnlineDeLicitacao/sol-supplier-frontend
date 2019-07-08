@@ -1,0 +1,10 @@
+pt-BR:
+  models:
+    user:
+      one: Usuário
+      other: Usuários
+
+      attributes:
+        name:     Nome
+        email:    E-mail
+        password: Senha

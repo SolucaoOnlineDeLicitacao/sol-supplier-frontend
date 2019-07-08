@@ -1,0 +1,13 @@
+pt-BR:
+  models:
+    user_role:
+      one: Cargo
+      other: Cargos
+
+      attributes:
+        id: Código (ID)
+        roleId: Cargo
+
+      errors:
+        roleId:
+          missing: Cargo não pode ficar em branco

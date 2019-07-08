@@ -1,0 +1,16 @@
+pt-BR:
+  components:
+    file-field:
+      button:
+        attach:
+          tooltip: Anexar arquivo...
+        download:
+          tooltip: "Baixar %{name}"
+        destroy:
+          tooltip: "Remover %{name}..."
+          confirmation: |-
+            Tem certeza que deseja remover %{name}?
+            (O arquivo só será removido após você concluir e enviar todas as alterações)
+
+      empty: Nenhum arquivo anexado
+      markedForDestruction: Marcado para remoção

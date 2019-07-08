@@ -1,0 +1,97 @@
+pt-BR:
+  biddings:
+    lots:
+      index:
+        title: Lotes e itens
+        empty: Nenhum lote cadastrado
+
+        button:
+          new: Adicionar lote
+
+        tabs:
+          lots: Lotes e itens
+          proposals: Propostas
+
+      show:
+        button:
+          proposals: Visualizar todas propostas
+
+        tabs:
+          lots: Lotes e itens
+          proposals: Propostas
+
+      _index:
+        lot-list-fields:
+          lot_group_items_count: 'Itens: %{value}'
+          status:
+            importing: importando proposta
+            abandoned: proposta excluida
+            draft: proposta preenchida
+            sent: proposta enviada
+            empty: sem proposta
+
+      _show:
+        lot-actions:
+          under_review: Licitação em análise. Não é possível editar e/ou remover a proposta enviada.
+          finnished: Licitação concluída. Não é possível editar e/ou remover a proposta enviada.
+          reopened: Licitação reaberta. Não é possível editar e/ou remover a proposta enviada.
+          failure: Licitação fracassada. Não é possível editar e/ou remover a proposta enviada.
+          canceled: Licitação cancelada. Não é possível editar e/ou remover a proposta enviada.
+          draw: Aguarde o desempate das propostas empatadas.
+          draw_with_proposal: 'Proposta empatada. Você poderá atualizar a sua proposta até o dia %{day}. Qualquer atualização nas propostas dos lotes irá atualizar a proposta.'
+
+          invites:
+            pending: Convite pendente. Aguarde a liberação para participar desta licitação.
+            not_invited: É preciso ser convidado para participar desta licitação. Clique no botão abaixo para requisitar um convite.
+
+          proposal:
+            draw:
+              alert: Houve um empate entre as propostas. Você poderá editar sua proposta com um novo valor.
+            abandoned:
+              alert: Proposta excluída. Não é possível enviar uma nova proposta.
+            importing:
+              alert: ' Importação de proposta em andamento...'
+            cannot_edit:
+              alert: Não é possível editar a proposta enviada em uma licitação do tipo "Convite fechado".
+
+          button:
+            new_proposal: Preencher proposta
+            new_global_proposal: Preencher proposta
+            new_proposal_from_file: Preencher proposta via planilha
+
+        proposal-import-overlay:
+          title: Importar proposta
+          alert: 'Baixe a planilha e preencha apenas o campo <strong>"proposta (valor unitario)"</strong> e o campo <strong>"frete (valor)"</strong>.'
+          button:
+            download: Baixar planilha do lote
+            submitFile: Importar proposta
+            submittingFile: Importando proposta
+
+          notifications:
+            file:
+              success: 'Você será notificado quando a proposta for processada. Após importação, será preciso confirmar o envio da proposta para concluir o processo.'
+              failure: Houve um erro ao importar a proposta.
+
+        edit-proposal-buttons:
+          button:
+            edit_proposal: Editar proposta
+            edit_draft_proposal: Confimar envio da proposta
+
+        request-invite-button:
+          button:
+            invite: Desejo participar
+
+          notifications:
+            invite:
+              success: Requisição enviada com sucesso!
+              failure: Houve um erro ao enviar a requisição.
+
+        destroy-proposal-buttons:
+          destroy:
+            title: Remover proposta
+            body: Tem certeza que deseja remover a proposta?
+
+          notifications:
+            destroy:
+              failure: Não foi possível remover a proposta.
+              success: Proposta removida com sucesso!

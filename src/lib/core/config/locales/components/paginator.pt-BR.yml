@@ -1,0 +1,7 @@
+pt-BR:
+  components:
+    paginator:
+      first: ''
+      prev: ''
+      next: ''
+      last: ''

@@ -1,0 +1,11 @@
+pt-BR:
+  models:
+    proposalImport:
+      one: Proposta via arquivo
+      other: Propostas via arquivo
+
+      attributes:
+        file: Planilha
+
+      errors:
+        file: Não pode ficar em branco

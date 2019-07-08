@@ -1,0 +1,125 @@
+$alert-padding-x:             1.25rem !default;
+$alert-padding-y:             .75rem !default;
+$alert-margin-bottom:         1rem !default;
+$alert-border-radius:         .25rem !default;
+$alert-link-font-weight:      bold !default;
+$alert-border-width:          1px !default;
+
+$alert-success-bg:            #dff0d8 !default;
+$alert-success-text:          #3c763d !default;
+$alert-success-border:        darken($alert-success-bg, 5%) !default;
+
+$alert-info-bg:               #d9edf7 !default;
+$alert-info-text:             #31708f !default;
+$alert-info-border:           darken($alert-info-bg, 7%) !default;
+
+$alert-warning-bg:            #fcf8e3 !default;
+$alert-warning-text:          #8a6d3b !default;
+$alert-warning-border:        darken($alert-warning-bg, 5%) !default;
+
+$alert-danger-bg:             #f2dede !default;
+$alert-danger-text:           #a94442 !default;
+$alert-danger-border:         darken($alert-danger-bg, 5%) !default;
+
+
+@mixin alert-variant($background, $border, $body-color) {
+  background-color: $background;
+  border-color: $border;
+  color: $body-color;
+
+  hr {
+    border-top-color: darken($border, 5%);
+  }
+  .alert-link {
+    color: darken($body-color, 10%);
+  }
+}
+
+
+.alert {
+  padding: $alert-padding-y $alert-padding-x;
+  margin-bottom: $alert-margin-bottom;
+  border: $alert-border-width solid transparent;
+  border-radius: $alert-border-radius;
+}
+
+// Headings for larger alerts
+.alert-heading {
+  // Specified to prevent conflicts of changing $headings-color
+  color: inherit;
+}
+
+// Provide class for links that match alerts
+.alert-link {
+  font-weight: $alert-link-font-weight;
+}
+
+
+// Dismissible alerts
+//
+// Expand the right padding and account for the close button's positioning.
+
+.alert-dismissible {
+  // Adjust close link position
+  .close {
+    position: relative;
+    top: -$alert-padding-y;
+    right: -$alert-padding-x;
+    padding: $alert-padding-y $alert-padding-x;
+    color: inherit;
+  }
+}
+
+
+// Alternate styles
+//
+// Generate contextual modifier classes for colorizing the alert.
+
+.alert-success {
+  @include alert-variant($alert-success-bg, $alert-success-border, $alert-success-text);
+}
+.alert-info {
+  @include alert-variant($alert-info-bg, $alert-info-border, $alert-info-text);
+}
+.alert-warning {
+  @include alert-variant($alert-warning-bg, $alert-warning-border, $alert-warning-text);
+}
+.alert-danger {
+  @include alert-variant($alert-danger-bg, $alert-danger-border, $alert-danger-text);
+}
+
+$close-font-size:             1rem * 1.5 !default;
+$close-font-weight:           bold !default;
+$close-color:                 #000 !default;
+$close-text-shadow:           0 1px 0 #fff !default;
+
+.close {
+  float: right;
+  font-size: $close-font-size;
+  font-weight: $close-font-weight;
+  line-height: 1;
+  color: $close-color;
+  text-shadow: $close-text-shadow;
+  opacity: .5;
+
+  &:focus,
+  &:hover {
+    color: $close-color;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+  }
+}
+
+// Additional properties for button version
+// iOS requires the button element instead of an anchor tag.
+// If you want the anchor version, it requires `href="#"`.
+// See https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
+
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}

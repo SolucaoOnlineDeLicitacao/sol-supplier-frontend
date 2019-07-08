@@ -1,0 +1,29 @@
+.dg-main-content {
+  .button,
+  button {
+    margin-bottom: auto;
+    height: auto;
+    overflow: initial;
+  }
+
+  .dg-btn--cancel {
+    background-color: transparent;
+    color: gray;
+  }
+
+  .dg-btn--ok {
+    border-color: darken($primary-color, 10%);
+    background-color: $primary-color;
+    color: $white;
+  }
+}
+
+.dg-delete {
+
+  .dg-btn--ok {
+    border-color: darken($danger-color, 10%);
+    background-color: $danger-color;
+    color: $white;
+  }
+
+}

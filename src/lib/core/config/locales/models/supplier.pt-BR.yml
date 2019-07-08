@@ -1,0 +1,10 @@
+pt-BR:
+  models:
+    supplier:
+      one: Fornecedor
+      other: Fornecedores
+
+      attributes:
+        name:     Nome
+        email:    E-mail
+        password: Senha

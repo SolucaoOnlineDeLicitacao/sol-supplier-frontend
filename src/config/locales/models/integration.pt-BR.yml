@@ -1,0 +1,23 @@
+pt-BR:
+  models:
+    integration:
+      one: Integração
+      other: Integrações
+
+      attributes:
+        id: Código (ID)
+        endpointUrl: Endpoint
+        token: Token
+        schedule: Frequência (cron)
+        status: Situação
+        statuses:
+          queued: Enfileirado
+          in_progress: Em progresso
+          success: Sucesso
+          fail: Falha
+      errors:
+        endpoint:
+          missing: Endpoint não pode ficar em branco
+        token:
+          missing: Token não pode ficar em branco
+

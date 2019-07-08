@@ -1,0 +1,47 @@
+pt-BR:
+  biddings:
+    lots:
+      lot_proposals:
+        new:
+          title: Nova proposta
+
+          button:
+            submit: Salvar proposta
+            submitting: Salvando proposta...
+
+          notifications:
+            failure: Não foi possível salvar a proposta
+            success: Proposta salva com sucesso
+
+        edit:
+          title: Atualizar proposta
+
+          button:
+            submit: Atualizar proposta
+            submitting: Atualizando proposta...
+
+          notifications:
+            failure: Não foi possível atualizar a proposta
+            success: Proposta atualizada com sucesso
+
+        index:
+          title: Propostas
+          empty: Nenhuma proposta recebida
+          cant_see: As propostas serão liberadas para visualização após a conclusão da licitação.
+          lot_group_items_count: 'Itens: %{value}'
+          total: 'Valor total: R$ %{value}'
+
+        _form:
+          lot-group-item-proposal-fields:
+            my_quote: 'Minha cotação: '
+            per_unit: ' por %{unit}'
+            inform_proposal: Clique para informar uma proposta
+            unique_price: A alteração do valor deste item irá refletir em todos os outros lotes desta licitação em que o item já foi informado.
+            count: ' (Em %{count} lotes)'
+
+          lot-group-item-proposal-overlay:
+            title: Minha cotação
+            lot_group_item_count: 'Este item está presente em %{count} lotes desta licitação. A alteração do valor deste item irá refletir em todos os outros lotes desta licitação em que o item já foi informado.'
+            button: Salvar cotação
+            label: Valor unitário
+            total: 'Valor total: '

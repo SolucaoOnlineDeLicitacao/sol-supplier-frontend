@@ -1,0 +1,31 @@
+pt-BR:
+  providers:
+    new:
+      title: Novo fornecedor
+      general:
+        title: Dados do fornecedor
+
+      classifications:
+        title: Categorias e segmentos
+
+      attachments:
+        title: Documentos
+
+      users:
+        title: Usuário de acesso
+
+      fields:
+        name:
+          placeholder: Informe o nome do fornecedor
+        cnpj:
+          placeholder: Informe o documento
+
+      button:
+        submit: Criar cadastro
+        submitting: Cadastrando...
+        find: Próximo
+        finding: Validando...
+
+      notifications:
+        success: Cadastro realizado com sucesso! Utilize seus dados para acessar!
+        failure: Houve um erro ao salvar o cadastro. Verifique os campos abaixo

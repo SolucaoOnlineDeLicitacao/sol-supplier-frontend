@@ -1,0 +1,23 @@
+@import "lib/lib.scss";
+@import "assets/styles/skeleton_overrides";
+@import "assets/styles/vuejsdialog_overrides";
+@import "~skeleton-scss/scss/skeleton"; // import skeleton, with normalize already included
+@import "assets/styles/base/base";
+
+// SAMPLE:
+// @import "styles/overrides";
+// @import "styles/transitions";
+// @import "styles/utils";
+
+* {
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+html,
+body {
+  background-color: #e1e6e9 !important;
+}

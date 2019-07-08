@@ -1,0 +1,58 @@
+pt-BR:
+  contracts:
+    index:
+      title: Contratos
+
+      card:
+        title: Contrato %{title}
+
+      empty: Nenhum contrato encontrado
+
+      list:
+        title: Lista de Contratos
+
+      search:
+        placeholder: Busque pelo número do contrato
+
+    show:
+      title: Detalhes do contrato
+
+      general:
+        title: Dados do contrato
+
+        button:
+          download: Baixar contrato original
+
+      overlay:
+        title: Recusar contrato
+        alert: Esta ação não poderá ser desfeita. Confirma a recusa?
+        field:
+          status:
+            label: Defina a nova situação do contrato
+        button: Recusar contrato
+
+      dialog:
+        title: Aceitar contrato
+        body: Esta ação não poderá ser desfeita. Confirma o aceite?
+        okText: Aceitar
+
+      signatures:
+        title: Assinaturas
+        waiting: Aguardando assinatura
+        refused: Contrato recusado
+        not_signed: Contrato não assinado
+
+      refused:
+        at: 'Contrato recusado em %{value}'
+
+      button:
+        sign: Aceitar
+        refuse: Recusar
+
+      notifications:
+        signs:
+          success: Contrato assinado com sucesso.
+          failure: Houve um erro ao assinar o contrato.
+        refused:
+          success: Contrato recusado com sucesso.
+          failure: Houve um erro ao recusar o contrato.

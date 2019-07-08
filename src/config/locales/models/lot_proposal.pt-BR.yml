@@ -1,0 +1,27 @@
+pt-BR:
+  models:
+    proposal:
+      one: Poposta de lote
+      other: Propostas delote
+
+      attributes:
+        id: Código (ID)
+        deliveryPrice: Valor do frete
+      errors:
+        delivery_price:
+          missing: Valor do frete precisa ser informado
+        price_total:
+          invalid: O valor total da proposta não pode ser maior que o valor informado anteriormente
+
+    lotProposal:
+      one: Poposta de lote
+      other: Propostas delote
+
+      attributes:
+        id: Código (ID)
+        deliveryPrice: Valor do frete
+      errors:
+        delivery_price:
+          missing: Valor do frete precisa ser informado
+        price_total:
+          invalid: O valor total da proposta não pode ser maior que o valor informado anteriormente

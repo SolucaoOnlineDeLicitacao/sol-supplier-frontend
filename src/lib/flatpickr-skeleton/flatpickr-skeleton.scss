@@ -1,0 +1,8 @@
+.flatpickr-time {
+  .numInputWrapper {
+    input {
+      // removing skeleton height
+      height: inherit;
+    }
+  }
+}

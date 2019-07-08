@@ -1,0 +1,22 @@
+pt-BR:
+  models:
+    group_item:
+      one: Item do Grupo
+      other: Itens do Grupo
+
+      attributes:
+        id: Código (ID)
+        itemName: Item de custo
+        itemId: Item de custo
+        item: Item de custo
+        quantity: Quantidade
+        estimated_cost: Custo estimado (R$)
+        estimatedCost: Custo estimado (R$)
+
+      errors:
+        item:
+          missing: Item de custo não pode ficar em branco
+        quantity:
+          missing: Quantidade não pode ficar em branco
+        estimatedCost:
+          missing: Custo estimado não pode ficar em branco

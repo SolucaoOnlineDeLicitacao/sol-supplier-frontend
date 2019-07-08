@@ -1,0 +1,21 @@
+pt-BR:
+  models:
+    admin:
+      one: Administrador
+      other: Administradores
+
+      attributes:
+        id: Código (ID)
+        name: Nome
+        email: E-mail
+        covenantId: Convênio
+        covenantName: Convênio
+
+      errors:
+        name:
+          missing: Nome não pode ficar em branco
+        covenant:
+          missing: Convênio não pode ficar em branco
+        email:
+          missing: E-mail não pode ficar em branco
+

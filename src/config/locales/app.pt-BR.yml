@@ -1,0 +1,10 @@
+pt-BR:
+  app: 'sdc-cooperative-frontend.vue'
+  title: 'SOL - Fornecedores'
+
+  button:
+    search: Buscar
+    searching: Buscando
+
+  messages:
+    not_informed: não informado

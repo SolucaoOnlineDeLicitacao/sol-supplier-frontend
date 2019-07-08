@@ -1,0 +1,18 @@
+pt-BR:
+  models:
+    lot_group_item_proposal:
+      one: Item da cotação
+      other: Itens da cotação
+
+      attributes:
+        id: Código (ID)
+        price: Valor da cotação (R$)
+
+      errors:
+        price:
+          missing: Valor da cotação precisa ser informado
+          invalid: Valor da cotação precisa ser maior do que zero (0)
+          different: Valor da cotação diferente dos demais lotes
+        price_total:
+          invalid: O valor total da proposta não pode ser maior que o valor informado anteriormente
+

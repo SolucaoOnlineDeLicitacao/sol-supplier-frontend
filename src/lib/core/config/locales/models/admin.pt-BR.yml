@@ -1,0 +1,10 @@
+pt-BR:
+  models:
+    admin:
+      one: Administrador
+      other: Administradores
+
+      attributes:
+        name:     Nome
+        email:    E-mail
+        password: Senha

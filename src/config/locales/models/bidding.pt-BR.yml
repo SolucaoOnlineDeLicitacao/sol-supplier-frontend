@@ -1,0 +1,64 @@
+pt-BR:
+  models:
+    bidding:
+      one: Licitação
+      other: Licitações
+
+      attributes:
+        id: Código (ID)
+        title: Número
+        description: Descrição (Objeto)
+        kind: Tipo de licitação
+        modality: Modalidade
+        status: Situação
+        deadline: Prazo para entrega/execução (dias)
+        link: URL adicional
+        startDate: Data de início
+        closingDate: Data de encerramento
+        openingDate: Data de abertura
+        covenantId: Convênio
+        covenant: Convênio
+        address: Local de entrega
+        cooperative: Associação
+
+        statuses:
+          approved: Liberada
+          canceled: Cancelada
+          closed: Fechada
+          completed: Completado
+          draft: Em rascunho
+          failure: Fracassada
+          finnished: Concluída
+          ongoing: Aberta
+          under_review: Em análise
+          waiting: Aguardando liberação
+          suspended: Suspensa
+          draw: Aguardando desempate
+          reopened: Reaberta
+          desert: Deserta
+
+        kinds:
+          global: Preço global
+          lot: Preço por lote
+          unitary: Preço individual
+
+        modalities:
+          unrestricted: Aberta/Pública
+          open_invite: Convite
+          closed_invite: Convite
+
+      errors:
+        covenant:
+          missing: Convênio não pode ficar em branco
+        title:
+          missing: Título não pode ficar em branco
+        description:
+          missing: Descrição não pode ficar em branco
+        kind:
+          missing: Tipo de licitação não pode ficar em branco
+        start_date:
+          missing: Data de início não pode ficar em branco
+        closing_date:
+          missing: Data de encerramento não pode ficar em branco
+        opening_date:
+          missing: Data de abertura não pode ficar em branco

@@ -1,0 +1,26 @@
+pt-BR:
+  models:
+    address:
+      one: Endereço
+      other: Endereços
+
+      attributes:
+        longitude: Longitude
+        latitude: Latitude
+        cityName: Município
+        cityId: Município
+        address: Logradouro
+        number: Número
+        neighborhood: Bairro
+        cep: CEP
+        complement: Complemento
+        referencePoint: Ponto de referência
+
+      errors:
+        address:
+          address:
+            missing: Logradouro não pode ficar em branco
+          number:
+            missing: Número não pode ficar em branco
+          reference_point:
+            missing: Ponto de referência não pode ficar em branco

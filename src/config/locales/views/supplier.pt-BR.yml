@@ -1,0 +1,47 @@
+pt-BR:
+  suppliers:
+    index:
+      title: Usuários de fornecedor
+      list:
+        title: Lista de Usuários de fornecedor
+      button:
+        new: Novo usuário de fornecedor
+      search:
+        placeholder: Busque por nome, cpf, telefone ou e-mail do usuário
+
+      notifications:
+        destroy:
+          success: Usuário excluido com sucesso
+          failure: Houve um erro ao excluir a usuário
+
+    new:
+      title: Novo usuário de fornecedor
+      general:
+        title: Dados do usuário
+
+      fields:
+        name:
+          placeholder: Informe o nome do usuário
+        cnpj:
+          placeholder: Informe o documento
+
+      button:
+        submit: Criar usuário de fornecedor
+        submitting: Criando usuário de fornecedor
+
+      notifications:
+        failure: Houve um erro ao criar o usuário
+
+
+    edit:
+      title: Editar usuário
+
+      notifications:
+        failure: Houve um erro ao editar o usuário
+
+      button:
+        submit: Editar usuário de fornecedor
+        submitting: Editando usuário de fornecedor
+
+    show:
+      title: Dados do usuário

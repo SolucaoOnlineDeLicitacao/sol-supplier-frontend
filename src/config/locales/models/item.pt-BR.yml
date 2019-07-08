@@ -1,0 +1,19 @@
+pt-BR:
+  models:
+    item:
+      one: Item de Custo
+      other: Itens de Custo
+
+      attributes:
+        id: Código (ID)
+        title: Título
+        description: Especificação
+        unit: Unidade
+        classificationId: Classificação
+
+      errors:
+        title:
+          missing: Título não pode ficar em branco
+        description:
+          missing: Especificação não pode ficar em branco
+

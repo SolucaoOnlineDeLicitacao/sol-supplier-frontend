@@ -1,0 +1,24 @@
+pt-BR:
+  home:
+    welcome: 'Bem vindo ao SOL, temos %{count} licitações abertas!'
+    period: Período
+    loading: Carregando...
+    bidding_title: 'Licitação nº %{title}'
+    last_biddings: 'Últimas licitações (%{count})'
+
+    biddings:
+      button: Procurar licitações
+      empty: Nenhuma licitação cadastrada.
+
+    button:
+      logout:
+        label: Sair
+        labelOngoing: Saindo...
+
+    notifications:
+      echo:
+        failure: Echoless
+      profile:
+        failure: Perfil não acessível
+      logout:
+        failure: Não foi possível sair. Tente novamente

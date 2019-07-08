@@ -1,0 +1,61 @@
+pt-BR:
+  biddings:
+    index:
+      title: Licitações
+
+      empty: Nenhuma licitação encontrada
+
+      list:
+        title: Lista de Licitações
+      button:
+        new: Nova licitação
+
+      search:
+        placeholder: Busque por nome ou número da licitação
+
+      period: Período
+
+    new:
+      title: Nova licitação
+      general: Configurações gerais
+      empty_covenants: Associação sem convênios. Não é possível criar uma licitação.
+
+      button:
+        submit: Salvar e definir itens da licitação
+        submitting: Salvando...
+      notifications:
+        success: Licitação criada com sucesso
+        failure: Houve um erro ao criar a licitação
+
+    edit:
+      button:
+        submit: Salvar licitação
+
+    show:
+      title: Detalhes da licitação
+
+      general:
+        title: Dados da licitação
+
+      edit: Editar licitação
+      empty_address: Não informado
+
+      documents:
+        title: Documentos
+
+      minute:
+        download: Baixar ATA
+        not_found: ATA não disponível
+
+      edict:
+        download: Baixar Edital
+        not_found: Edital não disponível
+
+      notifications:
+        destroy:
+          success: Licitação excluida com sucesso
+          failure: Houve um erro ao excluir a licitação
+
+      destroy:
+        title: Excluir licitação
+        body: Tem certeza que deseja excluir esta licitação?

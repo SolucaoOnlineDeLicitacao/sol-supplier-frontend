@@ -1,0 +1,7 @@
+pt-BR:
+  address:
+    address-fields:
+      search:
+        placeholder: Busque pelo nome do município
+      item:
+        empty: Nenhum município encontrado.

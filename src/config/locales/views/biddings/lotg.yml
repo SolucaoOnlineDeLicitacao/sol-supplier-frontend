@@ -1,0 +1,69 @@
+pt-BR:
+  biddings:
+    lotsg:
+      index:
+        title: Lotes e itens
+        empty: Nenhum lote cadastrado
+        lot_group_items_count: 'Itens: %{value}'
+
+        button:
+          proposals: Visualizar todas propostas
+          my_proposal: Visualizar minha proposta
+
+        tabs:
+          lots: Lotes e itens
+          proposals: Propostas
+
+        notifications:
+          finish:
+            failure: Não foi possível enviar a proposta!
+            success: Proposta enviada com sucesso!
+
+      show:
+        button:
+          new_proposal: Preencher proposta
+          edit_proposal: Visualizar ou editar proposta
+
+        destroy:
+          title: Remover proposta
+          body: Tem certeza que deseja remover a proposta?
+
+        notifications:
+          destroy:
+            failure: Não foi possível remover a proposta
+            success: Proposta removida com sucesso
+
+        tabs:
+          lots: Lotes e itens
+          proposals: Propostas
+
+      _index:
+        proposal-import-overlay:
+          title: Importar proposta
+          alert: 'Baixe a planilha e preencha apenas o campo <strong>"proposta (valor unitario)"</strong> e o campo <strong>"frete (valor)"</strong>.'
+          button:
+            download: Baixar planilha de todos os lotes
+            submitFile: Importar proposta
+            submittingFile: Importando proposta
+
+          notifications:
+            file:
+              success: 'Você será notificado quando a proposta for processada. Após importação, será preciso confirmar o envio da proposta para concluir o processo.'
+              failure: Houve um erro ao importar a proposta.
+
+        lot-alerts:
+          total: 'Valor da proposta atual: %{value}'
+
+          button:
+            new_proposal_from_file: Preencher proposta via planilha
+            submit: Enviar proposta
+            submitting: Enviando proposta
+
+          status:
+            abandoned: Proposta excluída. Não é possível enviar uma nova proposta.
+            sent: Proposta enviada. Qualquer atualização nas propostas dos lotes irá atualizar a proposta.
+            sent_and_closed_invite: 'Proposta enviada. Não é possível editar a proposta em licitações de modalidade "Convite fechado".'
+            not_sent: Proposta não enviada. Preencha todos os lotes para poder enviar a proposta.
+            importing: ' Importação de proposta em andamento...'
+            draw: 'Proposta empatada. Você poderá atualizar a sua proposta até o dia %{day}. Qualquer atualização nas propostas dos lotes irá atualizar a proposta.'
+            draw_waiting: Aguarde o desempate das propostas empatadas.

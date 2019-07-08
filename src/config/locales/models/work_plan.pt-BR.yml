@@ -1,0 +1,13 @@
+pt-BR:
+  models:
+    work_plan:
+      one: Plano de trabalho
+      other: Planos de trabalho
+
+      attributes:
+        id: Código (ID)
+        name: Nome do Plano de Trabalho
+
+      errors:
+        name:
+          missing: Nome não pode ficar em branco

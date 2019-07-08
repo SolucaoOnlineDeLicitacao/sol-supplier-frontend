@@ -1,0 +1,10 @@
+// importer via yarn
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/fa-solid";
+@import "~@fortawesome/fontawesome-free/scss/fa-regular";
+
+// src: https://github.com/FortAwesome/Font-Awesome/issues/1540#issuecomment-68689950
+.fa-times-thin:before,
+.fa-close-thin:before {
+  content: '\00d7';
+}

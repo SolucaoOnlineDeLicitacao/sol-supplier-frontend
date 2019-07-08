@@ -1,0 +1,125 @@
+pt-BR:
+  # copiado do Rails pt-BR.yml
+  date:
+    abbr_day_names:
+    - Dom
+    - Seg
+    - Ter
+    - Qua
+    - Qui
+    - Sex
+    - Sáb
+    abbr_month_names:
+    -
+    - Jan
+    - Fev
+    - Mar
+    - Abr
+    - Mai
+    - Jun
+    - Jul
+    - Ago
+    - Set
+    - Out
+    - Nov
+    - Dez
+    day_names:
+    - Domingo
+    - Segunda-feira
+    - Terça-feira
+    - Quarta-feira
+    - Quinta-feira
+    - Sexta-feira
+    - Sábado
+    formats:
+      default: '%d/%m/%Y'
+      long: '%d de %B de %Y'
+      short: '%d de %B'
+      iso: '%Y-%m-%d'
+    month_names:
+    -
+    - Janeiro
+    - Fevereiro
+    - Março
+    - Abril
+    - Maio
+    - Junho
+    - Julho
+    - Agosto
+    - Setembro
+    - Outubro
+    - Novembro
+    - Dezembro
+
+  number:
+    currency:
+      format:
+        delimiter: '.'
+        format: '%u %n'
+        precision: 2
+        separator: ','
+        significant: false
+        strip_insignificant_zeros: false
+        unit: R$
+
+    format:
+      delimiter: '.'
+      precision: 3
+      separator: ','
+      significant: false
+      strip_insignificant_zeros: false
+
+    human:
+      decimal_units:
+        format: '%n %u'
+        units:
+          billion:
+            one: bilhão
+            other: bilhões
+          million:
+            one: milhão
+            other: milhões
+          quadrillion:
+            one: quatrilhão
+            other: quatrilhões
+          thousand: mil
+          trillion:
+            one: trilhão
+            other: trilhões
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: '%n %u'
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+
+    percentage:
+      format:
+        delimiter: '.'
+        format: '%n%u'
+        precision: 2
+        separator: ','
+        unit: '%'
+
+  time:
+    am: ''
+    formats:
+      # XXX removendo timezone do formato padrão
+      # default: "%a, %d de %B de %Y às %H:%M:%S %z"
+      default: "%a, %d de %B de %Y às %H:%M:%S"
+      long: '%d de %B de %Y às %H:%M'
+      short: '%d de %B às %H:%M'
+      micro: '%d/%m/%Y às %H:%M'
+      iso: '%Y-%m-%dT%H:%M:%S%z'
+      appointment: "%A, %d de %B de %Y às %H:%M"
+    pm: ''

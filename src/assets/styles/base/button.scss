@@ -1,0 +1,46 @@
+.button.button {
+  background-color: white;
+}
+
+.button.button.button-primary,
+button.button-primary.button-primary {
+  background-color: rgb(47, 113, 158);
+  border-color: rgba(37, 125, 167, 1);
+}
+
+.button {
+  &.button-submit {
+  color: $white;
+  border-color: rgb(46, 158, 136);
+  background-color: rgb(46, 158, 136);
+  }
+
+  &.button-destroy {
+    color: $danger-color;
+    border-color: $danger-color;
+  }
+}
+
+.button-success,
+.button-submit {
+  color: $white;
+  border-color: rgb(46, 158, 136);
+  background-color: rgb(46, 158, 136) !important;
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: $white;
+  }
+}
+
+.button-danger {
+  background-color: $danger-color !important;
+  border-color: darken($danger-color, 15%);
+  color: white;
+}
+
+.button-icon {
+  padding: 0 15px;
+  line-height: 42px;
+}

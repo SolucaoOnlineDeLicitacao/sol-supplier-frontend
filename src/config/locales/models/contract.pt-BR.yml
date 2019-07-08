@@ -1,0 +1,27 @@
+pt-BR:
+  models:
+    contract:
+      one: Contrato
+      other: Contratos
+
+      attributes:
+        id: Código (ID)
+        title: Número
+        status: Situação
+
+        supplierSignedAt: Fornecedor
+        adminSignedAt: Revisor
+        userSignedAt: Associação
+
+        price_total: Valor
+        bidding_title: Licitação
+        provider_title: Fornecedor
+        cooperative_title: Associação
+
+        statuses:
+          waiting_signature: Aguardando assinatura
+          signed: Assinado
+          completed: Concluído
+          partial_execution: Executado parcialmente
+          total_inexecution: Inexecução total
+          refused: Recusado

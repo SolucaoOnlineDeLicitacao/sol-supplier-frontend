@@ -1,0 +1,42 @@
+pt-BR:
+  models:
+    covenant:
+      one: Convênio
+      other: Convênios
+
+      attributes:
+        id: Código (ID)
+        name: Nome
+        number: Número
+        status: Situação
+        cooperativeId: Associação
+        cooperative: Associação
+        adminId: Revisor
+        admin: Revisor
+        adminName: Revisor
+        estimatedCost: Valor do Convênio (R$)
+        validityDate: Data de vigência
+        signatureDate: Data da assinatura
+        cooperativeAddressCityName: Município
+        link: Anexos
+        statuses:
+          waiting: Em espera
+          running: Em andamento
+          completed: Completado
+          canceled: Cancelado
+
+      errors:
+        admin:
+          missing: Revisor não pode ficar em branco
+        name:
+          missing: Nome não pode ficar em branco
+        number:
+          missing: Número não pode ficar em branco
+        status:
+          missing: Situação não pode ficar em branco
+        signature_date:
+          missing: Data de assinatura não pode ficar em branco
+        validity_date:
+          missing: Data de vigência não pode ficar em branco
+        cooperative:
+          missing: Associação não pode ficar em branco

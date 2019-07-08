@@ -1,0 +1,13 @@
+.card {
+  padding: 20px;
+
+  background-color: $white;
+  border: solid 1px $white-two;
+  border-radius: 4px;
+  box-shadow: 0px 2px 3px 1px #d0d5d8;
+
+  &.slim {
+    padding: 0;
+  }
+}
+

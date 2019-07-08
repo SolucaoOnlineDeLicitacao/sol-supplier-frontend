@@ -1,0 +1,38 @@
+pt-BR:
+  covenants:
+    index:
+      title: Convênios
+      list:
+        title: Lista de Convênios
+      button:
+        new: Novo convênio
+      search:
+        placeholder: Busque por nome ou número do convênio
+
+      notifications:
+        destroy:
+          success: Convênio excluido com sucesso
+          failure: Houve um erro ao excluir o convênio
+
+    show:
+      title: Detalhes do convênio
+
+      general:
+        title: Dados do convênio
+
+      navbar:
+        title: 'Convênio nº '
+
+      notifications:
+        destroy:
+          success: Grupo excluido com sucesso
+          failure: Houve um erro ao excluir o grupo
+
+
+      work_plan:
+        title: Plano de Trabalho
+
+        groups:
+          empty: Nenhum grupo de itens
+          button:
+            new: Novo Grupo de itens

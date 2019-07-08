@@ -1,0 +1,17 @@
+pt-BR:
+  models:
+    cooperative:
+      one: Associação
+      other: Associações
+
+      attributes:
+        id: Código (ID)
+        name: Nome
+        cnpj: CNPJ
+        city: Cidade
+
+      errors:
+        name:
+          missing: Nome não pode ficar em branco
+        cnpj:
+          missing: CNPJ não pode ficar em branco
