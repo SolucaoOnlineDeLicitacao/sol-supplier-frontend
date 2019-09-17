@@ -402,10 +402,9 @@
 
         this.$http.get('/search/register/providers', { params: params })
           .then((response) => {
-
             if(response.status == 204) {
               this.alreadyInUse = true
-            } else if(response.data) {
+            } else if(_.isPresent(response.data)) {
               this.provider = response.data
               this.address = this.provider.address || {}
               this.legal_representative = this.provider.legal_representative || {}
@@ -436,10 +435,6 @@
       },
 
       submitSuccess(response) {
-        // this.$notifications.clear()
-
-        // this.$notifications.info(this.$t('.notifications.success'))
-
         this.errors = {}
 
         this.showSuccessOverlay = true
