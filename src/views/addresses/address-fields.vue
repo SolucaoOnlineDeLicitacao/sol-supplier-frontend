@@ -142,7 +142,7 @@
           require=false,
           :error="errors[errorPrefix + 'address.latitude']",
           placeholder="00.00000000",
-          :mask="{ mask: 'M00.00000000' }"
+          :mask="{ mask: 'M99.00000000' }"
         )
 
       .three.columns
@@ -154,7 +154,7 @@
           require=false,
           :error="errors[errorPrefix + 'address.longitude']",
           placeholder="00.00000000",
-          :mask="{ mask: 'M00.00000000' }"
+          :mask="{ mask: 'M99.00000000' }"
         )
 
     .row
