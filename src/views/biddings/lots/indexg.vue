@@ -96,7 +96,7 @@
 
     computed: {
       showProposals() {
-        return this.biddingStatus == 'finnished' || this.biddingUnderReviewAndUnrestricted
+        return this.biddingStatus == 'finnished' || this.biddingUnderReview
       },
 
       proposalId() {
@@ -111,8 +111,8 @@
         return this.biddingId && this.lots && this.lots[0] && this.lots[0].bidding_modality
       },
 
-      biddingUnderReviewAndUnrestricted() {
-        return this.biddingModality == 'unrestricted' && this.biddingStatus == 'under_review'
+      biddingUnderReview() {
+        return this.biddingStatus == 'under_review'
       },
     },
 
