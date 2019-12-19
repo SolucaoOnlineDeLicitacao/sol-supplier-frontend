@@ -16,7 +16,7 @@
       label.mr-0-5.mt-2
         | {{ $t('models.group_item.attributes.quantity') }}:
       span
-        | {{ this.overlayItem.quantity }}
+        | {{ $asNumber(this.overlayItem.quantity, { precision: 2 }) }}
         | {{ this.overlayItem.item_unit }}
 
       label.mr-0-5.mt-2

@@ -12,7 +12,7 @@
           label.inline-block.mr-0-5
             | {{ $t('models.group_item.attributes.quantity') }}:
           span
-            | {{ $asNumber(lot_group_item_lot_proposal.lot_group_item.quantity, { precision: 0 }) }}
+            | {{ $asNumber(lot_group_item_lot_proposal.lot_group_item.quantity, { precision: 2 }) }}
             | {{ lot_group_item_lot_proposal.lot_group_item.item_unit }}
         div
           label.inline-block.mr-0-5

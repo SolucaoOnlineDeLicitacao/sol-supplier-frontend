@@ -45,7 +45,7 @@
         label.inline-block.mr-0-5.ml-0
           | {{ $t('models.group_item.attributes.quantity') }}:
         span
-          | {{ $asNumber(item.lot_group_item.quantity, { precision: 0}) }}
+          | {{ $asNumber(item.lot_group_item.quantity, { precision: 2 }) }}
           | {{ item.lot_group_item.item_unit }}
 
         .proposal-container(v-if="item.price")

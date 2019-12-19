@@ -40,7 +40,7 @@
       label.mt-2
         | {{ $t('models.group_item.attributes.quantity') }}:
       span
-        | {{ $asNumber(this.item.lot_group_item.quantity, { precision: 0}) }}
+        | {{ $asNumber(this.item.lot_group_item.quantity, { precision: 2 }) }}
         | {{ this.item.lot_group_item.item_unit }}
 
       label.mt-2

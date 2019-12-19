@@ -59,6 +59,7 @@
         // resource
         isLoading: true,
         bidding: null,
+        lot: null,
         proposal: null,
 
         params: {},
@@ -98,6 +99,9 @@
             this.$http.get('/supplier/biddings/' + this.biddingId + '/lots/' + this.lotId + '/lot_proposals/' + params.id)
               .then((response) => {
                 this.proposal = response.data
+                this.lot = this.proposal.lot
+
+                this.updateTabsRoutes()
 
                 this.isLoading = false
 
@@ -125,6 +129,11 @@
       updateTabsRoutes() {
         this.tabs[0].route.params = { id: this.biddingId }
         this.tabs[1].route.params = { bidding_id: this.biddingId }
+
+        if(this.lot && this.lot.bidding_kind == 'global') {
+          this.tabs[1].route.name = 'lotsg'
+        }
+
       },
 
       init() {
