@@ -45,7 +45,7 @@
       .row
         label {{ $t('models.contract.attributes.price_total') }}
         span
-          | {{ parseFloat(contract.price_total || 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) }}
+          | {{ $asCurrency(parseFloat(contract.price_total || 0)) }}
 
       .row
         label {{ $t('models.contract.attributes.status') }}
