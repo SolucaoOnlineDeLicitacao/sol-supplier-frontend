@@ -213,7 +213,7 @@
       .container.logout-container
         div.router-link(type="button", data-action="logout", @click="logout")
           i.fa.fa-sign-out-alt
-          | {{ btnLogoutLabel }}
+          | {{ btnLogoutLabel() }}
 </template>
 
 <script>
@@ -243,10 +243,6 @@
         return !!this.showBackButton
       },
 
-      btnLogoutLabel() {
-        return this.loggingOut ? this.$t('.button.logout.labelOngoing') : this.$t('.button.logout.label')
-      },
-
       navbarStatus() {
         return this.navbarOpen ? 'open' : ''
       },
@@ -261,6 +257,10 @@
     },
 
     methods: {
+      btnLogoutLabel() {
+        return this.loggingOut ? this.$t('.button.logout.labelOngoing') : this.$t('.button.logout.label')
+      },
+
       avatarUrl() {
         return app.secrets.api.host + this.$auth.avatar.url
       },

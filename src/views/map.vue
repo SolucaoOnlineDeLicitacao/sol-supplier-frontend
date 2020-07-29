@@ -1,7 +1,7 @@
 <template lang="pug">
   .root
     .filter-bar
-      input-field(hideLabel=true name='search' placeholder="Lista de associações")
+      input-field(hideLabel=true name='search' :placeholder="this.$t('.cooperatives_list')")
     ll-map(:markers="markers" :classes='loadingClasses')
 </template>
 

@@ -1,0 +1,64 @@
+﻿en-US:
+  models:
+    bidding:
+      one: Procurement process
+      other: Procurement Processes
+
+      attributes:
+        id: Code (ID)
+        title: Number
+        description: Description (purpose)
+        kind: Procurement process type
+        modality: Modality
+        status: Status
+        deadline: Delivery/execution deadline (days)
+        link: Additional URL
+        startDate: Start date
+        closingDate: End date
+        openingDate: Opening date
+        covenantId: Covenant
+        covenant: Covenant
+        address: Delivery location
+        cooperative: Cooperative
+
+        statuses:
+          approved: Cleared
+          canceled: Cancelled
+          closed: Closed
+          completed: Completed
+          draft: In draft
+          failure: Failed
+          finnished: Completed
+          ongoing: Open
+          under_review: Under review
+          waiting: Awaiting clearance
+          suspended: Suspended
+          draw: Awaiting tie-break
+          reopened: Reopened
+          desert: Deserted
+
+        kinds:
+          global: Global price
+          lot: Price per lot
+          unitary: Unit price
+
+        modalities:
+          unrestricted: Open/Public
+          open_invite: Call for Bids
+          closed_invite: Call for Bids
+
+      errors:
+        covenant:
+          missing: Covenant cannot be blank
+        title:
+          missing: Title cannot be blank
+        description:
+          missing: Description cannot be blank
+        kind:
+          missing: Procurement process type cannot be blank
+        start_date:
+          missing: Start date cannot be blank
+        closing_date:
+          missing: End date cannot be blank
+        opening_date:
+          missing: Opening date cannot be blank

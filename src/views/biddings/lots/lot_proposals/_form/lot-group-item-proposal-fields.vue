@@ -43,7 +43,7 @@
 
         input(type="hidden", name="lot_proposal[lot_group_item_lot_proposals_attributes][][lot_group_item_id]", :value="item.lot_group_item.id")
 
-        input(type="hidden", name="lot_proposal[lot_group_item_lot_proposals_attributes][][price]", :value="item.price | stringfy")
+        input(type="hidden", name="lot_proposal[lot_group_item_lot_proposals_attributes][][price]", :value="item.price")
 
         label.inline-block.mr-0-5.ml-0
           | {{ $t('models.group_item.attributes.quantity') }}:
@@ -98,51 +98,10 @@
       }
     },
 
-    filters: {
-      stringfy(value) {
-        if(!value) return value
-
-        let splited = Number(value).toFixed(2).split('.')
-        let decimalPart = splited[0]
-        let integerPart = splited[1]
-
-        return [decimalPart, integerPart].join(',')
-      },
-    },
-
     methods: {
       toggleOverlay(item) {
-        let priceStr = this.stringfy(item.price)
-
         this.overlayItem = item
-        this.$set(this.overlayItem, 'priceStr', priceStr)
-
         this.showOverlay = true
-      },
-
-      stringfy(value) {
-        if(!value) return value
-
-        let splited = Number(value).toFixed(2).split('.')
-        let decimalPart = splited[0]
-        let integerPart = splited[1]
-
-        return [decimalPart, integerPart].join(',')
-      },
-
-      moneyToFloat(value) {
-        if (!value) return ''
-        if( typeof value === 'number') return value
-        return Number(value.split(',').join('.'))
-      },
-    },
-
-    watch: {
-      overlayItem: {
-        handler: function(item) {
-          if(this.showOverlay) item.price = this.moneyToFloat(item.priceStr)
-        },
-        deep: true
       }
     }
   }

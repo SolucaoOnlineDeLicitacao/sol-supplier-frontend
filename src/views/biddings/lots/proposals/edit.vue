@@ -33,12 +33,11 @@
 
           hr.mt-2.mb-2.o-container
 
-          input-field(
-            type="text",
+          numeric-field(
             v-model="lot_proposal.delivery_price",
             name="proposal[lot_proposals_attributes][][delivery_price]",
-            :mask="{ mask: '000000000000000,00', options: { reverse: true } }",
-            :error="errors['lot_proposals.delivery_price']"
+            :error="errors['lot_proposals.delivery_price']",
+            :label="$t('models.lotProposal.attributes.deliveryPrice')"
           )
 
           .text-center

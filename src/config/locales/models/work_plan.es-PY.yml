@@ -1,0 +1,13 @@
+﻿es-PY:
+  models:
+    work_plan:
+      one: Plan de trabajo
+      other: Planes de trabajo
+
+      attributes:
+        id: Código (ID)
+        name: Nombre del plan de trabajo
+
+      errors:
+        name:
+          missing: El nombre no puede quedar en blanco

@@ -1,0 +1,64 @@
+﻿es-PY:
+  models:
+    bidding:
+      one: Licitación
+      other: Licitaciones
+
+      attributes:
+        id: Código (ID)
+        title: Número
+        description: Descripción (Objeto)
+        kind: Tipo de licitación
+        modality: Modalidad
+        status: Situación
+        deadline: Plazo para entrega/ejecución (días)
+        link: URL adicional
+        startDate: Fecha de inicio
+        closingDate: Fecha de cierre
+        openingDate: Fecha de apertura
+        covenantId: Convenio
+        covenant: Convenio
+        address: Lugar de entrega
+        cooperative: Asociación
+
+        statuses:
+          approved: Liberada
+          canceled: Cancelada
+          closed: Cerrada
+          completed: Completado
+          draft: En borrador
+          failure: Fallida
+          finnished: Concluida
+          ongoing: Abierta
+          under_review: En revisión
+          waiting: A la espera de liberación
+          suspended: Suspendida
+          draw: A la espera de desempate
+          reopened: Reabierta
+          desert: Desierta
+
+        kinds:
+          global: Precio global
+          lot: Precio por lote
+          unitary: Precio individual
+
+        modalities:
+          unrestricted: Abierta/Pública
+          open_invite: Invitación
+          closed_invite: Invitación
+
+      errors:
+        covenant:
+          missing: El convenio no puede quedar en blanco
+        title:
+          missing: El título no puede quedar en blanco
+        description:
+          missing: La descripción no puede quedar en blanco
+        kind:
+          missing: El tipo de licitación no puede quedar en blanco
+        start_date:
+          missing: La fecha de inicio no puede quedar en blanco
+        closing_date:
+          missing: La fecha de cierre no puede quedar en blanco
+        opening_date:
+          missing: La fecha de apertura no puede quedar en blanco

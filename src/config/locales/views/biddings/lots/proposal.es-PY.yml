@@ -1,0 +1,80 @@
+﻿es-PY:
+  biddings:
+    lots:
+      proposals:
+        new:
+          title: Nueva propuesta
+          alert: Verifique la información antes de enviar la propuesta. No será posible editar la propuesta después del envío.
+
+          lot_name: 'Lote: %{name}'
+
+          button:
+            submit: Enviar propuesta
+            submitting: Enviando propuesta...
+
+          notifications:
+            failure: No se pudo enviar la propuesta
+            success: Propuesta enviada con éxito!
+
+        edit:
+          title: Actualizar la propuesta
+          alert: Verifique la información antes de enviar la propuesta. No será posible editar la propuesta después del envío.
+
+          success_overlay:
+            draft: ¡La propuesta ha sido enviada con éxito!
+            sent: ¡Propuesta actualizada con éxito!
+
+          button:
+            final_submit: Enviar propuesta
+            submit: Actualizar la propuesta
+            submitting: Actualizando propuesta...
+            submit_draft: Enviar propuesta
+            submitting_draft: Enviando propuesta...
+
+          notifications:
+            failure: No se pudo actualizar la propuesta
+            success: Propuesta actualizada con éxito
+
+        index:
+          title: Propuestas
+          empty: Ninguna propuesta recibida
+          cant_see: Las propuestas serán liberadas para su visualización al finalizar el proceso de licitación.
+          lot_group_items_count: 'Ítems: %{value}'
+          total: 'Valor total: R$ %{value}'
+
+        show:
+          proposals:
+            title: Lista de ítems y propuestas
+
+        _form:
+          lot-group-item-proposal-fields:
+            my_quote: 'Mi cotización: '
+            per_unit: ' por %{unit}'
+            inform_proposal: Haga clic para informar una propuesta
+
+        _show:
+          general-fields:
+            title: Resumen de la propuesta
+            provider: 'Proveedor: %{name}'
+            total: 'Valor total: %{value}'
+
+            proposal:
+              refused: Propuesta rechazada
+              accepted: Propuesta ganadora
+
+          proposal-list-fields:
+            price: 'Valor unitario:'
+            delivery: Valor del flete
+
+        _index:
+          proposal-list-fields:
+            badge: Mejor propuesta
+            provider: 'Proveedor: %{name}'
+            total: 'Valor total: %{value}'
+
+            status:
+              refused: Propuesta rechazada
+              accepted: Propuesta ganadora
+
+            button: Ver
+

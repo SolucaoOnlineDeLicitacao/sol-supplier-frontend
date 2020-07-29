@@ -1,0 +1,27 @@
+﻿es-PY:
+  models:
+    proposal:
+      one: Propuesta de lote
+      other: Propuestas de lote
+
+      attributes:
+        id: Código (ID)
+        deliveryPrice: Valor del flete
+      errors:
+        delivery_price:
+          missing: Se debe informar el valor del flete
+        price_total:
+          invalid: El valor total de la propuesta no puede ser superior al valor informado anteriormente
+
+    lotProposal:
+      one: Propuesta de lote
+      other: Propuestas de lote
+
+      attributes:
+        id: Código (ID)
+        deliveryPrice: Valor del flete
+      errors:
+        delivery_price:
+          missing: Se debe informar el valor del flete
+        price_total:
+          invalid: El valor total de la propuesta no puede ser superior al valor informado anteriormente

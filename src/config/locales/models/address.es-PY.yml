@@ -1,0 +1,26 @@
+﻿es-PY:
+  models:
+    address:
+      one: Dirección
+      other: Direcciones
+
+      attributes:
+        longitude: Longitud
+        latitude: Latitud
+        cityName: Municipio
+        cityId: Municipio
+        address: Paseo
+        number: Número
+        neighborhood: Barrio
+        cep: C.P.
+        complement: Complemento
+        referencePoint: Punto de referencia
+
+      errors:
+        address:
+          address:
+            missing: El paseo no puede quedar en blanco
+          number:
+            missing: El número no puede quedar en blanco
+          reference_point:
+            missing: Punto de referencia no puede quedar en blanco

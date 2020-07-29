@@ -5,3 +5,8 @@ pt-BR:
         placeholder: Busque pelo nome do município
       item:
         empty: Nenhum município encontrado.
+      overlay_title: Buscar município
+      button:
+        select_city: Selecionar município
+      labels:
+        city: Município*

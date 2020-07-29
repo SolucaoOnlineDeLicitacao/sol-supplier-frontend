@@ -1,0 +1,15 @@
+﻿en-US:
+  navbar:
+    app: SOL
+    home: Start
+    notifications: Notifications
+    covenants: Covenants
+    contracts: Contracts
+    biddings: Procurement Processes
+    map: Map
+    feedbacks: Evaluations
+    profile: My Profile
+    button:
+      logout:
+        label: Exit
+        labelOngoing: Exiting

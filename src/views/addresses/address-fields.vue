@@ -119,7 +119,8 @@
         )
 
       .three.columns.input-field(:class="this.errors && this.errors[this.errorPrefix + 'address.city'] && this.address.city_id == null ? 'errors': ''")
-        label Município*
+        label
+          | {{ $t('.labels.city') }}
         div.error.mb-1(v-if="this.errors && this.errors[this.errorPrefix + 'address.city'] && this.address.city_id == null")
           | {{ errors[errorPrefix + 'address.city'] }}
 
@@ -128,7 +129,7 @@
           template(v-if="this.address.city_name")
             | {{ this.address.city_name }}
           template(v-else)
-            | Selecionar município
+            | {{ $t('.button.select_city') }}
 
         input(type="hidden", :name="prefix + '[address_attributes][city_id]'", model="address", v-model="address.city_id")
 
@@ -179,7 +180,8 @@
 
     overlay-wnd(v-if="showOverlay", @close="showOverlay = false")
       .container
-        h4.mt-2.text-center Buscar município
+        h4.mt-2.text-center
+          | {{ $t('.overlay_title') }}
         hr.mt-0.mb-2.o-container
         form.filter(ref="formSearch", method="get" action="" @submit.prevent="fetchSearch")
           .search-field

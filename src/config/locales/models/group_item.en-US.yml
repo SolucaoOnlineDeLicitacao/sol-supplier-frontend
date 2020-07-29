@@ -1,0 +1,22 @@
+﻿en-US:
+  models:
+    group_item:
+      one: Group item
+      other: Group items
+
+      attributes:
+        id: Code (ID)
+        itemName: Cost item
+        itemId: Cost item
+        item: Cost item
+        quantity: Quantity
+        estimated_cost: Estimated cost (BRL)
+        estimatedCost: Estimated cost (BRL)
+
+      errors:
+        item:
+          missing: Cost item cannot be blank
+        quantity:
+          missing: Quantity cannot be blank
+        estimatedCost:
+          missing: Estimated cost cannot be blank

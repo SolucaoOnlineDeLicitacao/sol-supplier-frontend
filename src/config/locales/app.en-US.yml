@@ -1,0 +1,14 @@
+﻿en-US:
+  app: 'sdc-cooperative-frontend.vue'
+  title: 'SOL – Vendors'
+
+  button:
+    search: Search
+    searching: Searching
+
+  messages:
+    not_informed: not informed
+
+  dialog:
+    back: Cancel
+    destroy: Delete

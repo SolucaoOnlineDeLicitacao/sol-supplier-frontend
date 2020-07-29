@@ -1,0 +1,42 @@
+﻿en-US:
+  models:
+    covenant:
+      one: Covenant
+      other: Covenants
+
+      attributes:
+        id: Code (ID)
+        name: Name
+        number: Number
+        status: Status
+        cooperativeId: Cooperative
+        cooperative: Cooperative
+        adminId: Reviewer
+        admin: Reviewer
+        adminName: Reviewer
+        estimatedCost: Covenant amount (BRL)
+        validityDate: Effective date
+        signatureDate: Signature date
+        cooperativeAddressCityName: Municipality
+        link: Attachments
+        statuses:
+          waiting: On standby
+          running: Ongoing
+          completed: Completed
+          canceled: Cancelled
+
+      errors:
+        admin:
+          missing: Reviewer cannot be blank
+        name:
+          missing: Name cannot be blank
+        number:
+          missing: Number cannot be blank
+        status:
+          missing: Status cannot be blank
+        signature_date:
+          missing: Signature date cannot be blank
+        validity_date:
+          missing: Effective date cannot be blank
+        cooperative:
+          missing: Cooperative cannot be blank

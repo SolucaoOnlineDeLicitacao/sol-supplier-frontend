@@ -1,0 +1,30 @@
+﻿en-US:
+  models:
+    lot:
+      one: Lot
+      other: Lots
+
+      attributes:
+        id: Code (ID)
+        name: Lot name
+        status: Status
+        deadline: Delivery deadline (days)
+        address: Delivery location
+
+        statuses:
+          waiting: Ongoing
+          triage: Under review
+          accepted: Tendered
+          failure: Failed
+          draft: Draft
+          desert: Deserted
+          canceled: Cancelled
+
+      errors:
+        name:
+          missing: Name cannot be blank
+
+        lot_group_items:
+          invalid: At least one item must be entered
+
+        file: This field cannot be blank

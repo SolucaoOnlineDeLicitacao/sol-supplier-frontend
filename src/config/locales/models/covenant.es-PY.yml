@@ -1,0 +1,42 @@
+﻿es-PY:
+  models:
+    covenant:
+      one: Convenio
+      other: Convenios
+
+      attributes:
+        id: Código (ID)
+        name: Nombre
+        number: Número
+        status: Situación
+        cooperativeId: Asociación
+        cooperative: Asociación
+        adminId: Revisor
+        admin: Revisor
+        adminName: Revisor
+        estimatedCost: Valor del convenio (R$)
+        validityDate: Fecha de vigencia
+        signatureDate: Data de la firma
+        cooperativeAddressCityName: Municipio
+        link: Anexos
+        statuses:
+          waiting: En espera
+          running: En curso
+          completed: Completado
+          canceled: Cancelado
+
+      errors:
+        admin:
+          missing: El revisor no puede quedar en blanco
+        name:
+          missing: El nombre no puede quedar en blanco
+        number:
+          missing: El número no puede quedar en blanco
+        status:
+          missing: La situación no puede quedar en blanco
+        signature_date:
+          missing: La fecha de firma no puede quedar en blanco
+        validity_date:
+          missing: La fecha de vigencia no puede quedar en blanco
+        cooperative:
+          missing: La asociación no puede quedar en blanco

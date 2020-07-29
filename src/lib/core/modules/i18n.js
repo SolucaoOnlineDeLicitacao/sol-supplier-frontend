@@ -1,11 +1,21 @@
 import i18n from 'i18n-js'
+import store from 'store'
+import translations from '@/config/locales'
 import moment from 'moment'
-
-moment.locale('pt-BR')
 
 /**
  * Nosso módulo de I18n é basicamente a lib i18n-js (@https://github.com/fnando/i18n-js)
  */
+i18n.availableLocales = ['pt-BR', 'en-US', 'es-PY']
+i18n.defaultLocale = 'pt-BR'
+
+let locale = store.get('user') && store.get('user').locale || i18n.defaultLocale
+
+i18n.locale = locale
+
+i18n.translations = translations
+
+moment.locale(locale)
 
 // Sobrecarregando método i18n.localize(), para que repasse corretamente as
 // opções aos métodos `toCurrency()`, `toNumber()` e `toPercentage()`

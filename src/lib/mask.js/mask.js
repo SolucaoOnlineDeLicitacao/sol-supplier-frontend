@@ -7,52 +7,11 @@
 
 
 // helper functions
-function notSameMaskObject(field, mask, opts) {
-  let options = opts || {}
-  let maskObject = field.dataset.mask
-  let value = field.value || field.textContent
-  let stringify = JSON.stringify
-
-  try {
-    let maskedValue = mask
-
-    if (typeof mask === 'function') {
-      maskedValue = mask(value)
-    }
-
-    return typeof maskObject !== 'object' ||
-           stringify(maskObject.options) !== stringify(options) ||
-           maskObject.mask !== maskedValue
-
-  } catch (e) {}
-}
-
-function HTMLAttributes() {
-  let input = this
-  let options = {}
-  // let prefix = 'data-mask-'
-  let mask = input.dataset.mask
-
-  if (input.dataset.maskReverse) {
-    options.reverse = true
-  }
-
-  if (input.dataset.maskClearifnotmatch) {
-    options.clearIfNotMatch = true
-  }
-
-  if (input.dataset.maskSelectonfocus) {
-    options.selectOnFocus = true
-  }
-
-  if (notSameMaskObject(input, mask, options)) {
-    return input.dataset.mask = new Mask(this, mask, options)
-  }
-}
 
 function eventSupported(eventName) {
   let el = document.createElement('div')
   let isSupported = false
+
   let eventListenerAttribute = `on${eventName}`
 
   isSupported = (eventListenerAttribute in el)
@@ -65,31 +24,25 @@ function eventSupported(eventName) {
   return isSupported
 }
 
-
 // global config options
 const globals = {
-  maskElements:  'input,td,span,div',
-  dataMaskAttr:  '*[data-mask]',
-  dataMask:      true,
+  maskElements: 'input,td,span,div',
   watchInterval: 300,
-  watchInputs:   true,
+  watchInputs: true,
+  keyStrokeCompensation: 10,
   // old versions of chrome dont work great with input event
-  useInput:      !/Chrome\/[2-4][0-9]|SamsungBrowser/.test(window.navigator.userAgent) && eventSupported('input'),
-  watchDataMask: false,
-  byPassKeys:    [9, 16, 17, 18, 36, 37, 38, 39, 40, 91],
-
-  /* eslint-disable quote-props */
+  useInput: !/Chrome\/[2-4][0-9]|SamsungBrowser/.test(window.navigator.userAgent) && eventSupported('input'),
+  byPassKeys: [9, 16, 17, 18, 36, 37, 38, 39, 40, 91],
   translation: {
+    /* eslint-disable quote-props */
     '0': { pattern: /\d/ },
     '9': { pattern: /\d/, optional: true },
     '#': { pattern: /\d/, recursive: true },
     'A': { pattern: /[a-zA-Z0-9]/ },
-    'S': { pattern: /[a-zA-Z]/ },
-    'M': { pattern: /[-+]/, optional: true }
+    'S': { pattern: /[a-zA-Z]/ }
+    /* eslint-enable quote-props */
   },
-  /* eslint-enable quote-props */
-
-  clearIfNotMatch: null // TODO qual o valor default?!
+  clearIfNotMatch: false
 }
 
 
@@ -101,134 +54,83 @@ class Mask {
   constructor(el, mask, options) {
     // data
     this.invalid = []
-
-    // verificar necessidade do .bind(this) nos listeners
-    this.eventListeners = [{
-      events:   ['keydown'],
-      listener: (evt) => {
-        this.el.dataset.maskKeycode = evt.keyCode || evt.which
-        this.el.dataset.maskPreviousValue = this.el.value
-        this.el.dataset.maskPreviousCaretPos = this.getCaret()
-        this.maskDigitPosMapOld = this.maskDigitPosMap
-      }
-    }, {
-      events:   [Mask.globals.useInput ? 'input' : 'keyup'],
-      listener: (evt) => {
-        this.behaviour(evt)
-      }
-    }, {
-      events:   ['paste', 'drop'],
-      listener: (evt) => {
-        setTimeout(() => {
-          this.el.dispatchEvent(new Event('keydown'))
-          this.el.dispatchEvent(new Event('keyup'))
-        }, 100)
-      }
-    }, {
-      events:   ['change'],
-      listener: (evt) => {
-        this.el.dataset.changed = true
-      }
-    }, {
-      events:   ['blur'],
-      listener: (evt) => {
-        if (this.oldValue !== this.val() && !this.el.dataset.changed) {
-          this.el.dispatchEvent(new Event('change'))
-        }
-
-        this.el.dataset.changed = false
-      }
-    }, {
-      // TODO ENTENDER ESSE COMENTÁRIO
-      // it's very important that this callback remains in this position
-      // otherwhise oldValue it's going to work buggy
-      events:   ['blur'],
-      listener: (evt) => {
-        this.oldValue = this.val()
-      }
-    }, {
-      // select all text on focus
-      events:   ['focus'],
-      listener: (evt) => {
-        if (this.options.selectOnFocus === true) {
-          evt.target.dispatchEvent(new Event('select'))
-        }
-      }
-    }, {
-      // clear the value if it not complete the mask
-      events:   ['focusout'],
-      listener: (evt) => {
-        if (this.options.clearIfNotMatch && !this.regexMask.test(this.val())) {
-          this.val('')
-        }
-      }
-    }]
+    this.$data = {}
 
 
     // init do jMask
     this.el = el
-    this.options = options
-    this.mask = typeof mask === 'function' ? mask(this.val(), undefined, this.el, this.options) : mask
     this.oldValue = this.val()
+    this.options = options || {}
+    this.mask = typeof mask === 'function' ? mask(this.val(), undefined, this.el, this.options) : mask
 
-    this.clearIfNotMatch = Mask.globals.clearIfNotMatch
-    this.byPassKeys = Mask.globals.byPassKeys
-    this.translation = Object.assign({}, Mask.globals.translation, options.translation)
 
-    Object.assign(this, options) // TODO ???
-    // jMask = $.extend(true, {}, jMask, options);
+    let onlyMask = this.el.nodeName !== 'INPUT'
+
+    this.clearIfNotMatch = this.constructor.globals.clearIfNotMatch
+    this.byPassKeys = this.constructor.globals.byPassKeys
+    this.translation = Object.assign({}, this.constructor.globals.translation, options.translation)
+
+    Object.assign(this, options)
 
     this.regexMask = this.getRegexMask()
 
 
-    let init = (onlyMask) => {
-      if (onlyMask) {
-        this.events()
-        this.val(this.getMasked())
-      } else {
-        if (options.placeholder) {
-          this.el.setAttribute('placeholder', options.placeholder)
-        }
-
-        // this is necessary, otherwise if the user submit the form
-        // and then press the "back" button, the autocomplete will erase
-        // the data. Works fine on IE9+, FF, Opera, Safari.
-        if (this.el.dataset.mask) {
-          this.el.setAttribute('autocomplete', 'off')
-        }
-
-        // detect if is necessary let the user type freely.
-        // for is a lot faster than forEach.
-        let maxlength = true
-        for (let i = 0; i < mask.length; i++) {
-          let translation = this.translation[mask.charAt(i)]
-          if (translation && translation.recursive) {
-            maxlength = false
-            break
-          }
-        }
-
-        if (maxlength) {
-          el.setAttribute('maxlength', mask.length)
-        }
-
-        this.destroyEvents() // ???
-        this.events()
-
-        let caret = this.getCaret()
-        this.val(this.getMasked())
-        this.setCaret(caret)
-
-        setTimeout(() => {
-          let nextCaretPosition = this.calculateCaretPosition()
-          this.setCaret(nextCaretPosition)
-        }, 10)
+    if (onlyMask) {
+      this.events()
+      this.val(this.getMasked())
+    } else {
+      if (options.placeholder) {
+        this.el.setAttribute('placeholder', options.placeholder)
       }
+
+      // this is necessary, otherwise if the user submit the form
+      // and then press the "back" button, the autocomplete will erase
+      // the data. Works fine on IE9+, FF, Opera, Safari.
+      if (this.el.dataset.mask) {
+        this.el.setAttribute('autocomplete', 'off')
+      }
+
+      // detect if is necessary let the user type freely.
+      // for is a lot faster than forEach.
+      let maxlength = true
+      for (let i = 0; i < mask.length; i++) {
+        let translation = this.translation[mask.charAt(i)]
+        if (translation && translation.recursive) {
+          maxlength = false
+          break
+        }
+      }
+
+      if (maxlength) {
+        el.setAttribute('maxlength', mask.length)
+        this.data('mask-maxlength', true)
+      }
+
+      this.destroyEvents() // ???
+      this.events()
+
+      let caret = this.getCaret()
+      this.val(this.getMasked())
+      this.setCaret(caret)
     }
-    init(this.el.nodeName !== 'INPUT')
 
   } // [end] constructor
 
+
+  data(name, value) {
+    // checking if it's a "get"
+    if (arguments.length === 1) {
+      return this.$data[name]
+    }
+
+    // otherwise, it works as a setter
+    this.$data[name] = value
+    return this.$data[name]
+  }
+
+  trigger(evtName) {
+    this.el.dispatchEvent(new Event(evtName))
+  }
 
   getCaret() {
     try {
@@ -252,13 +154,13 @@ class Mask {
       /* eslint-enable brace-style */
 
       return pos
-    } catch (e) { return undefined }
+    } catch (e) {} // eslint-disable-line no-empty
   }
 
 
   setCaret(pos) {
     try {
-      if (document.activeElement === this.el) { // is(':focus')
+      if (document.activeElement === this.el) {
         let range
         let ctrl = this.el
 
@@ -273,22 +175,83 @@ class Mask {
           range.select()
         }
       }
-    } catch (e) {}
+    } catch (e) {} // eslint-disable-line no-empty
   }
 
 
+  get listeners() {
+    return [{
+      events: ['keydown'],
+      handler: (evt) => {
+        this.data('mask-keycode', evt.keyCode || evt.which)
+        this.data('mask-previus-value', this.val())
+        this.data('mask-previus-caret-pos', this.getCaret())
+        this.maskDigitPosMapOld = this.maskDigitPosMap
+      }
+    }, {
+      events: [this.constructor.globals.useInput ? 'input' : 'keyup'],
+      handler: (evt) => {
+        this.behaviour(evt)
+      }
+    }, {
+      events: ['paste', 'drop'],
+      listeners: (evt) => {
+        setTimeout(() => {
+          this.trigger('keydown')
+          this.trigger('keyup')
+        }, 100)
+      }
+    }, {
+      events: ['change'],
+      handler: (evt) => {
+        this.data('changed', true)
+      }
+    }, {
+      events: ['blur'],
+      handler: (evt) => {
+        if (this.oldValue !== this.val() && !this.data('changed')) {
+          this.trigger('change')
+        }
+        this.data('changed', false)
+      }
+    }, {
+      // it's very important that this callback remains in this position
+      // otherwhise oldValue it's going to work buggy
+      events: ['blur'],
+      handler: (evt) => {
+        this.oldValue = this.val()
+      }
+    }, {
+      // select all text on focus
+      events: ['focus'],
+      handler: (evt) => {
+        if (this.options.selectOnFocus === true) {
+          this.trigger('select')
+        }
+      }
+    }, {
+      // clear the value if it not complete the mask
+      events: ['focusout'],
+      handler: (evt) => {
+        if (this.options.clearIfNotMatch && !this.regexMask.test(this.val())) {
+          this.val('')
+        }
+      }
+    }]
+  }
+
   events() {
-    this.eventListeners.forEach(({ events, listener }) => {
+    this.listeners.forEach(({ events, handler }) => {
       events.forEach((eventName) => {
-        this.el.addEventListener(eventName, listener)
+        this.el.addEventListener(eventName, handler)
       })
     })
   }
 
   destroyEvents() {
-    this.eventListeners.forEach(({ events, listener }) => {
+    this.listeners.forEach(({ events, handler }) => {
       events.forEach((eventName) => {
-        this.el.removeEventListener(eventName, listener)
+        this.el.removeEventListener(eventName, handler)
       })
     })
   }
@@ -327,9 +290,8 @@ class Mask {
     r = maskChunks.join('')
 
     if (oRecursive) {
-      // r = r.replace(new RegExp('(' + oRecursive.digit + '(.*' + oRecursive.digit + ')?)'), '($1)?')
       r = r.replace(new RegExp(`(${oRecursive.digit}(.*${oRecursive.digit})?)`), '($1)?')
-           .replace(new RegExp(oRecursive.digit, 'g'), oRecursive.pattern)
+        .replace(new RegExp(oRecursive.digit, 'g'), oRecursive.pattern)
     }
 
     return new RegExp(r)
@@ -342,31 +304,40 @@ class Mask {
     let isInput = this.el.nodeName === 'INPUT'
     let property = isInput ? 'value' : 'textContent'
 
-    if (arguments.length > 0) { // setter
-      if (this.el[property] !== v) {
-        this.el[property] = v
-
-        // XXX emitindo `input` para trocar valor no Vue (v-model para input)
-        if (isInput) {
-          this.el.dispatchEvent(new Event(Mask.globals.useInput ? 'input' : 'keyup'))
-        }
-      }
-    } else { // getter
+    // if it's a "get"
+    if (arguments.length === 0) {
       return this.el[property]
     }
+
+    // otherwise it's a setter
+    if (this.el[property] !== v) {
+      this.el[property] = v
+    }
+
+    // XXX emitting `input` to follow Vue reaction data-flow (v-model, @input, sync...)
+    if (this.__lastEmittedVal !== v) {
+      let eventName = this.constructor.globals.useInput ? 'input' : 'keyup'
+      this.__lastEmittedVal = v
+      this.trigger(eventName)
+    }
+
   }
 
 
-  calculateCaretPosition() {
-    let oldVal = this.el.dataset.maskPreviousValue || ''
+  calculateCaretPosition(oldVal) {
     let newVal = this.getMasked()
     let caretPosNew = this.getCaret()
 
-    // se não houve mudança, early return
+    // if not changed, early return
     if (oldVal === newVal) return caretPosNew
 
-    // senão, calcula posição do cursor
-    let caretPosOld = this.el.dataset.maskPreviousCaretPos || 0
+    // otherwise, calculates the new caret position
+
+    // XXX ensuring position maps do exist
+    this.maskDigitPosMap = this.maskDigitPosMap || {}
+    this.maskDigitPosMapOld = this.maskDigitPosMapOld || {}
+
+    let caretPosOld = this.data('mask-previus-caret-pos') || 0
     let newValL = newVal.length
     let oldValL = oldVal.length
     let maskDigitsBeforeCaret = 0
@@ -375,19 +346,17 @@ class Mask {
     let maskDigitsBeforeCaretAllOld = 0
     let i = 0
 
-    // XXX garantindo a existencia dos mapas de posição
-    this.maskDigitPosMap = this.maskDigitPosMap || {}
-    this.maskDigitPosMapOld = this.maskDigitPosMapOld || {}
-
     for (i = caretPosNew; i < newValL; i++) {
-      if (!this.maskDigitPosMap[i]) break
-
+      if (!this.maskDigitPosMap[i]) {
+        break
+      }
       maskDigitsAfterCaret++
     }
 
     for (i = caretPosNew - 1; i >= 0; i--) {
-      if (!this.maskDigitPosMap[i]) break
-
+      if (!this.maskDigitPosMap[i]) {
+        break
+      }
       maskDigitsBeforeCaret++
     }
 
@@ -403,19 +372,21 @@ class Mask {
       }
     }
 
+    // if the cursor is at the end keep it there
     if (caretPosNew > oldValL) {
-      // if the cursor is at the end keep it there
-      caretPosNew = newValL
+      caretPosNew = newValL * 10
     } else if (caretPosOld >= caretPosNew && caretPosOld !== oldValL) {
-      if (!this.maskDigitPosMapOld[caretPosNew]) {
+      if (!this.maskDigitPosMapOld[caretPosNew])  {
         let caretPos = caretPosNew
         caretPosNew -= maskDigitsBeforeCaretAllOld - maskDigitsBeforeCaretAll
         caretPosNew -= maskDigitsBeforeCaret
-        if (this.maskDigitPosMap[caretPosNew]) {
+
+        if (this.maskDigitPosMap[caretPosNew])  {
           caretPosNew = caretPos
         }
       }
-    } else if (caretPosNew > caretPosOld) {
+    }
+    else if (caretPosNew > caretPosOld) {
       caretPosNew += maskDigitsBeforeCaretAll - maskDigitsBeforeCaretAllOld
       caretPosNew += maskDigitsAfterCaret
     }
@@ -425,23 +396,21 @@ class Mask {
 
 
   behaviour(evt) {
-    // XXX ignorando evento "extra" de `input` para processar o Vue, emitido
-    // no método val(v) [setter]!
-    if (this.oldValue === this.val()) return
-
     let event = evt || window.event
     this.invalid = []
 
-    let keyCode = this.el.dataset.maskKeycode
+    let keyCode = this.data('mask-keycode')
 
     if (this.byPassKeys.indexOf(keyCode) === -1) {
       let newVal   = this.getMasked()
       let caretPos = this.getCaret()
+      let oldVal   = this.data('mask-previus-value') || ''
 
+      // this is a compensation to devices/browsers that don't compensate
+      // caret positioning the right way
       setTimeout(() => {
-        let nextCaretPosition = this.calculateCaretPosition()
-        this.setCaret(nextCaretPosition)
-      }, 10)
+        this.setCaret(this.calculateCaretPosition(oldVal))
+      }, this.constructor.globals.keyStrokeCompensation)
 
       this.val(newVal)
       this.setCaret(caretPos)
@@ -451,7 +420,7 @@ class Mask {
 
   getMasked(skipMaskChars, val) {
     let buf = []
-    let value = val === undefined ? this.val() : (val + '')
+    let value = val === undefined ? this.val() : `${val}`
     let m = 0
     let maskLen = this.mask.length
     let v = 0
@@ -476,7 +445,6 @@ class Mask {
       check = () => m < maskLen && v < valLen
     }
 
-
     let lastUntranslatedMaskChar
 
     while (check()) {
@@ -491,7 +459,7 @@ class Mask {
           if (translation.recursive) {
             if (resetPos === -1) {
               resetPos = m
-            } else if (m === lastMaskChar) {
+            } else if (m === lastMaskChar && m !== resetPos) {
               m = resetPos - offset
             }
 
@@ -555,7 +523,7 @@ class Mask {
 
 
   mapMaskdigitPositions(newVal, maskDigitPosArr, valLen) {
-    let maskDiff = this.options.reverse ? newVal.length - valLen : 0
+    let maskDiff = this.options.reverse ? (newVal.length - valLen) : 0
     this.maskDigitPosMap = {}
 
     for (let i = 0; i < maskDigitPosArr.length; i++) {
@@ -565,7 +533,9 @@ class Mask {
 
   callbacks(evt) {
     let val = this.val()
-    let changed = val !== this.oldValue
+    // XXX: handling "cleared input" too! (!null && !empty)
+    let changed = (val !== this.oldValue) || (val == null) || (val === '')
+
     let defaultArgs = [val, evt, this.el, this.options]
     let callback = (name, criteria, args) => {
       if (typeof this.options[name] === 'function' && criteria) {
@@ -584,23 +554,34 @@ class Mask {
   // jMask public methods
   remove() {
     let caret = this.getCaret()
+    if (this.options.placeholder) {
+      this.el.removeAttribute('placeholder')
+    }
+    if (this.data('mask-maxlength')) {
+      this.el.removeAttribute('maxlength')
+    }
+
     this.destroyEvents()
     this.val(this.getCleanVal())
     this.setCaret(caret)
+
+    return this.el
   }
 
   // get value without mask
   getCleanVal() {
     return this.getMasked(true)
   }
-  // TODO renomear para cleanVal ou unmaskedVal()
 
+  // XXX extra: an alias with better name
+  unmaskedVal() {
+    return this.getCleanVal()
+  }
 
   // get masked value without the value being in the input or element
   getMaskedVal(val) {
     return this.getMasked(false, val)
   }
-  // TODO renomear para maskedVal(value)
 }
 
 

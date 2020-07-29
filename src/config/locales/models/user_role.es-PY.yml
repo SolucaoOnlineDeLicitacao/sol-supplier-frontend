@@ -1,0 +1,13 @@
+﻿es-PY:
+  models:
+    user_role:
+      one: Cargo
+      other: Cargos
+
+      attributes:
+        id: Código (ID)
+        roleId: Cargo
+
+      errors:
+        roleId:
+          missing: El cargo no puede quedar en blanco

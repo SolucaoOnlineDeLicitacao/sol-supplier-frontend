@@ -1,0 +1,30 @@
+﻿en-US:
+  models:
+    user:
+      one: User
+      other: Users
+
+      attributes:
+        id: Code (ID)
+        name: Name
+        email: Email
+        cpf: CPF
+        phone: Phone
+        roleId: Position
+        roleTitle: Position
+        cooperativeId: Cooperative
+        cooperativeName: Cooperative
+        passwordConfirmation: Password confirmation
+
+      errors:
+        name:
+          missing: Name cannot be blank
+        cpf:
+          missing: CPF cannot be blank
+          invalid: Invalid CPF (000.000.000-00)
+        phone:
+          missing: Phone cannot be blank
+          invalid: 'Invalid phone Format: (00) 00000-0000'
+        cooperative:
+          missing: Cooperative cannot be blank
+

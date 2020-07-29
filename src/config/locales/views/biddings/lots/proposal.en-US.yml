@@ -1,0 +1,80 @@
+﻿en-US:
+  biddings:
+    lots:
+      proposals:
+        new:
+          title: New proposal
+          alert: Review all information before submitting the proposal. Proposals cannot be edited after submission.
+
+          lot_name: 'Lot: %{name}'
+
+          button:
+            submit: Submit proposal
+            submitting: Submitting proposal...
+
+          notifications:
+            failure: Unable to submit proposal
+            success: Proposal successfully submitted!
+
+        edit:
+          title: Update proposal
+          alert: Review all information before submitting the proposal. Proposals cannot be edited after submission.
+
+          success_overlay:
+            draft: Proposal successfully submitted!
+            sent: Proposal successfully updated!
+
+          button:
+            final_submit: Submit proposal
+            submit: Update proposal
+            submitting: Updating proposal...
+            submit_draft: Submit proposal
+            submitting_draft: Submitting proposal...
+
+          notifications:
+            failure: Unable to update proposal
+            success: Proposal successfully updated
+
+        index:
+          title: Proposals
+          empty: No proposal received
+          cant_see: Proposals will be cleared for viewing after the procurement process is completed.
+          lot_group_items_count: 'Items: %{value}'
+          total: 'Total value: BRL %{value}'
+
+        show:
+          proposals:
+            title: List of items and proposals
+
+        _form:
+          lot-group-item-proposal-fields:
+            my_quote: 'My quotation: '
+            per_unit: ' by %{unit}'
+            inform_proposal: Click to inform a proposal
+
+        _show:
+          general-fields:
+            title: Proposal summary
+            provider: 'Vendor: %{name}'
+            total: 'Total value: %{value}'
+
+            proposal:
+              refused: Proposal rejected
+              accepted: Winning proposal
+
+          proposal-list-fields:
+            price: 'Unit value:'
+            delivery: Value of the shipping fee
+
+        _index:
+          proposal-list-fields:
+            badge: Best proposal
+            provider: 'Vendor: %{name}'
+            total: 'Total value: %{value}'
+
+            status:
+              refused: Proposal rejected
+              accepted: Winning proposal
+
+            button: View
+

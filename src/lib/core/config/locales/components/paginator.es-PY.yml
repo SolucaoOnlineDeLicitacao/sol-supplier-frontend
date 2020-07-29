@@ -1,0 +1,7 @@
+es-PY:
+  components:
+    paginator:
+      first: ''
+      prev: ''
+      next: ''
+      last: ''

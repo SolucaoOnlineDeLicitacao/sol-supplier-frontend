@@ -1,0 +1,15 @@
+en-US:
+  errors:
+    # codes
+    invalid: it is invalid
+    missing: cannot be blank
+    taken:   already in use
+
+    #
+    # global attributes
+    #
+    # Registre aqui "fallbacks" globais para nomes de atributos.
+    # Ex:
+    # email:
+    #   invalid: não é valido. Siga o formato 'usuario@dominio.servidor'
+    #

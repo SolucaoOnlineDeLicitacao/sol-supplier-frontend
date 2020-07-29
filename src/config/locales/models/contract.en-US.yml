@@ -1,0 +1,27 @@
+﻿en-US:
+  models:
+    contract:
+      one: Contract
+      other: Contracts
+
+      attributes:
+        id: Code (ID)
+        title: Number
+        status: Status
+
+        supplierSignedAt: Vendor
+        adminSignedAt: Reviewer
+        userSignedAt: Cooperative
+
+        price_total: Value
+        bidding_title: Procurement process
+        provider_title: Vendor
+        cooperative_title: Cooperative
+
+        statuses:
+          waiting_signature: Awaiting signature
+          signed: Signed
+          completed: Completed
+          partial_execution: Partially executed
+          total_inexecution: Complete nonperformance
+          refused: Rejected

@@ -15,7 +15,11 @@ pt-BR:
         placeholder: Busque pelo número do contrato
 
     show:
-      title: Detalhes do contrato
+      tabs:
+        contract: Contrato
+        proposal: Proposta
+
+      title: Contrato %{title}
 
       general:
         title: Dados do contrato
@@ -35,6 +39,7 @@ pt-BR:
         title: Aceitar contrato
         body: Esta ação não poderá ser desfeita. Confirma o aceite?
         okText: Aceitar
+        cancelText: Cancelar
 
       signatures:
         title: Assinaturas

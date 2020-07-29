@@ -1,0 +1,38 @@
+﻿en-US:
+  covenants:
+    index:
+      title: Covenants
+      list:
+        title: List of Covenants
+      button:
+        new: New covenant
+      search:
+        placeholder: Search by covenant name or number
+
+      notifications:
+        destroy:
+          success: Covenant successfully deleted
+          failure: An error occurred when deleting the covenant
+
+    show:
+      title: Covenant details
+
+      general:
+        title: Covenant data
+
+      navbar:
+        title: 'Covenant No. '
+
+      notifications:
+        destroy:
+          success: Group successfully deleted
+          failure: An error occurred when deleting the group
+
+
+      work_plan:
+        title: Work Plan
+
+        groups:
+          empty: No item group
+          button:
+            new: New Item group

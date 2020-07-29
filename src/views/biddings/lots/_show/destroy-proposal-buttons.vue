@@ -2,11 +2,11 @@
   .destroy-proposal-buttons
     template(v-if="lot.bidding_kind != 'global'")
       .mt-1.button.button-destroy.u-full-width(@click="destroyDialog(currentProposal.proposal_id)")
-        | Remover proposta
+        | {{ this.$t('.destroy.title') }}
 
     template(v-else)
       .mt-1.button.button-destroy.u-full-width(@click="destroyLotProposalDialog(currentProposal.id)" )
-        | Remover proposta
+        | {{ this.$t('.destroy.title') }}
 
 </template>
 
@@ -55,8 +55,8 @@
         }
 
         let options = {
-          cancelText: 'Voltar',
-          okText: 'Remover',
+          cancelText: this.$t('dialog.back'),
+          okText: this.$t('dialog.destroy'),
           customClass: 'dg-delete'
         }
 
@@ -77,8 +77,8 @@
         }
 
         let options = {
-          cancelText: 'Voltar',
-          okText: 'Remover',
+          cancelText: this.$t('dialog.back'),
+          okText: this.$t('dialog.destroy'),
           customClass: 'dg-delete'
         }
 

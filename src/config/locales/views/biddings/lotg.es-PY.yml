@@ -1,0 +1,61 @@
+﻿es-PY:
+  biddings:
+    lotsg:
+      index:
+        title: Lotes e ítems
+        empty: No se han registrado lotes
+        lot_group_items_count: 'Ítems: %{value}'
+
+        button:
+          proposals: Ver todas las propuestas
+          my_proposal: Ver mi propuesta
+
+        notifications:
+          finish:
+            failure: ¡No se pudo enviar la propuesta!
+            success: ¡La propuesta ha sido enviada con éxito!
+
+      show:
+        button:
+          new_proposal: Completar la propuesta
+          edit_proposal: Visualizar o editar la propuesta
+
+        destroy:
+          title: Eliminar la propuesta
+          body: ¿Está seguro de que desea eliminar la propuesta?
+
+        notifications:
+          destroy:
+            failure: No se pudo eliminar la propuesta
+            success: La propuesta ha sido eliminada con éxito
+
+      _index:
+        proposal-import-overlay:
+          title: Importar propuesta
+          alert: 'Descargue la planilla y complete solo el campo <strong>"propuesta (valor unitario)"</strong> y el campo <strong>"flete (valor)"</strong>.'
+          button:
+            download: Descargar planilla de todos los lotes
+            submitFile: Importar propuesta
+            submittingFile: Importando propuesta
+
+          notifications:
+            file:
+              success: 'Al procesar la propuesta se le notificará. Después de la importación, tendrá que confirmar que la propuesta ha sido enviada para completar el proceso.'
+              failure: Hubo un error al importar la propuesta.
+
+        lot-alerts:
+          total: 'Valor de la propuesta actual: %{value}'
+
+          button:
+            new_proposal_from_file: Completar propuesta mediante planilla
+            submit: Enviar propuesta
+            submitting: Enviando propuesta
+
+          status:
+            abandoned: Propuesta eliminada. No se puede enviar una nueva propuesta.
+            sent: Propuesta enviada. Cualquier actualización de propuestas de los lotes actualizará la propuesta.
+            sent_and_closed_invite: 'Propuesta enviada. No se puede editar la propuesta en licitaciones de modalidad "Invitación cerrada".'
+            not_sent: Propuesta no enviada. Completar todos los lotes para que se pueda enviar la propuesta.
+            importing: ' Importación de la propuesta en curso...'
+            draw: 'Propuesta empatada. Puede actualizar su propuesta hasta el día %{day}. Cualquier actualización de propuestas de los lotes actualizará la propuesta.'
+            draw_waiting: Espere el desempate de las propuestas que empataron.

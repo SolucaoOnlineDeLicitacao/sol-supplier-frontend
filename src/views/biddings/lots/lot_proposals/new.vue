@@ -24,12 +24,11 @@
 
           hr.mt-0.mb-2.o-container
 
-          input-field(
-            type="text",
+          numeric-field(
             v-model="lot_proposal.delivery_price",
             name="lot_proposal[delivery_price]",
-            :mask="{ mask: '000000000000000,00', options: { reverse: true } }",
-            :error="errors.delivery_price"
+            :error="errors.delivery_price",
+            :label="$t('models.lotProposal.attributes.deliveryPrice')"
           )
 
           .text-center
@@ -89,14 +88,14 @@
           {
             route: { name: 'bidding', params: {} },
             icon: 'fa-file',
-            text: 'Licitação',
+            text: this.$t('models.bidding.one'),
             active: true,
           },
 
           {
             route: { name: 'lots', params: {} },
             icon: 'fa-list',
-            text: 'Lotes e itens',
+            text: this.$t('biddings.tabs.lots'),
             active: false,
           }
         ]

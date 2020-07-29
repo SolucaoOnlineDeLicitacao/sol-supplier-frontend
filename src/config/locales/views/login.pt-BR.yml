@@ -12,6 +12,7 @@ pt-BR:
 
     forgot_password_instructions: Digite seu e-mail cadastrado na plataforma e uma mensagem será enviada para você com as instruções de troca de senha.
 
+    terms_instructions: Ao acessar a plataforma você concorda com nosso termo de uso e política de privacidade.
 
     button:
       submit: Acessar

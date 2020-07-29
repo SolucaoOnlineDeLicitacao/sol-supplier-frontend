@@ -1,0 +1,63 @@
+﻿en-US:
+  contracts:
+    index:
+      title: Contracts
+
+      card:
+        title: Contract %{title}
+
+      empty: No contract found
+
+      list:
+        title: List of Contracts
+
+      search:
+        placeholder: Search by contract number
+
+    show:
+      tabs:
+        contract: Contract
+        proposal: Proposal
+
+      title: Contract %{title}
+
+      general:
+        title: Contract data
+
+        button:
+          download: Download original contract
+
+      overlay:
+        title: Reject contract
+        alert: This action cannot be undone. Confirm rejection?
+        field:
+          status:
+            label: Set the new contract status
+        button: Reject contract
+
+      dialog:
+        title: Accept contract
+        body: This action cannot be undone. Confirm acceptance?
+        okText: Accept
+        cancelText: Cancel
+
+      signatures:
+        title: Signatures
+        waiting: Awaiting signature
+        refused: Contract rejected
+        not_signed: Contract not signed
+
+      refused:
+        at: 'Contract rejected in %{value}'
+
+      button:
+        sign: Accept
+        refuse: Reject
+
+      notifications:
+        signs:
+          success: Contract successfully signed.
+          failure: An error occurred when signing the contract.
+        refused:
+          success: Contract successfully rejected.
+          failure: An error occurred when rejecting the contract.

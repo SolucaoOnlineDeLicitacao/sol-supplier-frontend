@@ -1,0 +1,38 @@
+﻿es-PY:
+  covenants:
+    index:
+      title: Convenios
+      list:
+        title: Lista de convenios
+      button:
+        new: Nuevo convenio
+      search:
+        placeholder: Busque por nombre o número del convenio
+
+      notifications:
+        destroy:
+          success: Convenio eliminado con éxito
+          failure: Hubo un error al eliminar el convenio
+
+    show:
+      title: Detalles del convenio
+
+      general:
+        title: Datos del convenio
+
+      navbar:
+        title: 'Convenio n.º '
+
+      notifications:
+        destroy:
+          success: Grupo eliminado con éxito
+          failure: Hubo un error al excluir el grupo.
+
+
+      work_plan:
+        title: Plan de trabajo
+
+        groups:
+          empty: Ningún grupo de ítems
+          button:
+            new: Nuevo grupo de ítems

@@ -1,0 +1,34 @@
+﻿es-PY:
+  login:
+    heading: Solución en Línea de Licitación
+
+    fields:
+      username:
+        label: Correo electrónico
+        placeholder: Su correo electrónico
+      password:
+        label: Contraseña
+        placeholder: Su contraseña
+
+    forgot_password_instructions: Escriba su correo electrónico registrado en la plataforma y se le enviará un mensaje con instrucciones para el cambio de contraseña.
+
+    terms_instructions: Al acceder a la plataforma, acepta nuestros términos de uso de privacidad.
+
+    button:
+      submit: Acceder
+      submitting: Accediendo...
+
+      submitForgotPassword: Enviar
+      submittingForgotPassword: Enviando...
+
+      new: ¿Nuevo en SOL? ¡Regístrese ahora!
+      forgot_password: Olvidé mi contraseña
+
+    notifications:
+      login:
+        failure: Correo electrónico o contraseña inválidos. Intente nuevamente
+        blocked: Usuario bloqueado. Comuníquese con los administradores de la plataforma.
+
+      password:
+        failure: Error al intentar enviar el correo electrónico. Correo electrónico inválido o no encontrado.
+        success: "Recibirá instrucciones para el cambio de contraseña en el correo electrónico informado. Al seguirlas, podrá acceder nuevamente a la plataforma."

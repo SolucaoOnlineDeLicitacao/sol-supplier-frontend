@@ -1,0 +1,30 @@
+﻿es-PY:
+  models:
+    lot:
+      one: Lote
+      other: Lotes
+
+      attributes:
+        id: Código (ID)
+        name: Nombre del lote
+        status: Situación
+        deadline: Plazo para entrega (días)
+        address: Lugar de entrega
+
+        statuses:
+          waiting: En curso
+          triage: En revisión
+          accepted: Adjudicado
+          failure: Fallido
+          draft: Borrador
+          desert: Desierto
+          canceled: Cancelado
+
+      errors:
+        name:
+          missing: El nombre no puede quedar en blanco
+
+        lot_group_items:
+          invalid: Es necesario agregar por lo menos un ítem
+
+        file: No puede quedar en blanco

@@ -1,0 +1,12 @@
+﻿en-US:
+  address:
+    address-fields:
+      search:
+        placeholder: Search by municipality
+      item:
+        empty: No municipality found.
+      overlay_title: Search for Municipality
+      button:
+        select_city: Select Municipality
+      labels:
+        city: Municipality*

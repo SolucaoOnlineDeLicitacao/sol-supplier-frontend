@@ -1,0 +1,24 @@
+﻿en-US:
+  home:
+    welcome: 'Welcome to SOL, we have %{count} procurement processes currently open!'
+    period: Period
+    loading: Loading...
+    bidding_title: 'Procurement Process No. %{title}'
+    last_biddings: 'Last procurement processes (%{count})'
+
+    biddings:
+      button: Search procurement processes
+      empty: No procurement process registered.
+
+    button:
+      logout:
+        label: Exit
+        labelOngoing: Exiting...
+
+    notifications:
+      echo:
+        failure: Echoless
+      profile:
+        failure: Profile cannot be accessed
+      logout:
+        failure: Unable to exit. Try again

@@ -1,0 +1,27 @@
+﻿en-US:
+  models:
+    proposal:
+      one: Lot proposal
+      other: Lot proposals
+
+      attributes:
+        id: Code (ID)
+        deliveryPrice: Value of the shipping fee
+      errors:
+        delivery_price:
+          missing: Value of the shipping fee must be informed
+        price_total:
+          invalid: The total proposal value must not exceed the previously informed value
+
+    lotProposal:
+      one: Lot proposal
+      other: Lot proposals
+
+      attributes:
+        id: Code (ID)
+        deliveryPrice: Value of the shipping fee
+      errors:
+        delivery_price:
+          missing: Value of the shipping fee must be informed
+        price_total:
+          invalid: The total proposal value must not exceed the previously informed value

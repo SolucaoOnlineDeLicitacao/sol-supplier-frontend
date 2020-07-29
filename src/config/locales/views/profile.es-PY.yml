@@ -1,0 +1,17 @@
+﻿es-PY:
+  profile:
+    edit:
+      title: Editar perfil
+      languages: Idioma
+      locale:
+        spanish: Español
+        english: Inglés
+        portuguese: Portugués
+
+      button:
+        submit: Editar
+        submitting: Editando...
+
+      notifications:
+        success: ¡Perfil editado con éxito!
+        failure: Hubo un error al editar el perfil.

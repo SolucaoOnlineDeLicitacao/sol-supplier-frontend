@@ -1,0 +1,21 @@
+﻿en-US:
+  models:
+    admin:
+      one: Administrator
+      other: Administrators
+
+      attributes:
+        id: Code (ID)
+        name: Name
+        email: Email
+        covenantId: Covenant
+        covenantName: Covenant
+
+      errors:
+        name:
+          missing: Name cannot be blank
+        covenant:
+          missing: Covenant cannot be blank
+        email:
+          missing: Email cannot be blank
+

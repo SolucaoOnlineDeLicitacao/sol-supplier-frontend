@@ -2,6 +2,11 @@ pt-BR:
   profile:
     edit:
       title: Editar perfil
+      languages: Idioma
+      locale:
+        spanish: Espanhol
+        english: Inglês
+        portuguese: Português
 
       button:
         submit: Editar

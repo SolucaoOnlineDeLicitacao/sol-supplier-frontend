@@ -1,9 +1,21 @@
 pt-BR:
   providers:
     new:
-      title: Novo fornecedor
+      title: Cadastro
       general:
         title: Dados do fornecedor
+
+      legal_representative:
+        title: Representante Legal
+
+      labels:
+        provider_type: Tipo de pessoa (PF/PJ)
+        cpf: Informe o CPF
+        cnpj: Informe o CNPJ
+        document: Documento
+
+      errors:
+        at_least_one_classification: É obrigatório informar pelo menos uma classificação e/ou segmento.
 
       classifications:
         title: Categorias e segmentos
@@ -20,12 +32,19 @@ pt-BR:
         cnpj:
           placeholder: Informe o documento
 
+      terms_instructions: Ao se cadastrar na plataforma você concorda com nosso termo de uso e política de privacidade.
+
       button:
         submit: Criar cadastro
         submitting: Cadastrando...
         find: Próximo
         finding: Validando...
+        add: Adicionar
+        ok: Entendi
 
       notifications:
         success: Cadastro realizado com sucesso! Utilize seus dados para acessar!
         failure: Houve um erro ao salvar o cadastro. Verifique os campos abaixo
+        already_in_use: Fornecedor cadastrado no sistema com usuário para acesso. Informe outro documento ou acesse o sistema com seu usuário e senha.
+        text1: Informações pré-cadastradas para o documento
+        text2: Por favor valide as informações e prossiga com o cadastro.

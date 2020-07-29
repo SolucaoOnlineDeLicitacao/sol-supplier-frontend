@@ -70,7 +70,7 @@
           {
             route: { name: 'lots', params: { bidding_id: null } },
             icon: 'fa-list',
-            text: this.$t('biddings.lots.index.tabs.lots'),
+            text: this.$t('biddings.tabs.lots'),
             active: true,
           }
         ]

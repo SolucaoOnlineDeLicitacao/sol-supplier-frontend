@@ -1,0 +1,47 @@
+﻿en-US:
+  suppliers:
+    index:
+      title: Vendor users
+      list:
+        title: List of vendor users
+      button:
+        new: New vendor user
+      search:
+        placeholder: Search by user name, CPF, phone or email
+
+      notifications:
+        destroy:
+          success: User successfully deleted
+          failure: An error occurred when deleting the user
+
+    new:
+      title: New vendor user
+      general:
+        title: User data
+
+      fields:
+        name:
+          placeholder: Enter user name
+        cnpj:
+          placeholder: Enter document
+
+      button:
+        submit: Create vendor user
+        submitting: Creating vendor user
+
+      notifications:
+        failure: An error occurred when creating the user
+
+
+    edit:
+      title: Edit user
+
+      notifications:
+        failure: An error occurred when editing the user
+
+      button:
+        submit: Edit vendor user
+        submitting: Editing vendor user
+
+    show:
+      title: User data

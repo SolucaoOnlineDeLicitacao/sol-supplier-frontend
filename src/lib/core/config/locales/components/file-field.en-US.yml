@@ -1,0 +1,16 @@
+en-US:
+  components:
+    file-field:
+      button:
+        attach:
+          tooltip: Attach file...
+        download:
+          tooltip: "Download %{name}"
+        destroy:
+          tooltip: "Remove %{name}..."
+          confirmation: |-
+            Are you sure you want to remove %{name}?
+            (The file will only be removed after you complete and submit all changes)
+
+      empty: No file attached
+      markedForDestruction: Marked for removal

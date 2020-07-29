@@ -26,7 +26,7 @@
         label
           | {{ $t('.delivery') }}
         span
-         | R$ {{ proposal.delivery_price }}
+         | {{ $asCurrency(proposal.delivery_price) }}
 
     lot-group-item-overlay(:showOverlay="showOverlay", :overlayItem="overlayItem", @closeOverlay="showOverlay = false")
 

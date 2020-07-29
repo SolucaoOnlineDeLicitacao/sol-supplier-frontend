@@ -136,14 +136,14 @@
           {
             route: { name: 'bidding', params: {} },
             icon: 'fa-file',
-            text: 'Licitação',
+            text: this.$t('models.bidding.one'),
             active: true,
           },
 
           {
             route: { name: 'lots', params: {} },
             icon: 'fa-list',
-            text: 'Lotes e itens',
+            text: this.$t('biddings.tabs.lots'),
             active: false,
           }
         ]

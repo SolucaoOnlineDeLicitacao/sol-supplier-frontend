@@ -1,0 +1,31 @@
+﻿es-PY:
+  models:
+    supplier:
+      one: Usuario
+      other: Usuarios
+
+      attributes:
+        id: Código (ID)
+        name: Nombre
+        email: Correo electrónico
+        cpf: CPF
+        phone: Teléfono
+        providerId: Proveedor
+        providerName: Proveedor
+        password: Contraseña
+        passwordConfirmation: Confirmación de la contraseña
+
+      errors:
+        supplier:
+          not_found: Correo electrónico no registrado
+        name:
+          missing: El nombre no puede quedar en blanco
+        cpf:
+          missing: El CPF no puede se quedar en blanco
+          invalid: El CPF no es válido (000.000.000-00)
+        phone:
+          missing: El teléfono no puede quedar en blanco
+          invalid: 'El teléfono no es válido. Formato: (00) 00000-0000'
+        provider:
+          missing: El proveedor no puede quedar en blanco
+

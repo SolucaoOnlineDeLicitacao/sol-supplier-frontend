@@ -1,0 +1,61 @@
+﻿en-US:
+  biddings:
+    lotsg:
+      index:
+        title: Lots and items
+        empty: No lot registered
+        lot_group_items_count: 'Items: %{value}'
+
+        button:
+          proposals: View all proposals
+          my_proposal: View my proposal
+
+        notifications:
+          finish:
+            failure: Unable to submit proposal!
+            success: Proposal successfully submitted!
+
+      show:
+        button:
+          new_proposal: Fill out proposal
+          edit_proposal: View or edit proposal
+
+        destroy:
+          title: Delete proposal
+          body: Are you sure you wish to delete the proposal?
+
+        notifications:
+          destroy:
+            failure: Unable to delete proposal
+            success: Proposal successfully deleted
+
+      _index:
+        proposal-import-overlay:
+          title: Import proposal
+          alert: 'Download the worksheet and fill out only the field <strong>”proposal (unit value)"</strong> and the field <strong>”shipping fee (value)"</strong>.'
+          button:
+            download: Download worksheet of all lots
+            submitFile: Import proposal
+            submittingFile: Importing proposal
+
+          notifications:
+            file:
+              success: 'You will be notified when the proposal is processed. After importing, the proposal’s submission must be confirmed to complete the process.'
+              failure: An error occurred when importing the proposal.
+
+        lot-alerts:
+          total: 'Current proposal value: %{value}'
+
+          button:
+            new_proposal_from_file: Fill out proposal via worksheet
+            submit: Submit proposal
+            submitting: Submitting proposal
+
+          status:
+            abandoned: Proposal deleted. Unable to submit a new proposal.
+            sent: Proposal submitted. Updating lot proposals will also update the proposal.
+            sent_and_closed_invite: 'Proposal submitted. Unable to edit proposal in procurement processes of “Closed call for bids” modality.'
+            not_sent: The proposal was not submitted. Fill out all lots to submit the proposal.
+            importing: ' Importing proposal...'
+            draw: 'Procurement process tied. You can update your proposal by %{day}. Updating lot proposals will also update the proposal.'
+            draw_waiting: Await the tie-break of proposals.

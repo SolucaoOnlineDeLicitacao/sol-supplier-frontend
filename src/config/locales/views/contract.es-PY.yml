@@ -1,0 +1,63 @@
+﻿es-PY:
+  contracts:
+    index:
+      title: Contratos
+
+      card:
+        title: Contrato %{title}
+
+      empty: No se ha encontrado ningún contrato
+
+      list:
+        title: Lista de contratos
+
+      search:
+        placeholder: Busque por el número del contrato
+
+    show:
+      tabs:
+        contract: Contrato
+        proposal: Propuesta
+
+      title: Contrato %{title}
+
+      general:
+        title: Datos del contrato
+
+        button:
+          download: Descargar contrato original
+
+      overlay:
+        title: Rechazar contrato
+        alert: Esta acción no podrá deshacerse. ¿Confirmar el rechazo?
+        field:
+          status:
+            label: Defina la nueva situación del contrato
+        button: Rechazar contrato
+
+      dialog:
+        title: Aceptar contrato
+        body: Esta acción no podrá deshacerse. ¿Confirma la aceptación?
+        okText: Aceptar
+        cancelText: Cancelar
+
+      signatures:
+        title: Firmas
+        waiting: A la espera de firma
+        refused: Contrato rechazado
+        not_signed: Contrato no firmado
+
+      refused:
+        at: 'Contrato rechazado en %{value}'
+
+      button:
+        sign: Aceptar
+        refuse: Rechazar
+
+      notifications:
+        signs:
+          success: Contrato firmado con éxito.
+          failure: Hubo un error al firmar el contrato.
+        refused:
+          success: Contrato rechazado con éxito.
+          failure: Hubo un error al rechazar el contrato.

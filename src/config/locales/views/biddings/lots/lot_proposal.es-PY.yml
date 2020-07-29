@@ -1,0 +1,47 @@
+﻿es-PY:
+  biddings:
+    lots:
+      lot_proposals:
+        new:
+          title: Nueva propuesta
+
+          button:
+            submit: Guardar propuesta
+            submitting: Guardando propuesta...
+
+          notifications:
+            failure: No se pudo guardar la propuesta
+            success: La propuesta ha sido guardada con éxito
+
+        edit:
+          title: Actualizar la propuesta
+
+          button:
+            submit: Actualizar la propuesta
+            submitting: Actualizando propuesta...
+
+          notifications:
+            failure: No se pudo actualizar la propuesta
+            success: Propuesta actualizada con éxito
+
+        index:
+          title: Propuestas
+          empty: Ninguna propuesta recibida
+          cant_see: Las propuestas serán liberadas para su visualización al finalizar el proceso de licitación.
+          lot_group_items_count: 'Ítems: %{value}'
+          total: 'Valor total: R$ %{value}'
+
+        _form:
+          lot-group-item-proposal-fields:
+            my_quote: 'Mi cotización: '
+            per_unit: ' por %{unit}'
+            inform_proposal: Haga clic para informar una propuesta
+            unique_price: La modificación del valor de este ítem se reflejará en todos los demás lotes de esta licitación en la que se haya informado el ítem.
+            count: ' (En %{count} lotes)'
+
+          lot-group-item-proposal-overlay:
+            title: Mi cotización
+            lot_group_item_count: 'Este ítem está presente en el %{count} lotes de esta licitación. La modificación del valor de este ítem se reflejará en todos los demás lotes de esta licitación en la que se haya informado el ítem.'
+            button: Guardar cotización
+            label: Valor unitario
+            total: 'Valor total: '

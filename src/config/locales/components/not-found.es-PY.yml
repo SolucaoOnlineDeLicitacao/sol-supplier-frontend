@@ -1,0 +1,6 @@
+﻿es-PY:
+  components:
+    not-found:
+      heading: '404'
+      content: Página no encontrada
+      backToHome: Volver al inicio

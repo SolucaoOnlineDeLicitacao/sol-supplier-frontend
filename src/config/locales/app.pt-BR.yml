@@ -8,3 +8,7 @@ pt-BR:
 
   messages:
     not_informed: não informado
+
+  dialog:
+    back: Voltar
+    destroy: Remover

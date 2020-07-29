@@ -1,0 +1,65 @@
+﻿es-PY:
+  biddings:
+    tabs:
+      lots: Lotes e ítems
+      proposals: Propuestas
+
+    index:
+      title: Licitaciones
+
+      empty: No se ha encontrado ninguna licitación
+
+      list:
+        title: Lista de licitaciones
+      button:
+        new: Nueva licitación
+
+      search:
+        placeholder: Busque por nombre o número de la licitación
+
+      period: Período
+
+    new:
+      title: Nueva licitación
+      general: Configuraciones generales
+      empty_covenants: Asociación sin convenios. No se puede crear una licitación.
+
+      button:
+        submit: Guardar y definir ítems de la licitación
+        submitting: Guardando...
+      notifications:
+        success: Licitación creada con éxito
+        failure: Hubo un error al crear la licitación
+
+    edit:
+      button:
+        submit: Guardar licitación
+
+    show:
+      title: Detalles de la licitación
+
+      general:
+        title: Datos de la licitación
+
+      edit: Editar licitación
+      empty_address: No informado
+
+      documents:
+        title: Documentos
+
+      minute:
+        download: Descargar ACTA
+        not_found: ACTA no disponible
+
+      edict:
+        download: Descargar edicto
+        not_found: Edicto no disponible
+
+      notifications:
+        destroy:
+          success: Licitación eliminada con éxito
+          failure: Hubo un error al eliminar la licitación
+
+      destroy:
+        title: Eliminar licitación
+        body: ¿Está seguro de que desea eliminar esta licitación?

@@ -10,10 +10,6 @@ pt-BR:
           proposals: Visualizar todas propostas
           my_proposal: Visualizar minha proposta
 
-        tabs:
-          lots: Lotes e itens
-          proposals: Propostas
-
         notifications:
           finish:
             failure: Não foi possível enviar a proposta!
@@ -32,10 +28,6 @@ pt-BR:
           destroy:
             failure: Não foi possível remover a proposta
             success: Proposta removida com sucesso
-
-        tabs:
-          lots: Lotes e itens
-          proposals: Propostas
 
       _index:
         proposal-import-overlay:

@@ -1,0 +1,18 @@
+﻿en-US:
+  models:
+    group:
+      one: Group
+      other: Groups
+
+      attributes:
+        id: Code (ID)
+        name: Group name
+        group_items_count: Total cost items
+        items: Cost items
+
+      errors:
+        name:
+          missing: Name cannot be blank
+
+        group_items:
+          invalid: At least one cost item must be added to the group

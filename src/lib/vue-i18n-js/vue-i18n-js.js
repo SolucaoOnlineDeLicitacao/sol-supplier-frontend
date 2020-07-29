@@ -30,6 +30,7 @@
  *
  * @type {VuePlugin}
  */
+
 const VueI18nJS = {
   installed: false,
 
@@ -59,7 +60,11 @@ const VueI18nJS = {
       return translation
     }
 
-    Vue.prototype.$asCurrency = i18n.toCurrency.bind(i18n)
+    Vue.prototype.$asCurrency = function (value) {
+      let options = i18n.defaultLocale ? { unit: i18n.translations[i18n.defaultLocale].number.currency.format.unit } : {}
+      return i18n.toCurrency(value, options)
+    }
+
     Vue.prototype.$asDate = i18n.strftime.bind(i18n)
     Vue.prototype.$asHumanSize = i18n.toHumanSize.bind(i18n)
     Vue.prototype.$asNumber = i18n.toNumber.bind(i18n)

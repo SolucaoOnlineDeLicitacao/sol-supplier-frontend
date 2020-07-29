@@ -1,0 +1,32 @@
+﻿en-US:
+  biddings:
+    proposals:
+      new:
+        title: New proposal
+
+        button:
+          submit: Submit proposal
+          submitting: Submitting proposal...
+
+        notifications:
+          failure: Unable to submit proposal
+          success: Proposal successfully submitted
+
+      edit:
+        title: Update proposal
+
+        button:
+          submit: Update proposal
+          submitting: Updating proposal...
+
+        notifications:
+          failure: Unable to update proposal
+          success: Proposal successfully updated
+
+      index:
+        title: Proposals
+        empty: No proposal received
+        cant_see: Proposals will be cleared for viewing after the procurement process is completed.
+        lot_group_items_count: 'Items: %{value}'
+        total: 'Total value: BRL %{value}'
+

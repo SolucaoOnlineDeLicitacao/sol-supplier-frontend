@@ -245,7 +245,7 @@
 
     created: function () {
       this.$emit('tabChanged', this.tabs)
-      this.$emit('navbarTitleChanged', 'Notificações')
+      this.$emit('navbarTitleChanged', this.$t('navbar.notifications'))
 
       this.init();
     },

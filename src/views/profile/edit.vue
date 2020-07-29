@@ -1,5 +1,4 @@
 <style scoped lang="scss">
-
   .avatar {
     display: block;
     margin-left: auto;
@@ -22,7 +21,6 @@
   .input-file {
     display: none;
   }
-
 </style>
 
 
@@ -64,6 +62,14 @@
           :error="errors.password_confirmation"
         )
 
+        select-field(
+          name="supplier[locale]",
+          v-model="locale",
+          :options="locales",
+          :error="errors.locale",
+          :label="$t('.languages')"
+        )
+
         .text-center
           button.mb-0.button-primary(
             type="submit",
@@ -87,7 +93,14 @@
         params: null,
         uploadPercentage: null,
         files: [],
-        preview: null
+        preview: null,
+
+        locales: [
+          { id: 'es-PY', text: this.$t('profile.edit.locale.spanish') },
+          { id: 'en-US', text: this.$t('profile.edit.locale.english') },
+          { id: 'pt-BR', text: this.$t('profile.edit.locale.portuguese') }
+        ],
+        locale: app.auth.user.locale
       }
     },
 
@@ -128,13 +141,18 @@
           }
         })
           .then((response) => {
-            this.$notifications.clear()
-            this.$notifications.info(this.$t('.notifications.success'))
             this.errors = {}
 
             this.$auth.setUser(response.data.supplier)
 
-            this.loadUser()
+            // nesse momento atualizamos o locale
+            app.store.set('locale', this.locale)
+            app.i18n.locale = this.locale
+
+            this.$notifications.clear()
+            this.$notifications.info(this.$t('.notifications.success'))
+
+            this.$router.replace({ name: "home" })
           })
           .catch((err) => {
             let errors = _.dig(err, 'response', 'data', 'errors') || {}
