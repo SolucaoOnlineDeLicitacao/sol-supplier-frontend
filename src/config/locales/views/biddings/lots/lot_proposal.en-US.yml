@@ -1,0 +1,47 @@
+﻿en-US:
+  biddings:
+    lots:
+      lot_proposals:
+        new:
+          title: New proposal
+
+          button:
+            submit: Save proposal
+            submitting: Saving proposal...
+
+          notifications:
+            failure: Unable to save proposal
+            success: Proposal successfully saved
+
+        edit:
+          title: Update proposal
+
+          button:
+            submit: Update proposal
+            submitting: Updating proposal...
+
+          notifications:
+            failure: Unable to update proposal
+            success: Proposal successfully updated
+
+        index:
+          title: Proposals
+          empty: No proposal received
+          cant_see: Proposals will be cleared for viewing after the procurement process is completed.
+          lot_group_items_count: 'Items: %{value}'
+          total: 'Total value: BRL %{value}'
+
+        _form:
+          lot-group-item-proposal-fields:
+            my_quote: 'My quotation: '
+            per_unit: ' by %{unit}'
+            inform_proposal: Click to inform a proposal
+            unique_price: Changing the value of this item will affect all other lots of this procurement process in which the item has been informed.
+            count: ' (In %{count} lots)'
+
+          lot-group-item-proposal-overlay:
+            title: My quotation
+            lot_group_item_count: 'This item is present in %{count} lots of this procurement process. Changing the value of this item will affect all other lots of this procurement process in which the item has been informed.'
+            button: Save quotation
+            label: Unit value
+            total: 'Total value: '

@@ -1,0 +1,12 @@
+﻿es-PY:
+  address:
+    address-fields:
+      search:
+        placeholder: Busque por el nombre del municipio
+      item:
+        empty: No se ha encontrado ningún municipio.
+      overlay_title: Buscar municipio
+      button:
+        select_city: Seleccionar Municipio
+      labels:
+        city: Municipio*

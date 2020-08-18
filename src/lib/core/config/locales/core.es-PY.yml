@@ -1,0 +1,121 @@
+es-PY:
+  date:
+    abbr_day_names:
+    - dom
+    - lun
+    - mar
+    - mié
+    - jue
+    - vie
+    - sáb
+    abbr_month_names:
+    -
+    - ene
+    - feb
+    - mar
+    - abr
+    - may
+    - jun
+    - jul
+    - ago
+    - sep
+    - oct
+    - nov
+    - dic
+    day_names:
+    - domingo
+    - lunes
+    - martes
+    - miércoles
+    - jueves
+    - viernes
+    - sábado
+    formats:
+      default: '%d/%m/%Y'
+      long: '%d de %B %H de %Y às :%M'
+      short: '%d de %B às %H:%M'
+      iso: '%Y-%m-%d'
+    month_names:
+    -
+    - enero
+    - febrero
+    - marzo
+    - abril
+    - mayo
+    - junio
+    - julio
+    - agosto
+    - septiembre
+    - octubre
+    - noviembre
+    - diciembre
+
+  number:
+    currency:
+      format:
+        delimiter: "."
+        format: "%u%n"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: B/.
+
+    format:
+      delimiter: "."
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: mil millones
+          million:
+            one: millón
+            other: millones
+          quadrillion: mil billones
+          thousand: mil
+          trillion:
+            one: billón
+            other: billones
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1 # XXX checar
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n %"
+        precision: 2
+        separator: ','
+        unit: '%'
+
+  time:
+    am: am
+    formats:
+      # XXX removendo timezone do formato padrão
+      # default: "%A, %d de %B de %Y %H:%M:%S %z"
+
+      # XXX pegar dados com tradutores
+      default: "%A, %d de %B de %Y %H:%M:%S"
+      long: "%d de %B de %Y %H:%M"
+      short: "%d de %b %H:%M"
+      micro: '%d/%m/%Y %H:%M'
+      iso: '%Y-%m-%dT%H:%M:%S%z'
+    pm: pm

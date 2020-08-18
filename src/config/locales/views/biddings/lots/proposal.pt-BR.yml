@@ -14,7 +14,7 @@ pt-BR:
 
           notifications:
             failure: Não foi possível enviar a proposta
-            success: Proposta enviada com sucesso
+            success: Proposta enviada com sucesso!
 
         edit:
           title: Atualizar proposta

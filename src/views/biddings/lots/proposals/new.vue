@@ -35,12 +35,11 @@
 
           hr.mt-0.mb-2.o-container
 
-          input-field(
-            type="text",
+          numeric-field(
             v-model="lot_proposal.delivery_price",
             name="proposal[lot_proposals_attributes][][delivery_price]",
-            :mask="{ mask: '000000000000000,00', options: { reverse: true } }",
-            :error="errors['lot_proposals.delivery_price']"
+            :error="errors['lot_proposals.delivery_price']",
+            :label="$t('models.lotProposal.attributes.deliveryPrice')"
           )
 
           .text-center
@@ -70,7 +69,7 @@
               .list-title
               i.fas.fa-spinner.fa-pulse.fa-2x
 
-    overlay-notification(v-if="showSuccessOverlay", :showOverlay="showSuccessOverlay", text='Proposta enviada com sucesso!' @ok="redirecToIndex")
+    overlay-notification(v-if="showSuccessOverlay", :showOverlay="showSuccessOverlay", :text="$t('.notifications.success')" @ok="redirecToIndex")
 
 </template>
 
@@ -104,14 +103,14 @@
           {
             route: { name: 'bidding', params: {} },
             icon: 'fa-file',
-            text: 'Licitação',
+            text: this.$t('models.bidding.one'),
             active: false,
           },
 
           {
             route: { name: 'lots', params: {} },
             icon: 'fa-list',
-            text: 'Lotes e itens',
+            text: this.$t('biddings.tabs.lots'),
             active: true,
           }
         ]

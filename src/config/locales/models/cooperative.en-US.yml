@@ -1,0 +1,17 @@
+﻿en-US:
+  models:
+    cooperative:
+      one: Cooperative
+      other: Cooperatives
+
+      attributes:
+        id: Code (ID)
+        name: Name
+        cnpj: CNPJ
+        city: City
+
+      errors:
+        name:
+          missing: Name cannot be blank
+        cnpj:
+          missing: CNPJ cannot be blank

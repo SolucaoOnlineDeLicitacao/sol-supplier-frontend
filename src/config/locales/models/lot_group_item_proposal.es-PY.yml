@@ -1,0 +1,18 @@
+﻿es-PY:
+  models:
+    lot_group_item_proposal:
+      one: Ítem de la cotización
+      other: Ítems de la cotización
+
+      attributes:
+        id: Código (ID)
+        price: Valor de la cotización (R$)
+
+      errors:
+        price:
+          missing: Se debe informar el valor de la cotización
+          invalid: El valor de la cotización debe ser superior a cero (0)
+          different: El valor de la cotización es diferente al resto de los lotes
+        price_total:
+          invalid: El valor total de la propuesta no puede ser superior al valor informado anteriormente
+

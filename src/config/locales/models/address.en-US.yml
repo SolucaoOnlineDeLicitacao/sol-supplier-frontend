@@ -1,0 +1,26 @@
+﻿en-US:
+  models:
+    address:
+      one: Address
+      other: Addresses
+
+      attributes:
+        longitude: Longitude
+        latitude: Latitude
+        cityName: Municipality
+        cityId: Municipality
+        address: Street name
+        number: Number
+        neighborhood: District
+        cep: Postal code (CEP)
+        complement: Second address line
+        referencePoint: Point of reference
+
+      errors:
+        address:
+          address:
+            missing: Street name cannot be blank
+          number:
+            missing: Number cannot be blank
+          reference_point:
+            missing: Point of reference cannot be blank

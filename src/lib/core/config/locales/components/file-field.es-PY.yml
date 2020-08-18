@@ -1,0 +1,16 @@
+es-PY:
+  components:
+    file-field:
+      button:
+        attach:
+          tooltip: Adjuntar archivo...
+        download:
+          tooltip: "Descargar %{name}"
+        destroy:
+          tooltip: "Eliminar %{name}..."
+          confirmation: |-
+            ¿Estás seguro de que desea eliminar %{name}?
+            (El archivo solo se eliminará después de completar y enviar todos los cambios
+
+      empty: No hay archivos adjuntos 
+      markedForDestruction: Marcado para remoción

@@ -44,3 +44,12 @@ button.button-primary.button-primary {
   padding: 0 15px;
   line-height: 42px;
 }
+
+.button-long {
+  min-height: 38px;
+  height: auto;
+  white-space: normal;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 15px;
+}

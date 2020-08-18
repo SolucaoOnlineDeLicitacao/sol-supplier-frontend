@@ -1,0 +1,21 @@
+﻿es-PY:
+  models:
+    provider:
+      one: Proveedor
+      other: Proveedores
+
+      attributes:
+        id: Código (ID)
+        name: Nombre / Razón social
+        document: Documento
+        type: Tipo
+        city: Ciudad
+        types:
+          individual: Persona física
+          company: Persona jurídica
+
+      errors:
+        name:
+          missing: El nombre no puede quedar en blanco
+        document:
+          missing: El documento no puede quedar en blanco

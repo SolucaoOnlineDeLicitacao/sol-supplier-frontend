@@ -44,6 +44,11 @@
     padding: 0 30px;
   }
 
+  .terms-container {
+    text-align: center;
+    line-height: 18px;
+  }
+
 </style>
 
 <template lang="pug">
@@ -94,6 +99,11 @@
         .button.mt-1.u-full-width(@click="passwordOverlay = true")
           | {{ $t('.button.forgot_password') }}
 
+        
+        .terms-container
+          router-link.router-link(:to="{ name: 'terms' }")
+            i {{ $t('.terms_instructions') }}
+
     router-link.text-center.router-link.bottom-button.u-full-width(:to="{ name: 'newProvider' }")
       | {{ $t('.button.new') }}
       i.fa.fa-chevron-right.ml-1
@@ -111,7 +121,7 @@
             type="text",
             v-model="email",
             name="supplier[email]",
-            label="E-mail",
+            :label="$t('.fields.username.label')",
             :error="errors.supplier"
           )
 
@@ -183,6 +193,8 @@
 
             // autentica o usuário no client
             app.auth.login({ user: response.data.user, token: response.data.access_token })
+
+            app.i18n.locale = response.data.user.locale
 
             this.saveDeviceToken()
 

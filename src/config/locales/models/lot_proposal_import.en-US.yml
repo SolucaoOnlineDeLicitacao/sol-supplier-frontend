@@ -1,0 +1,11 @@
+﻿en-US:
+  models:
+    lotProposalImport:
+      one: Proposal via file
+      other: Proposals via file
+
+      attributes:
+        file: Worksheet
+
+      errors:
+        file: This field cannot be blank

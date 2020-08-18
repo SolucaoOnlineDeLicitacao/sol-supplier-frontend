@@ -60,7 +60,7 @@
               | {{ $t('.button.new_proposal') }}
 
             template(v-if="notUnitary")
-              .button.button-primary.router-link.mb-1.u-full-width(@click="showFileProposalOverlay = true")
+              .button.button-primary.router-link.mb-1.u-full-width.button-long(@click="showFileProposalOverlay = true")
                 | {{ this.$t('.button.new_proposal_from_file') }}
 
           template(v-else)

@@ -121,5 +121,4 @@ pt-BR:
       short: '%d de %B às %H:%M'
       micro: '%d/%m/%Y às %H:%M'
       iso: '%Y-%m-%dT%H:%M:%S%z'
-      appointment: "%A, %d de %B de %Y às %H:%M"
     pm: ''

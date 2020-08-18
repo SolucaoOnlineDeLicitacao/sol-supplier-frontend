@@ -1,0 +1,23 @@
+﻿es-PY:
+  models:
+    integration:
+      one: Integración
+      other: Integraciones
+
+      attributes:
+        id: Código (ID)
+        endpointUrl: Endpoint
+        token: Token
+        schedule: Frecuencia (cron)
+        status: Situación
+        statuses:
+          queued: En cola
+          in_progress: En progreso
+          success: Éxito
+          fail: Falla
+      errors:
+        endpoint:
+          missing: El endpoint no puede quedar en blanco
+        token:
+          missing: El token no puede quedar en blanco
+

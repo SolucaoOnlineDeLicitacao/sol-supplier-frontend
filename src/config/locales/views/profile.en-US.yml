@@ -1,0 +1,17 @@
+﻿en-US:
+  profile:
+    edit:
+      title: Edit profile
+      languages: Language
+      locale:
+        spanish: Spanish
+        english: English
+        portuguese: Portuguese
+
+      button:
+        submit: Edit
+        submitting: Editing...
+
+      notifications:
+        success: Profile successfully edited!
+        failure: An error occurred when editing the profile.

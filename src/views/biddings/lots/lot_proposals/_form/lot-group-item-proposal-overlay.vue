@@ -51,12 +51,10 @@
       hr
 
       .price-container
-        input-field(
-          type="text",
-          v-model="item.priceStr",
+        numeric-field(
+          v-model="item.price",
           name="proposal[lot_proposals_attributes][][lot_group_item_lot_proposals_attributes][][price]",
-          :label="$t('.label')",
-          :mask="{ mask: '000000000000000,00', options: { reverse: true } }"
+          :label="$t('.label')"
         )
 
         i.unit

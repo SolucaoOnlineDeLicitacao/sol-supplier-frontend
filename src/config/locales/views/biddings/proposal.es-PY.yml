@@ -1,0 +1,32 @@
+﻿es-PY:
+  biddings:
+    proposals:
+      new:
+        title: Nueva propuesta
+
+        button:
+          submit: Enviar propuesta
+          submitting: Enviando propuesta...
+
+        notifications:
+          failure: No se pudo enviar la propuesta
+          success: Propuesta enviada con éxito
+
+      edit:
+        title: Actualizar la propuesta
+
+        button:
+          submit: Actualizar la propuesta
+          submitting: Actualizando propuesta...
+
+        notifications:
+          failure: No se pudo actualizar la propuesta
+          success: Propuesta actualizada con éxito
+
+      index:
+        title: Propuestas
+        empty: Ninguna propuesta recibida
+        cant_see: Las propuestas serán liberadas para su visualización al finalizar el proceso de licitación.
+        lot_group_items_count: 'Ítems: %{value}'
+        total: 'Valor total: R$ %{value}'
+

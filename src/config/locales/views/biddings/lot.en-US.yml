@@ -1,0 +1,90 @@
+﻿en-US:
+  biddings:
+    lots:
+      index:
+        title: Lots and items
+        empty: No lot registered
+
+        button:
+          new: Add lot
+
+      show:
+        button:
+          view_proposal: View lot proposal 
+          proposals: View all proposals
+
+      _index:
+        lot-list-fields:
+          lot_group_items_count: 'Items: %{value}'
+          status:
+            importing: importing proposal
+            abandoned: proposal deleted
+            draft: filled proposal
+            sent: proposal submitted
+            empty: no proposal
+
+      _show:
+        lot-actions:
+          under_review: Procurement process under review. Unable to edit and/or delete the submitted proposal.
+          finnished: Procurement process completed. Unable to edit and/or delete the submitted proposal.
+          reopened: Procurement process reopened. Unable to edit and/or delete the submitted proposal.
+          failure: Procurement process failed. Unable to edit and/or delete the submitted proposal.
+          canceled: Procurement process cancelled. Unable to edit and/or delete the submitted proposal.
+          draw: Await the tie-break of proposals.
+          draw_with_proposal: 'Procurement process tied. You can update your proposal by %{day}. Updating lot proposals will also update the proposal.'
+
+          invites:
+            pending: Pending call. Await clearance to join the procurement process.
+            not_invited: A call for bids must be received to join this procurement process. Click the button below to request a call for bids.
+
+          proposal:
+            draw:
+              alert: There was a tie between proposals. You can edit your proposal with a new value.
+            abandoned:
+              alert: Proposal deleted. Unable to submit a new proposal.
+            importing:
+              alert: ' Importing proposal...'
+            cannot_edit:
+              alert: Unable to edit the proposal submitted in a “Closed call for bids” procurement process.
+
+          button:
+            new_proposal: Fill out proposal
+            new_global_proposal: Fill out proposal
+            new_proposal_from_file: Fill out proposal via worksheet
+
+        proposal-import-overlay:
+          title: Import proposal
+          alert: 'Download the worksheet and fill out only the field <strong>”proposal (unit value)"</strong> and the field <strong>”shipping fee (value)"</strong>.'
+          button:
+            download: Download lot worksheet
+            submitFile: Import proposal
+            submittingFile: Importing proposal
+
+          notifications:
+            file:
+              success: 'You will be notified when the proposal is processed. After importing, the proposal’s submission must be confirmed to complete the process.'
+              failure: An error occurred when importing the proposal.
+
+        edit-proposal-buttons:
+          button:
+            edit_proposal: Edit proposal
+            edit_draft_proposal: Confirm proposal submission
+
+        request-invite-button:
+          button:
+            invite: I want to join
+
+          notifications:
+            invite:
+              success: Request successfully submitted!
+              failure: An error occurred when submitting the request.
+
+        destroy-proposal-buttons:
+          destroy:
+            title: Delete proposal
+            body: Are you sure you wish to delete the proposal?
+
+          notifications:
+            destroy:
+              failure: Unable to delete proposal.
+              success: Proposal successfully deleted!

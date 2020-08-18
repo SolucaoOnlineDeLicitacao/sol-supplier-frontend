@@ -1,0 +1,19 @@
+﻿es-PY:
+  models:
+    item:
+      one: Ítem de costo
+      other: Ítems de costo
+
+      attributes:
+        id: Código (ID)
+        title: Título
+        description: Especificación
+        unit: Unidad
+        classificationId: Clasificación
+
+      errors:
+        title:
+          missing: El título no puede quedar en blanco
+        description:
+          missing: La especificación no puede quedar en blanco
+

@@ -1,0 +1,47 @@
+﻿en-US:
+  cooperatives:
+    index:
+      title: Cooperatives
+      list:
+        title: List of Cooperatives
+      button:
+        new: New cooperative
+      search:
+        placeholder: Search by cooperative name or CNPJ
+
+      notifications:
+        destroy:
+          success: Cooperative successfully deleted
+          failure: An error occurred when deleting the cooperative
+
+    new:
+      title: New cooperative
+
+      fields:
+        name:
+          placeholder: Enter cooperative name
+        cnpj:
+          placeholder: Enter CNPJ
+
+      button:
+        submit: Create cooperative
+        submitting: Creating cooperative
+
+      notifications:
+        failure: An error occurred when creating the cooperative
+
+
+    edit:
+      title: Edit cooperative
+
+      notifications:
+        failure: An error occurred when editing the cooperative
+
+      button:
+        submit: Edit cooperative
+        submitting: Editing cooperative
+
+    show:
+      title: Cooperative data
+      covenants:
+        title: Cooperative covenants

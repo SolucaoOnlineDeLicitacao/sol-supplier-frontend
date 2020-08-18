@@ -1,0 +1,22 @@
+﻿es-PY:
+  models:
+    group_item:
+      one: Ítem del grupo
+      other: Ítems del grupo
+
+      attributes:
+        id: Código (ID)
+        itemName: Ítem de costo
+        itemId: Ítem de costo
+        item: Ítem de costo
+        quantity: Cantidad
+        estimated_cost: Valor estimado (R$)
+        estimatedCost: Valor estimado (R$)
+
+      errors:
+        item:
+          missing: El ítem de costo no puede quedar en blanco
+        quantity:
+          missing: La cantidad no puede quedar en blanco
+        estimatedCost:
+          missing: El valor estimado no puede quedar en blanco

@@ -1,0 +1,65 @@
+﻿en-US:
+  biddings:
+    tabs:
+      lots: Lots and items
+      proposals: Proposals
+
+    index:
+      title: Procurement Processes
+
+      empty: No procurement process found.
+
+      list:
+        title: List of Procurement Processes
+      button:
+        new: New procurement process
+
+      search:
+        placeholder: Search by procurement process name or number
+
+      period: Period
+
+    new:
+      title: New procurement process
+      general: General settings
+      empty_covenants: Cooperative without covenants. Unable to create a procurement process.
+
+      button:
+        submit: Save and define procurement process items
+        submitting: Saving...
+      notifications:
+        success: Procurement process successfully created
+        failure: An error occurred when creating the procurement process
+
+    edit:
+      button:
+        submit: Save procurement process
+
+    show:
+      title: Procurement process details
+
+      general:
+        title: Procurement process data
+
+      edit: Edit procurement process
+      empty_address: Not informed
+
+      documents:
+        title: Documents
+
+      minute:
+        download: Download MINUTES
+        not_found: MINUTES not available
+
+      edict:
+        download: Download RFP
+        not_found: RFP not available
+
+      notifications:
+        destroy:
+          success: Procurement process successfully deleted
+          failure: An error occurred when deleting the procurement process
+
+      destroy:
+        title: Delete procurement process
+        body: Are you sure you wish to delete this procurement process?

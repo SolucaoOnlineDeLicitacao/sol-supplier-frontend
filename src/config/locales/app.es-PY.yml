@@ -1,0 +1,14 @@
+﻿es-PY:
+  app: 'sdc-cooperative-frontend.vue'
+  title: 'SOL - Proveedores'
+
+  button:
+    search: Buscar
+    searching: Buscando
+
+  messages:
+    not_informed: no informado
+
+  dialog:
+    back: Volver
+    destroy: Eliminar

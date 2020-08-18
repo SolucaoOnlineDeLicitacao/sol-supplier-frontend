@@ -1,0 +1,18 @@
+﻿en-US:
+  models:
+    lot_group_item_proposal:
+      one: Quote item
+      other: Quote items
+
+      attributes:
+        id: Code (ID)
+        price: Quote value (BRL)
+
+      errors:
+        price:
+          missing: Quote value must be informed
+          invalid: Quote value must be greater than zero (0)
+          different: Quote value inconsistent with other lots
+        price_total:
+          invalid: The total proposal value must not exceed the previously informed value
+

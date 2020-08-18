@@ -48,7 +48,7 @@
 
       template(v-if="currentProposal && !isAbandoned")
         router-link.button.button-primary.u-full-width(:to="{ name: 'proposal', params: { id: currentProposal.id, lot_id: this.lotId } }")
-          | Visualizar proposta do lote
+          | {{ this.$t('.button.view_proposal') }}
 
       lot-actions(:lot="lot", :currentProposal="currentProposal", :biddingId="biddingId", :params="params", @successInvite="successInvite")
 
@@ -91,7 +91,7 @@
           {
             route: { name: 'lots', params: { bidding_id: 0 } },
             icon: 'fa-list',
-            text: this.$t('biddings.lots.index.tabs.lots'),
+            text: this.$t('biddings.tabs.lots'),
             active: true,
           }
         ]

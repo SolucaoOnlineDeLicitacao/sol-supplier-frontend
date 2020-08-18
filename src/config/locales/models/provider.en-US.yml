@@ -1,0 +1,21 @@
+﻿en-US:
+  models:
+    provider:
+      one: Vendor
+      other: Vendors
+
+      attributes:
+        id: Code (ID)
+        name: Name / Trade Name
+        document: Document
+        type: Type
+        city: City
+        types:
+          individual: Individual
+          company: Corporation
+
+      errors:
+        name:
+          missing: Name cannot be blank
+        document:
+          missing: Document cannot be blank

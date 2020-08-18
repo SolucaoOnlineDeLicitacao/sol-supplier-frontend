@@ -1,0 +1,50 @@
+﻿es-PY:
+  providers:
+    new:
+      title: Registro
+      general:
+        title: Datos del proveedor
+
+      legal_representative:
+        title: Representante Legal
+
+      labels:
+        provider_type: Perfil de persona (PF/PJ)
+        cpf: Informar el CPF
+        cnpj: Informar el CNPJ
+        document: Documento
+
+      errors:
+        at_least_one_classification: Es obligatorio informar al menos una clasificación y/o segmento.
+
+      classifications:
+        title: Categorías y segmentos
+
+      attachments:
+        title: Documentos
+
+      users:
+        title: Usuario de acceso
+
+      fields:
+        name:
+          placeholder: Informe el nombre del proveedor
+        cnpj:
+          placeholder: Informe el documento
+
+      terms_instructions: Al registrarse en la plataforma, acepta nuestros términos de uso de privacidad.
+
+      button:
+        submit: Crear registro
+        submitting: Registrando...
+        find: Siguiente
+        finding: Validando...
+        add: Añadir
+        ok: Entendido
+
+      notifications:
+        success: ¡Registro realizado con éxito! ¡Utilice sus datos para acceder!
+        failure: Hubo un error al guardar el registro. Verifique los campos a continuación
+        already_in_use: Proveedor registrado en el sistema con usuario para acceso. Ingrese otro documento o acceda al sistema con su nombre de usuario y contraseña.
+        text1: Información prerregistrada para el documento
+        text2: Valide la información y continúe con el registro.

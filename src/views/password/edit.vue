@@ -138,6 +138,7 @@
 
       parseRoute() {
         this.token = this.$route.query.reset_password_token
+        this.$i18n.locale = this.$route.query.locale
       },
     },
 

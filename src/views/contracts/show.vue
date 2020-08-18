@@ -129,14 +129,14 @@
           {
             route: { name: 'contract', params: {} },
             icon: 'fa-file',
-            text: 'Contrato',
+            text: this.$t('contracts.show.tabs.contract'),
             active: true,
           },
 
           {
             route: { name: 'proposal', params: {} },
             icon: 'fa-list',
-            text: 'Proposta',
+            text: this.$t('contracts.show.tabs.proposal'),
             active: false,
           }
         ]
@@ -187,7 +187,7 @@
 
             this.changeTabs()
 
-            this.$emit('navbarTitleChanged', 'Contrato ' + this.contract.title)
+            this.$emit('navbarTitleChanged', this.$t('.title', { title: this.contract.title }))
 
           }).catch((_err) => {
             this.error = _err
@@ -204,6 +204,7 @@
 
         let options = {
           okText: this.$t('.dialog.okText'),
+          cancelText: this.$t('.dialog.cancelText'),
           customClass: 'dg-success'
         }
 

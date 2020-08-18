@@ -1,0 +1,34 @@
+﻿en-US:
+  login:
+    heading: Online Procurement Process Solution
+
+    fields:
+      username:
+        label: Email
+        placeholder: Your email
+      password:
+        label: Password
+        placeholder: Your password
+
+    forgot_password_instructions: Enter your email registered in the platform to receive a message with instructions on how to change your password.
+
+    terms_instructions: By accessing the platform you agree with our term of use and privacy policy.
+
+    button:
+      submit: Log in
+      submitting: Logging in...
+
+      submitForgotPassword: Send
+      submittingForgotPassword: Sending...
+
+      new: New at SOL? Sign up now!
+      forgot_password: I forgot my password
+
+    notifications:
+      login:
+        failure: Invalid email or password. Try again
+        blocked: User locked. Contact the platform’s administrators.
+
+      password:
+        failure: An error occurred when sending the email. Email invalid or not found
+        success: "A message with instructions on how to change your password will be sent to the email informed. Follow the instructions to log into the platform."

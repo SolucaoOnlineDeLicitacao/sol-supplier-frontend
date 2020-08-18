@@ -31,6 +31,11 @@
     }
   }
 
+  .terms-container {
+    text-align: center;
+    line-height: 18px;
+  }
+
 </style>
 
 <template lang="pug">
@@ -41,18 +46,19 @@
       template(v-if="provider")
         template(v-if="this.provider.id")
           .alert.alert-info
-            | Informações pré-cadastradas para o documento
+            | {{ this.$t('.notifications.text1') }}
             strong  {{ this.provider.document }}.
 
             div.mt-2
-            | Por favor valide as informações e prossiga com o cadastro.
+            | {{ this.$t('.notifications.text2') }}
 
         form.card(ref="form", method="post", @submit.prevent="submit" )
 
           h4.title
             | {{ this.$t('.general.title') }}
 
-          label Documento
+          label
+            | {{ this.$t('.labels.document') }}
           span {{ this.provider.document }}
 
           input-field.mt-1(
@@ -71,7 +77,8 @@
           AddressFields(:errors="errorsAddress" prefix="provider" :address="address")
 
           hr
-          h4.title Representante Legal
+          h4.title
+            | {{ this.$t('.legal_representative.title') }}
 
           input(type="hidden", name="provider[legal_representative_attributes][id]", :value="legal_representative.id" v-if="provider.legal_representative")
 
@@ -214,10 +221,11 @@
             .six.columns
               .button.u-full-width(@click="addClassification")
                 i.fa.fa-plus.mr-1
-                | Adicionar
+                | {{ this.$t('.button.add') }}
 
           .errors(v-if="errors.provider_classifications")
-            .error É obrigatório informar pelo menos uma classificação e/ou segmento.
+            .error
+              | {{ this.$t('.errors.at_least_one_classification') }}
 
           .row.classification-line.mb-1(v-for="(classification, index) in classifications")
             .u-pull-left(v-if="!classification._destroy")
@@ -240,7 +248,7 @@
 
           .button.u-full-width(@click="addAttachment")
             i.fa.fa-plus.mr-1
-            | Adicionar
+            | {{ this.$t('.button.add') }}
 
           template(v-for="attachment in attachments" v-if="attachment.visible")
             .u-pull-left
@@ -248,6 +256,10 @@
                 i.fa.fa-close-thin
 
             input.input-file(type="file", name="provider[attachments_attributes][][file]")
+
+          .terms-container.mt-3
+            router-link.router-link(:to="{ name: 'terms' }", target='_blank')
+              i {{ $t('.terms_instructions') }}
 
           .mt-2
             button.button-submit.u-full-width(
@@ -261,7 +273,7 @@
           select-field(
             name="provider_type",
             v-model="provider_type",
-              label="Tipo de pessoa (PF/PJ)",
+            :label="this.$t('.labels.provider_type')"
             :options="types",
             placeholder="Selecione uma opção"
           )
@@ -276,7 +288,7 @@
             )
 
             .alert.alert-info(v-if="alreadyInUse")
-              | Fornecedor cadastrado no sistema com usuário para acesso. Informe outro documento ou acesse o sistema com seu usuário e senha.
+              | {{ this.$t('.notifications.already_in_use') }}
 
             button.button.u-full-width(
               v-if="canFind",
@@ -285,7 +297,7 @@
             )
               | {{ findText }}
 
-    overlay-notification(v-if="showSuccessOverlay", :showOverlay="showSuccessOverlay", :text="$t('.notifications.success')" @ok="redirecToIndex", okText="Entendi")
+    overlay-notification(v-if="showSuccessOverlay", :showOverlay="showSuccessOverlay", :text="$t('.notifications.success')" @ok="redirecToIndex", :okText="$t('.button.ok')")
 
 </template>
 
@@ -357,12 +369,12 @@
       documentLabel() {
         let type = this.provider_type
 
-        if(type == 'Individual') return 'Informe o CPF'
-        return 'Informe o CNPJ'
+        if(type == 'Individual') return this.$t('.labels.cpf')
+        return this.$t('.labels.cnpj')
       },
 
       navbarTitle() {
-        return 'Cadastro'
+        return this.$t('.title')
       },
 
       submitText() {

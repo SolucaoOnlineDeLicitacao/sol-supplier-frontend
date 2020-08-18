@@ -19,7 +19,7 @@
           | {{ $t('.status.not_sent') }}
 
         template(v-if="!lots[0].global_proposal_importing")
-          .button.button-primary.router-link.u-full-width(v-if="lots[0].invited", @click="showFileProposalOverlay = true")
+          .button.button-primary.router-link.u-full-width.button-long(v-if="lots[0].invited", @click="showFileProposalOverlay = true")
             | {{ $t('.button.new_proposal_from_file') }}
 
         template(v-else)

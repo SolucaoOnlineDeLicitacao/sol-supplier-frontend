@@ -1,0 +1,18 @@
+﻿es-PY:
+  models:
+    group:
+      one: Grupo
+      other: Grupos
+
+      attributes:
+        id: Código (ID)
+        name: Nombre del grupo
+        group_items_count: Total de ítems de costo
+        items: Ítems de costo
+
+      errors:
+        name:
+          missing: El nombre no puede quedar en blanco
+
+        group_items:
+          invalid: Es necesario agregar por lo menos un ítem de costo en el grupo

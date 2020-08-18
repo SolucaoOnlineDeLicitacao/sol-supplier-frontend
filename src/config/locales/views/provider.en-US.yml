@@ -1,0 +1,50 @@
+﻿en-US:
+  providers:
+    new:
+      title: Register
+      general:
+        title: Vendor data
+
+      legal_representative:
+        title: Legal Representative
+
+      labels:
+        provider_type: Type of profile (Individual/Corporation)
+        cpf: Inform the CPF
+        cnpj: Inform the CNPJ
+        document: Document
+
+      errors:
+        at_least_one_classification: It is mandatory to inform at least one classification and/or segment.
+
+      classifications:
+        title: Categories and segments
+
+      attachments:
+        title: Documents
+
+      users:
+        title: Access user
+
+      fields:
+        name:
+          placeholder: Enter vendor name
+        cnpj:
+          placeholder: Enter document
+
+      terms_instructions: By registering in the platform you agree with our term of use and privacy policy.
+
+      button:
+        submit: Create registry
+        submitting: Registering...
+        find: Next
+        finding: Validating...
+        add: Add
+        ok: Ok
+
+      notifications:
+        success: Registry successfully created! Use your credentials to access!
+        failure: An error occurred when saving the registry. Check the fields below
+        already_in_use: Vendor registered in the system with user for access. Enter another document or access the system with your username and password.
+        text1: Pre-registered information for the document
+        text2: Please validate the information and proceed with the registration.

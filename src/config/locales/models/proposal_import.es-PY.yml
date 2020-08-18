@@ -1,0 +1,11 @@
+﻿es-PY:
+  models:
+    proposalImport:
+      one: Propuesta vía archivo
+      other: Propuestas vía archivo
+
+      attributes:
+        file: Planilla
+
+      errors:
+        file: No puede quedar en blanco

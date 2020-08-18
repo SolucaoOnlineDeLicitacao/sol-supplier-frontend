@@ -1,5 +1,9 @@
 pt-BR:
   biddings:
+    tabs:
+      lots: Lotes e itens
+      proposals: Propostas
+
     index:
       title: Licitações
 

@@ -8,17 +8,10 @@ pt-BR:
         button:
           new: Adicionar lote
 
-        tabs:
-          lots: Lotes e itens
-          proposals: Propostas
-
       show:
         button:
+          view_proposal: Visualizar proposta do lote
           proposals: Visualizar todas propostas
-
-        tabs:
-          lots: Lotes e itens
-          proposals: Propostas
 
       _index:
         lot-list-fields:

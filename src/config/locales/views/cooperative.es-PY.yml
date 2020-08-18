@@ -1,0 +1,47 @@
+﻿es-PY:
+  cooperatives:
+    index:
+      title: Asociaciones
+      list:
+        title: Lista de asociaciones
+      button:
+        new: Nueva asociación
+      search:
+        placeholder: Busque por nombre o CNPJ de la asociación
+
+      notifications:
+        destroy:
+          success: Asociación eliminada con éxito
+          failure: Hubo un error al eliminar la asociación
+
+    new:
+      title: Nueva asociación
+
+      fields:
+        name:
+          placeholder: Informe el nombre de la asociación
+        cnpj:
+          placeholder: Informe el CNPJ
+
+      button:
+        submit: Crear asociación
+        submitting: Creando asociación
+
+      notifications:
+        failure: Hubo un error al crear la asociación
+
+
+    edit:
+      title: Editar asociación
+
+      notifications:
+        failure: Hubo un error al editar la asociación
+
+      button:
+        submit: Editar asociación
+        submitting: Editando asociación
+
+    show:
+      title: Dados de la asociación
+      covenants:
+        title: Convenios de la asociación

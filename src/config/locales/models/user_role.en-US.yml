@@ -1,0 +1,13 @@
+﻿en-US:
+  models:
+    user_role:
+      one: Position
+      other: Positions
+
+      attributes:
+        id: Code (ID)
+        roleId: Position
+
+      errors:
+        roleId:
+          missing: Position cannot be blank

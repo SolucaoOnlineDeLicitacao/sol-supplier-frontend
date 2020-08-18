@@ -1,0 +1,13 @@
+﻿en-US:
+  models:
+    work_plan:
+      one: Work plan
+      other: Work plans
+
+      attributes:
+        id: Code (ID)
+        name: Name of Work Plan
+
+      errors:
+        name:
+          missing: Name cannot be blank

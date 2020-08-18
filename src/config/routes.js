@@ -1,6 +1,8 @@
 import NotFound from '@/components/not-found.vue'
 
 import Login from '@/views/login.vue'
+import Terms from '@/views/terms.vue'
+
 import editProfile from '@/views/profile/edit.vue'
 import editPassword from '@/views/password/edit.vue'
 
@@ -62,6 +64,17 @@ const routes = [
     name:      'login',
     path:      '/login',
     component: Login,
+    meta:      {
+      transition: { name: 'fade' }
+    }
+  },
+
+  // terms
+  // ----
+  {
+    name:      'terms',
+    path:      '/terms',
+    component: Terms,
     meta:      {
       transition: { name: 'fade' }
     }
