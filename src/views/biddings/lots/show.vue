@@ -4,7 +4,7 @@
 <template lang="pug">
   .mt-2(v-if="lot")
     .container
-      template(v-if="lot.bidding_kind != 'global' && (lot.bidding_status == 'finnished' || biddingUnderReview)")
+      template(v-if="lot.bidding_kind != 'global' && (lot.bidding_status == 'finnished' || biddingUnderReviewAndUnrestricted)")
         router-link.mb-2.button.button-primary.router-link.u-full-width.mb-0(:to="{ name: 'proposals', params: { bidding_id: this.biddingId, lot_id: lot.id } }")
           | {{ this.$t('.button.proposals') }}
 
@@ -118,8 +118,8 @@
         return this.lot && this.lot.bidding_modality
       },
 
-      biddingUnderReview() {
-        return this.biddingStatus == 'under_review'
+      biddingUnderReviewAndUnrestricted() {
+        return this.biddingModality == 'unrestricted' && this.biddingStatus == 'under_review'
       },
     },
 
