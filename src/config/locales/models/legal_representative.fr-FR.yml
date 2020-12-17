@@ -1,0 +1,19 @@
+﻿fr-FR:
+  models:
+    legal_representative:
+      one: Représentant légal (données pour le contrat)
+      other: Représentants légaux (données pour le contrat)
+
+      attributes:
+        name: Nom
+        nationality: Nationalité
+        civilState: Etat civil
+        rg: Identité
+        cpf: CPF
+        validUntil: Date de validité
+        civil_states:
+          single: Célibataire
+          married: Marié(e)
+          divorced: Divorcé(e)
+          widower: Veuf(ve)
+          separated: Séparé(e)

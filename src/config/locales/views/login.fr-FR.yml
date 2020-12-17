@@ -1,0 +1,34 @@
+﻿fr-FR:
+  login:
+    heading: Solution Online d'Appel d'Offres
+
+    fields:
+      username:
+        label: E-mail
+        placeholder: Votre E-mail
+      password:
+        label: Code d'accès
+        placeholder: Votre Code d'accès
+
+    forgot_password_instructions: Informez votre adresse email enregistrée sur la plateforme et un message vous sera envoyé avec des instructions pour modifier le code d'accès.
+
+    terms_instructions: En accédant à la plateforme, vous acceptez nos conditions d'utilisation et notre politique de confidentialité.
+
+    button:
+      submit: Accéder
+      submitting: En train d'accéder...
+
+      submitForgotPassword: Envoyer
+      submittingForgotPassword: En train d'envoyer...
+
+      new: Vous êtes nouveau au SOL? Enregistrez-vous maintenant!
+      forgot_password: J'ai oublié mon code d'accès
+
+    notifications:
+      login:
+        failure: Email ou code d'accès non valable. Essayez encore une fois
+        blocked: Usager bloqué. Contactez les administrateurs de la plateforme.
+
+      password:
+        failure: Erreur lors de l'envoi de l'email. E-mail non valable ou non trouvé.
+        success: "Vous recevrez des instructions pour changer le code d'accès dans votre adresse e-mail informée. Suivez-le et vous pourrez accéder encore à la plateforme."

@@ -1,0 +1,64 @@
+﻿fr-FR:
+  models:
+    bidding:
+      one: Appel d'offres
+      other: Appels d'offres
+
+      attributes:
+        id: Code (ID)
+        title: Numéro
+        description: Description (Objet)
+        kind: Type d'appel d'offres
+        modality: Modalité
+        status: Situation
+        deadline: Délai de livraison / réalisation (en jours)
+        link: URL additionnelle
+        startDate: Date du début
+        closingDate: Date de la clôture
+        openingDate: Date de l'ouverture
+        covenantId: Convention
+        covenant: Convention
+        address: Lieu de livraison
+        cooperative: Association
+
+        statuses:
+          approved: Libérée
+          canceled: Annulée
+          closed: Fermée
+          completed: Complété
+          draft: En brouillon
+          failure: Échouée
+          finnished: Achevée
+          ongoing: Ouverte
+          under_review: En analyse
+          waiting: En attente de libération
+          suspended: En suspension
+          draw: En attente de définition du gagnant
+          reopened: Ré-ouverte
+          desert: Déserte
+
+        kinds:
+          global: Prix global
+          lot: Prix par lot
+          unitary: Prix individuel
+
+        modalities:
+          unrestricted: Ouverte/publique
+          open_invite: Invitation
+          closed_invite: Invitation
+
+      errors:
+        covenant:
+          missing: Le champ Convention ne peut rester en blanc
+        title:
+          missing: Le champ Titre ne peut rester en blanc
+        description:
+          missing: Le champ Description ne peut rester en blanc
+        kind:
+          missing: Le champ Type d'appel d'offres ne peut rester en blanc
+        start_date:
+          missing: Le champ Date du début ne peut rester en blanc
+        closing_date:
+          missing: Le champ Date de clôture ne peut rester en blanc
+        opening_date:
+          missing: Le champ Date d'ouverture ne peut rester en blanc

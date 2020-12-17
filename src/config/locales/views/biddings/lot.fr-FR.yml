@@ -1,0 +1,90 @@
+﻿fr-FR:
+  biddings:
+    lots:
+      index:
+        title: Lots et postes
+        empty: Aucun lot n'a été enregistré
+
+        button:
+          new: Ajouter lot
+
+      show:
+        button:
+          view_proposal: Exhiber offre du lot
+          proposals: Exhiber toutes les offres
+
+      _index:
+        lot-list-fields:
+          lot_group_items_count: 'Postes: %{value}'
+          status:
+            importing: Importation de l'offre
+            abandoned: offre exclue
+            draft: offre remplie
+            sent: offre envoyée
+            empty: pas d'offre
+
+      _show:
+        lot-actions:
+          under_review: Appel d'offres en analyse. Il est impossible d'éditer et/ou de supprimer l'offre envoyée.
+          finnished: Appel d'offres achevé. Il est impossible d'éditer et/ou de supprimer l'offre envoyée.
+          reopened: Appel d'offres réouvert. Il est impossible d'éditer et/ou de supprimer l'offre envoyée.
+          failure: Appel d'offres échoué. Il est impossible d'éditer et/ou de supprimer l'offre envoyée.
+          canceled: Appel d'offres annulé. Il est impossible d'éditer et/ou de supprimer l'offre envoyée.
+          draw: Attendez que les offres à égalité soient départagées.
+          draw_with_proposal: "Offre à égalité. Vous pourrez mettre à jour votre offre jusqu'au jour %{day}. Toute mise à jour des offres par lot entraînera la mise à jour de l'offre."
+
+          invites:
+            pending: Invitations en suspens. Attendez la libération pour participer à cet appel d'offres.
+            not_invited: Il faut être invité pour participer à cet appel d'offres. Appuyez sur le bouton ci-dessous pour demander une invitation.
+
+          proposal:
+            draw:
+              alert: Les offres sont à égalité. Vous pourrez éditer votre offre avec une nouvelle valeur.
+            abandoned:
+              alert: Offre exclue. Il est impossible d'envoyer une nouvelle offre.
+            importing:
+              alert: " Importation de l'offre en cours..."
+            cannot_edit:
+              alert: Il est impossible d'éditer l'offre envoyée dans un appel d'offres du type « invitation fermée ».
+
+          button:
+            new_proposal: Remplir l'offre
+            new_global_proposal: Remplir l'offre
+            new_proposal_from_file: Remplir l'offre via feuilles de calcul
+
+        proposal-import-overlay:
+          title: Importer l'offre
+          alert: 'Télécharger la feuille de calcul et remplissez seulement le champ <strong> »offre (valeur unitaire)"</strong> et le champ <strong>"fret (valeur)"</strong>.'
+          button:
+            download: Télécharger feuille de calcul du lot
+            submitFile: Importer l'offre
+            submittingFile: Importation de l'offre
+
+          notifications:
+            file:
+              success: "Vous serez notifié lorsque l'offre aura été traitée. Après l'importation, il faudra confirmer l'envoi de l'offre pour achever le processus."
+              failure: Il y a eu une erreur lors de l'importation de l'offre.
+
+        edit-proposal-buttons:
+          button:
+            edit_proposal: Editer l'offre
+            edit_draft_proposal: Confirmer l'envoi de l'offre
+
+        request-invite-button:
+          button:
+            invite: Je souhaite participer
+
+          notifications:
+            invite:
+              success: Demande envoyée avec succès
+              failure: Il y a eu une erreur à l'envoi de la demande.
+
+        destroy-proposal-buttons:
+          destroy:
+            title: Supprimer offre
+            body: Vous confirmez l'exclusion de l'offre?
+
+          notifications:
+            destroy:
+              failure: Il a été impossible de supprimer l'offre.
+              success: Offre supprimée avec succès!

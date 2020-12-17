@@ -1,0 +1,65 @@
+﻿fr-FR:
+  biddings:
+    tabs:
+      lots: Lots et postes
+      proposals: Offres
+
+    index:
+      title: Appels d'offres
+
+      empty: Aucun appel d'offres n'a été trouvé
+
+      list:
+        title: Liste d'appel d'offres
+      button:
+        new: Nouvel appel d'offres
+
+      search:
+        placeholder: Chercher par le nom ou par le numéro de l'appel d'offres
+
+      period: Période
+
+    new:
+      title: Nouvel appel d'offres
+      general: Configurations générales
+      empty_covenants: Association sans conventions. Il n'est pas possible de créer un appel d'offres.
+
+      button:
+        submit: Sauvegarder et définir les postes de l'appel d'offres
+        submitting: Sauvegarde...
+      notifications:
+        success: Appel d'offres créé avec succès
+        failure: Il y a eu une erreur lors de la création de l'appel d'offres
+
+    edit:
+      button:
+        submit: Sauvegarder l'appel d'offres
+
+    show:
+      title: Détails de l'appel d'offres
+
+      general:
+        title: Données de l'appel d'offres
+
+      edit: Editer l'appel d'offres
+      empty_address: Non informé
+
+      documents:
+        title: Documents
+
+      minute:
+        download: Télécharger ATA
+        not_found: ATA non disponible
+
+      edict:
+        download: Télécharger le Cahier des Charges
+        not_found: Cahier des Charges non disponible
+
+      notifications:
+        destroy:
+          success: Appel d'offres exclu avec succès
+          failure: Il y a eu une erreur lors de l'exclusion de l'appel d'offres
+
+      destroy:
+        title: Exclure l'appel d'offres
+        body: Vous confirmez l'exclusion de cet appel d'offres?

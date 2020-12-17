@@ -1,0 +1,27 @@
+﻿fr-FR:
+  models:
+    proposal:
+      one: Offre de lot
+      other: Offres de lot
+
+      attributes:
+        id: Code (ID)
+        deliveryPrice: Valeur du fret
+      errors:
+        delivery_price:
+          missing: Il faut informer la valeur du fret
+        price_total:
+          invalid: La valeur totale de l'offre ne peut pas être plus grande que la valeur informée avant
+
+    lotProposal:
+      one: Offre de lot
+      other: Offres de lot
+
+      attributes:
+        id: Code (ID)
+        deliveryPrice: Valeur du fret
+      errors:
+        delivery_price:
+          missing: Il faut informer la valeur du fret
+        price_total:
+          invalid: La valeur totale de l'offre ne peut pas être plus grande que la valeur informée avant

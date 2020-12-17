@@ -1,0 +1,27 @@
+﻿fr-FR:
+  models:
+    contract:
+      one: Contrat
+      other: Contrats
+
+      attributes:
+        id: Code (ID)
+        title: Numéro
+        status: Situation
+
+        supplierSignedAt: Fournisseur
+        adminSignedAt: Réviseur
+        userSignedAt: Association
+
+        price_total: Valeur
+        bidding_title: Appel d'offres
+        provider_title: Fournisseur
+        cooperative_title: Association
+
+        statuses:
+          waiting_signature: En attente de signature
+          signed: Signé
+          completed: Achevé
+          partial_execution: Réalisé partiellement
+          total_inexecution: Non réalisation totale
+          refused: Rejeté

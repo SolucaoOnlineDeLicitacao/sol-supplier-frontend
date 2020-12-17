@@ -1,0 +1,50 @@
+﻿fr-FR:
+  providers:
+    new:
+      title: Cadastre
+      general:
+        title: Données du fournisseur
+
+      legal_representative:
+        title: Représentant légal
+
+      labels:
+        provider_type: Type de personne (physique ou morale)
+        cpf: Informez le CPF
+        cnpj: Informez le CNPJ
+        document: Document
+
+      errors:
+        at_least_one_classification: Il faut informer au moins une classe ou un segment.
+
+      classifications:
+        title: Catégories et segments
+
+      attachments:
+        title: Documents
+
+      users:
+        title: Utilisateurs d'accès
+
+      fields:
+        name:
+          placeholder: Informez le nom du fournisseur
+        cnpj:
+          placeholder: Informez le document
+
+      terms_instructions: En vous inscrivant à la plateforme, vous acceptez nos conditions d'utilisation et notre politique de confidentialité.
+
+      button:
+        submit: Créer Cadastre
+        submitting: Cadastre...
+        find: Suivant(e)
+        finding: Validation...
+        add: Ajouter
+        ok: J'ai compris
+
+      notifications:
+        success: Cadastre créé avec succès! Utilisez vos données pour connecter!
+        failure: Il y a eu une erreur lors de la sauvegarde du cadastre. Vérifiez les champs ci-dessous
+        already_in_use: Fournisseur enregistré dans le cadastre du système avec utilisateur pour accès Informez un autre document ou connectez le système avec votre utilisateur et code d'accès.
+        text1: Informations pré-enregistrées pour le document
+        text2: Veuillez valider les informations et continuez le cadastre.

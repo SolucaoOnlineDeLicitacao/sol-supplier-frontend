@@ -1,0 +1,47 @@
+﻿fr-FR:
+  cooperatives:
+    index:
+      title: Associations
+      list:
+        title: Liste d'associations
+      button:
+        new: Nouvelle association
+      search:
+        placeholder: Chercher par le nom ou par le CNPJ
+
+      notifications:
+        destroy:
+          success: Association exclue avec succès
+          failure: Il y a eu une erreur lors de l'exclusion de l'association
+
+    new:
+      title: Nouvelle association
+
+      fields:
+        name:
+          placeholder: Informez le nom de l'association
+        cnpj:
+          placeholder: Informez le CNPJ
+
+      button:
+        submit: Créer association
+        submitting: Création association
+
+      notifications:
+        failure: Il y a eu une erreur lors de la création de l'association
+
+
+    edit:
+      title: Editer l'association
+
+      notifications:
+        failure: Il y a eu une erreur lors de l'édition de l'association
+
+      button:
+        submit: Editer l'association
+        submitting: Edition de l'association
+
+    show:
+      title: Données de l'association
+      covenants:
+        title: Conventions de l'association

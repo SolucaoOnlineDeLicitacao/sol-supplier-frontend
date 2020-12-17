@@ -1,0 +1,7 @@
+﻿fr-FR:
+  components:
+    paginator:
+      first: ''
+      prev: ''
+      next: ''
+      last: ''

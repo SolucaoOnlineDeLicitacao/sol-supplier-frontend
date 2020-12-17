@@ -1,0 +1,14 @@
+﻿fr-FR:
+  app: 'sdc-cooperative-frontend.vue'
+  title: 'SOL - Fournisseurs'
+
+  button:
+    search: Chercher
+    searching: Recherche
+
+  messages:
+    not_informed: non informé
+
+  dialog:
+    back: Retour
+    destroy: Supprimer

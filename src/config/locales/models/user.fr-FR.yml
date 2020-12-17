@@ -1,0 +1,30 @@
+﻿fr-FR:
+  models:
+    user:
+      one: Utilisateur
+      other: Utilisateurs
+
+      attributes:
+        id: Code (ID)
+        name: Nom
+        email: E-mail
+        cpf: CPF
+        phone: Téléphone
+        roleId: Fonction
+        roleTitle: Fonction
+        cooperativeId: Association
+        cooperativeName: Association
+        passwordConfirmation: Confirmation du code d'accès
+
+      errors:
+        name:
+          missing: Le champ Nom ne peut pas rester en blanc
+        cpf:
+          missing: Le champ CPF ne peut pas rester en blanc
+          invalid: Ce CPF n'est pas valable (000.000.000-00)
+        phone:
+          missing: Le champ Téléphone ne peut pas rester en blanc
+          invalid: "Ce Téléphone n'est pas valable. Format: (00) 00000-0000"
+        cooperative:
+          missing: Le champ Association ne peut rester en blanc
+

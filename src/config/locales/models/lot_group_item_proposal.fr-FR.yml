@@ -1,0 +1,18 @@
+﻿fr-FR:
+  models:
+    lot_group_item_proposal:
+      one: Poste de la cotation
+      other: Postes de la cotation
+
+      attributes:
+        id: Code (ID)
+        price: Valeur de la cotation (R$)
+
+      errors:
+        price:
+          missing: Il faut informer la valeur de la cotation
+          invalid: I faut que la valeur de la cotation soit plus grande que zéro (0)
+          different: Valeur de la cotation différente des autres postes
+        price_total:
+          invalid: La valeur totale de l'offre ne peut pas être plus grande que la valeur informée avant
+

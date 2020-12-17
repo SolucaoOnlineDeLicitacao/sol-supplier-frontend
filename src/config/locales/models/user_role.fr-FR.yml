@@ -1,0 +1,13 @@
+﻿fr-FR:
+  models:
+    user_role:
+      one: Fonction
+      other: Fonctions
+
+      attributes:
+        id: Code (ID)
+        roleId: Fonction
+
+      errors:
+        roleId:
+          missing: Le champ Fonction ne peut pas rester en blanc

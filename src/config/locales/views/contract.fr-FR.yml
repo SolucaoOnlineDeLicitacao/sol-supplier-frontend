@@ -1,0 +1,63 @@
+﻿fr-FR:
+  contracts:
+    index:
+      title: Contrats
+
+      card:
+        title: Contrat %{title}
+
+      empty: Aucune contrat n'a été trouvé.
+
+      list:
+        title: Liste des contrats
+
+      search:
+        placeholder: Cherchez par le numéro du contrat
+
+    show:
+      tabs:
+        contract: Contrat
+        proposal: Offre
+
+      title: Contrat %{title}
+
+      general:
+        title: Données du contrat
+
+        button:
+          download: Télécharger le contrat original
+
+      overlay:
+        title: Refuser le contrat
+        alert: Cette action ne pourra plus être annulée. Vous confirmez le refus?
+        field:
+          status:
+            label: Définissez le nouvelle situation du contrat
+        button: Refuser le contrat
+
+      dialog:
+        title: Accepter le contrat
+        body: Cette action ne pourra plus être annulée. Vous confirmez l'acceptation?
+        okText: Accepter
+        cancelText: Annuler
+
+      signatures:
+        title: Signatures
+        waiting: En attente de signature
+        refused: Contrat refusé
+        not_signed: Contrat non signé
+
+      refused:
+        at: 'Contrat refusé en %{value}'
+
+      button:
+        sign: Accepter
+        refuse: Refuser
+
+      notifications:
+        signs:
+          success: Contrat signé avec succès.
+          failure: Il y a eu une erreur lors de la signature du contrat.
+        refused:
+          success: Contrat refusé avec succès.
+          failure: Il y a eu une erreur lors du refus du contrat.

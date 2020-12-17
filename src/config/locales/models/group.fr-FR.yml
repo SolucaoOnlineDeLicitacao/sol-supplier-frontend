@@ -1,0 +1,18 @@
+﻿fr-FR:
+  models:
+    group:
+      one: Groupe
+      other: Groupes
+
+      attributes:
+        id: Code (ID)
+        name: Nom du groupe
+        group_items_count: Total des postes de coût
+        items: Postes de coût
+
+      errors:
+        name:
+          missing: Le champ Nom ne peut rester en blanc
+
+        group_items:
+          invalid: Vous devez ajouter au moins un élément de coût au groupe

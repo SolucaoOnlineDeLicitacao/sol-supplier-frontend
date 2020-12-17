@@ -1,0 +1,11 @@
+﻿fr-FR:
+  models:
+    lotProposalImport:
+      one: Offre via fichier
+      other: Offres via fichier
+
+      attributes:
+        file: Feuille de calcul
+
+      errors:
+        file: Ne peut pas rester en blanc

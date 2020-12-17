@@ -1,0 +1,30 @@
+﻿fr-FR:
+  models:
+    lot:
+      one: Lot
+      other: Lots
+
+      attributes:
+        id: Code (ID)
+        name: Nom du lot
+        status: Situation
+        deadline: Délai de livraison (en jours)
+        address: Lieu de livraison
+
+        statuses:
+          waiting: En cours
+          triage: En analyse
+          accepted: Adjugé
+          failure: Échoué
+          draft: En brouillon
+          desert: Désert
+          canceled: Annulé
+
+      errors:
+        name:
+          missing: Le champ Nom ne peut rester en blanc
+
+        lot_group_items:
+          invalid: Vous devez ajouter au moins un poste
+
+        file: Ne peut pas rester en blanc
