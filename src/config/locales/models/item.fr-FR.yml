@@ -1,15 +1,15 @@
 ﻿fr-FR:
   models:
     item:
-      one: Poste de coût
-      other: Postes de coût
+      one: Élement de coût
+      other: Éléments de coût
 
       attributes:
         id: Code (ID)
         title: Titre
         description: Spécification
         unit: Unité
-        classificationId: Classement
+        classificationId: Classification
 
       errors:
         title:

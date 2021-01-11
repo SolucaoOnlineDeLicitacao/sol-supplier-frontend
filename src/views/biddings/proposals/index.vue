@@ -33,7 +33,8 @@
     .container
       .card
         div(v-if="proposals && proposals[0]")
-          h4.mt-0 Lista de propostas
+          h4.mt-0
+            | {{ $t('.sub_title') }}
 
           hr.mt-2.mb-2.o-container
 

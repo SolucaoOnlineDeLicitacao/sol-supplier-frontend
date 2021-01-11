@@ -1,9 +1,9 @@
 ﻿fr-FR:
   suppliers:
     index:
-      title: Utilisateurs du fournisseur
+      title: Utilisateurs de fournisseur
       list:
-        title: Liste des Utilisateurs du fournisseur
+        title: Liste des Utilisateurs de fournisseur
       button:
         new: Nouvel utilisateur de Fournisseur
       search:

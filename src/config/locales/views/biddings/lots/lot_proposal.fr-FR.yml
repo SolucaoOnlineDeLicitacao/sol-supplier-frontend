@@ -27,13 +27,13 @@
         index:
           title: Offres
           empty: Aucune offre n'a été reçue
-          cant_see: Les offres seront publiées pour consultation une fois l'appel d'offres terminé.
-          lot_group_items_count: 'Postes: %{value}'
-          total: 'Valeur totale: R$ %{value}'
+          cant_see: Les offres seront libérées pour consultation une fois l'appel d'offres terminé.
+          lot_group_items_count: 'Postes : %{value}'
+          total: 'Valeur totale : R$ %{value}'
 
         _form:
           lot-group-item-proposal-fields:
-            my_quote: 'Ma cotation: '
+            my_quote: 'Ma cotation : '
             per_unit: ' par %{unit}'
             inform_proposal: Cliquez pour soumettre une offre
             unique_price: La modification de la valeur de ce poste répercutera sur tous les autres lots de cet appel d'offres pour lesquels le poste a déjà été informé.
@@ -44,4 +44,4 @@
             lot_group_item_count: "Ce poste est présent en %{count} lots de cet appel d'offres. La modification de la valeur de ce poste répercutera sur tous les autres lots de cet appel d'offres pour lesquels le poste a déjà été informé."
             button: Sauvegarder la cotation
             label: Valeur unitaire
-            total: 'Valeur totale: '
+            total: 'Valeur totale : '

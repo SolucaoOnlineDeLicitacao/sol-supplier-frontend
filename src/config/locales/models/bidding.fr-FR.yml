@@ -33,8 +33,8 @@
           under_review: En analyse
           waiting: En attente de libération
           suspended: En suspension
-          draw: En attente de définition du gagnant
-          reopened: Ré-ouverte
+          draw: En attente de départage
+          reopened: Rouverte
           desert: Déserte
 
         kinds:
@@ -49,16 +49,16 @@
 
       errors:
         covenant:
-          missing: Le champ Convention ne peut rester en blanc
+          missing: Le champ Convention ne peut pas rester en blanc
         title:
-          missing: Le champ Titre ne peut rester en blanc
+          missing: Le champ Titre ne peut pas rester en blanc
         description:
-          missing: Le champ Description ne peut rester en blanc
+          missing: Le champ Description ne peut pas rester en blanc
         kind:
-          missing: Le champ Type d'appel d'offres ne peut rester en blanc
+          missing: Le champ Type d'appel d'offres ne peut pas rester en blanc
         start_date:
-          missing: Le champ Date du début ne peut rester en blanc
+          missing: Le champ Date du début ne peut pas rester en blanc
         closing_date:
-          missing: Le champ Date de clôture ne peut rester en blanc
+          missing: Le champ Date de clôture ne peut pas rester en blanc
         opening_date:
-          missing: Le champ Date d'ouverture ne peut rester en blanc
+          missing: Le champ Date d'ouverture ne peut pas rester en blanc

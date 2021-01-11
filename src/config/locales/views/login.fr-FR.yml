@@ -21,7 +21,7 @@
       submitForgotPassword: Envoyer
       submittingForgotPassword: En train d'envoyer...
 
-      new: Vous êtes nouveau au SOL? Enregistrez-vous maintenant!
+      new: Vous êtes nouveau au SOL ? Enregistrez-vous maintenant !
       forgot_password: J'ai oublié mon code d'accès
 
     notifications:

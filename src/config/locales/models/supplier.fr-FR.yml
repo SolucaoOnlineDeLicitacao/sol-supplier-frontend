@@ -12,6 +12,7 @@
         phone: Téléphone
         providerId: Fournisseur
         providerName: Fournisseur
+        password: Code d'accès
         passwordConfirmation: Confirmation du code d'accès
 
       errors:
@@ -24,7 +25,7 @@
           invalid: Ce CPF n'est pas valable (000.000.000-00)
         phone:
           missing: Le champ Téléphone ne peut pas rester en blanc
-          invalid: "Ce Téléphone n'est pas valable. Format: (00) 00000-0000"
+          invalid: "Ce Téléphone n'est pas valable. Format : (00) 00000-0000"
         provider:
           missing: Le champ Fournisseur ne peut pas rester en blanc
 

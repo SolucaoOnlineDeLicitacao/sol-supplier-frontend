@@ -10,7 +10,7 @@
 
         notifications:
           failure: Il a été impossible d'envoyer l'offre
-          success: Offre envoyée avec succès!
+          success: Offre envoyée avec succès !
 
       edit:
         title: Mettre à jour l'offre
@@ -25,8 +25,9 @@
 
       index:
         title: Offres
+        sub_title: Liste des offres
         empty: Aucune offre n'a été reçue
         cant_see: Les offres seront libérées pour consultation une fois l'appel d'offres terminé.
-        lot_group_items_count: 'Postes: %{value}'
-        total: 'Valeur totale: R$ %{value}'
+        lot_group_items_count: 'Postes : %{value}'
+        total: 'Valeur totale : R$ %{value}'
 

@@ -2,20 +2,20 @@
   models:
     group_item:
       one: Poste du groupe
-      other: Postes du groupe
+      other: Éléments du groupe
 
       attributes:
         id: Code (ID)
-        itemName: Poste de coût
-        itemId: Poste de coût
-        item: Poste de coût
+        itemName: Élement de coût
+        itemId: Élement de coût
+        item: Élement de coût
         quantity: Quantité
         estimated_cost: Coût estimé (R$)
         estimatedCost: Coût estimé (R$)
 
       errors:
         item:
-          missing: Le champ Poste de coût ne peut pas rester en blanc
+          missing: Le champ élement de coût ne peut pas rester en blanc
         quantity:
           missing: Le champ Quantité ne peut pas rester en blanc
         estimatedCost:

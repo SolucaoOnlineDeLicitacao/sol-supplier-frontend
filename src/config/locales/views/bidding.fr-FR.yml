@@ -10,12 +10,12 @@
       empty: Aucun appel d'offres n'a été trouvé
 
       list:
-        title: Liste d'appel d'offres
+        title: Liste d'appels d'offres
       button:
         new: Nouvel appel d'offres
 
       search:
-        placeholder: Chercher par le nom ou par le numéro de l'appel d'offres
+        placeholder: Chercher par l'objet ou par le numéro de l'appel d'offres
 
       period: Période
 
@@ -25,7 +25,7 @@
       empty_covenants: Association sans conventions. Il n'est pas possible de créer un appel d'offres.
 
       button:
-        submit: Sauvegarder et définir les postes de l'appel d'offres
+        submit: Sauvegarder et définir les éléments de l'appel d'offres
         submitting: Sauvegarde...
       notifications:
         success: Appel d'offres créé avec succès
@@ -62,4 +62,4 @@
 
       destroy:
         title: Exclure l'appel d'offres
-        body: Vous confirmez l'exclusion de cet appel d'offres?
+        body: Vous confirmez l'exclusion de cet appel d'offres ?

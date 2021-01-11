@@ -7,7 +7,7 @@
       button:
         new: Nouvelle association
       search:
-        placeholder: Chercher par le nom ou par le CNPJ
+        placeholder: Chercher par le nom ou par le CNPJ de l'association
 
       notifications:
         destroy:

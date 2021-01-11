@@ -16,15 +16,15 @@
           triage: En analyse
           accepted: Adjugé
           failure: Échoué
-          draft: En brouillon
+          draft: Brouillon
           desert: Désert
           canceled: Annulé
 
       errors:
         name:
-          missing: Le champ Nom ne peut rester en blanc
+          missing: Le champ Nom ne peut pas rester en blanc
 
         lot_group_items:
           invalid: Vous devez ajouter au moins un poste
 
-        file: Ne peut pas rester en blanc
+        file: Cela ne peut pas rester en blanc

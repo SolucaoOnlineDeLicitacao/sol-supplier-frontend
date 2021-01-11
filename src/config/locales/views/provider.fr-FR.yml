@@ -43,7 +43,7 @@
         ok: J'ai compris
 
       notifications:
-        success: Cadastre créé avec succès! Utilisez vos données pour connecter!
+        success: Cadastre créé avec succès ! Utilisez vos données pour connecter !
         failure: Il y a eu une erreur lors de la sauvegarde du cadastre. Vérifiez les champs ci-dessous
         already_in_use: Fournisseur enregistré dans le cadastre du système avec utilisateur pour accès Informez un autre document ou connectez le système avec votre utilisateur et code d'accès.
         text1: Informations pré-enregistrées pour le document

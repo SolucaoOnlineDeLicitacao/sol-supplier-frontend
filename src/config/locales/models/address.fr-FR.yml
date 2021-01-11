@@ -19,8 +19,8 @@
       errors:
         address:
           address:
-            missing: Le champ Rue ne peut rester en blanc
+            missing: Le champ Rue ne peut pas rester en blanc
           number:
-            missing: Le champ Numéro ne peut rester en blanc
+            missing: Le champ Numéro ne peut pas rester en blanc
           reference_point:
-            missing: Le champ Point de repère ne peut rester en blanc
+            missing: Le champ Point de repère ne peut pas rester en blanc

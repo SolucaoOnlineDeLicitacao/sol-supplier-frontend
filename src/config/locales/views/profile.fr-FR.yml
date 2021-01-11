@@ -14,5 +14,5 @@
         submitting: Edition...
 
       notifications:
-        success: Profil édité avec succès!
+        success: Profil édité avec succès !
         failure: Il y a eu une erreur lors de l'édition du profil.

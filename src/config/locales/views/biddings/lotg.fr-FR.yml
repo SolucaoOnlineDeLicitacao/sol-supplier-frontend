@@ -4,7 +4,7 @@
       index:
         title: Lots et postes
         empty: Aucun lot n'a été enregistré
-        lot_group_items_count: 'Postes: %{value}'
+        lot_group_items_count: 'Postes : %{value}'
 
         button:
           proposals: Exhiber toutes les offres
@@ -12,8 +12,8 @@
 
         notifications:
           finish:
-            failure: Il a été impossible d'envoyer l'offre!
-            success: Offre envoyée avec succès!
+            failure: Il a été impossible d'envoyer l'offre !
+            success: Offre envoyée avec succès !
 
       show:
         button:
@@ -22,20 +22,20 @@
 
         destroy:
           title: Supprimer offre
-          body: Vous confirmez l'exclusion de l'offre?
+          body: Vous confirmez l'exclusion de l'offre ?
 
         notifications:
           destroy:
             failure: Il a été impossible de supprimer l'offre
-            success: Offre supprimée avec succès!
+            success: Offre supprimée avec succès !
 
       _index:
         proposal-import-overlay:
-          title: Importer offre
-          alert: 'Télécharger la feuille de calcul et remplissez seulement le champ <strong> »offre (valeur unitaire)"</strong> et le champ <strong>"fret (valeur)"</strong>.'
+          title: Importer l'offre
+          alert: 'Télécharger la feuille de calcul et remplissez seulement le champ <strong>« offre (valeur unitaire) »</strong> et le champ <strong>« fret (valeur) »</strong>.'
           button:
             download: Télécharger feuille de calcul de tous les lots
-            submitFile: Importer offre
+            submitFile: Importer l'offre
             submittingFile: Importation de l'offre
 
           notifications:
@@ -44,7 +44,7 @@
               failure: Il y a eu une erreur lors de l'importation de l'offre.
 
         lot-alerts:
-          total: "Valeur de l'offre en objet: %{value}"
+          total: "Valeur de l'offre en objet : %{value}"
 
           button:
             new_proposal_from_file: Remplir l'offre via feuilles de calcul
@@ -54,7 +54,7 @@
           status:
             abandoned: Offre exclue. Il est impossible d'envoyer une nouvelle offre.
             sent: Offre envoyée. Toute mise à jour des offres par lot entraînera la mise à jour de l'offre.
-            sent_and_closed_invite: "Offre envoyée. Il est impossible d'éditer l'offre envoyée dans un appel d'offres du type « invitation fermée »."
+            sent_and_closed_invite: "Offre envoyée. Il est impossible d'éditer l'offre envoyée dans des appels d'offres du type « invitation fermée »."
             not_sent: Offre non envoyée. Remplissez tous les lots pour envoyer l'offre.
             importing: " Importation de l'offre en cours..."
             draw: "Offre à égalité. Vous pourrez mettre à jour votre offre jusqu'au jour %{day}. Toute mise à jour des offres par lot entraînera la mise à jour de l'offre."

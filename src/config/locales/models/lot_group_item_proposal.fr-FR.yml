@@ -2,7 +2,7 @@
   models:
     lot_group_item_proposal:
       one: Poste de la cotation
-      other: Postes de la cotation
+      other: Éléments de la cotation
 
       attributes:
         id: Code (ID)

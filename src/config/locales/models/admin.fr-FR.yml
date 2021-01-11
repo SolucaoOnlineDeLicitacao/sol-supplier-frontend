@@ -13,9 +13,9 @@
 
       errors:
         name:
-          missing: Le champ Nom ne peut rester en blanc
+          missing: Le champ Nom ne peut pas rester en blanc
         covenant:
-          missing: Le champ Convention ne peut rester en blanc
+          missing: Le champ Convention ne peut pas rester en blanc
         email:
-          missing: Le champ E-mail ne peut rester en blanc
+          missing: Le champ E-mail ne peut pas rester en blanc
 

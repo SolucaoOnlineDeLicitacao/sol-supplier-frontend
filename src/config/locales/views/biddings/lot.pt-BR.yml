@@ -88,3 +88,6 @@ pt-BR:
             destroy:
               failure: Não foi possível remover a proposta.
               success: Proposta removida com sucesso!
+
+        attachment-list-fields:
+          title: Arquivos do lote

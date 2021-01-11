@@ -15,7 +15,7 @@
 
       _index:
         lot-list-fields:
-          lot_group_items_count: 'Postes: %{value}'
+          lot_group_items_count: 'Postes : %{value}'
           status:
             importing: Importation de l'offre
             abandoned: offre exclue
@@ -45,7 +45,7 @@
             importing:
               alert: " Importation de l'offre en cours..."
             cannot_edit:
-              alert: Il est impossible d'éditer l'offre envoyée dans un appel d'offres du type « invitation fermée ».
+              alert: Il est impossible d'éditer l'offre envoyée dans un appel d'offres du type « Invitation fermée ».
 
           button:
             new_proposal: Remplir l'offre
@@ -54,7 +54,7 @@
 
         proposal-import-overlay:
           title: Importer l'offre
-          alert: 'Télécharger la feuille de calcul et remplissez seulement le champ <strong> »offre (valeur unitaire)"</strong> et le champ <strong>"fret (valeur)"</strong>.'
+          alert: 'Télécharger la feuille de calcul et remplissez seulement le champ <strong>« offre (valeur unitaire) »</strong> et le champ <strong>« fret (valeur) »</strong>.'
           button:
             download: Télécharger feuille de calcul du lot
             submitFile: Importer l'offre
@@ -82,9 +82,12 @@
         destroy-proposal-buttons:
           destroy:
             title: Supprimer offre
-            body: Vous confirmez l'exclusion de l'offre?
+            body: Vous confirmez l'exclusion de l'offre ?
 
           notifications:
             destroy:
               failure: Il a été impossible de supprimer l'offre.
-              success: Offre supprimée avec succès!
+              success: Offre supprimée avec succès !
+
+        attachment-list-fields:
+          title: Fichiers du lot

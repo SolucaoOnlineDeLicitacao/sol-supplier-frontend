@@ -1,6 +1,6 @@
 ﻿fr-FR:
   home:
-    welcome: "Binvenue au SOL, nous avons %{count} appels d'offres ouverts!"
+    welcome: "Bienvenue au SOL, nous avons %{count} appels d'offres ouverts !"
     period: Période
     loading: En téléchargement...
     bidding_title: "Appel d'offres nº %{title}"

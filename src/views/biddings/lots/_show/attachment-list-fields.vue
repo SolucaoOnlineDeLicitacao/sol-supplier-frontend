@@ -9,7 +9,8 @@
 <template lang="pug">
   .card.mt-2.slim.mb-2(v-if="lot && lot.attachments.length > 0")
     .container
-      h5.mt-1.mb-1 Arquivos do lote
+      h5.mt-1.mb-1
+        | {{ $t('.title') }}
 
     hr.mt-0.mb-2
 

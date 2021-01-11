@@ -7,12 +7,12 @@
       attributes:
         id: Code (ID)
         name: Nom du groupe
-        group_items_count: Total des postes de coût
-        items: Postes de coût
+        group_items_count: Total des éléments de coût
+        items: Éléments de coût
 
       errors:
         name:
-          missing: Le champ Nom ne peut rester en blanc
+          missing: Le champ Nom ne peut pas rester en blanc
 
         group_items:
           invalid: Vous devez ajouter au moins un élément de coût au groupe

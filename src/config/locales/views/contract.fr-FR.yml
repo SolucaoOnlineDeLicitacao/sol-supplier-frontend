@@ -6,7 +6,7 @@
       card:
         title: Contrat %{title}
 
-      empty: Aucune contrat n'a été trouvé.
+      empty: Aucun contrat n'a été trouvé.
 
       list:
         title: Liste des contrats
@@ -29,7 +29,7 @@
 
       overlay:
         title: Refuser le contrat
-        alert: Cette action ne pourra plus être annulée. Vous confirmez le refus?
+        alert: Cette action ne pourra plus être annulée. Vous confirmez le refus ?
         field:
           status:
             label: Définissez le nouvelle situation du contrat
@@ -37,7 +37,7 @@
 
       dialog:
         title: Accepter le contrat
-        body: Cette action ne pourra plus être annulée. Vous confirmez l'acceptation?
+        body: Cette action ne pourra plus être annulée. Vous confirmez l'acceptation ?
         okText: Accepter
         cancelText: Annuler
 

@@ -12,6 +12,6 @@
 
       errors:
         name:
-          missing: Le champ Nom ne peut rester en blanc
+          missing: Le champ Nom ne peut pas rester en blanc
         cnpj:
-          missing: Le champ CNPJ ne peut rester en blanc
+          missing: Le champ CNPJ ne peut pas rester en blanc
