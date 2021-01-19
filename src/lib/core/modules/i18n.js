@@ -62,6 +62,7 @@ i18n.error = function i18nError(code, attribute, model) {
 
 
 i18n.fromNow = function i18nFromNow(value) {
+  moment.locale(this.locale)
   return moment(value).fromNow()
 }
 
