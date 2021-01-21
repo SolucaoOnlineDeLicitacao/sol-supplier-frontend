@@ -1,0 +1,19 @@
+﻿fr-FR:
+  models:
+    item:
+      one: Élement de coût
+      other: Éléments de coût
+
+      attributes:
+        id: Code (ID)
+        title: Titre
+        description: Spécification
+        unit: Unité
+        classificationId: Classification
+
+      errors:
+        title:
+          missing: Le champ Titre ne peut pas rester en blanc
+        description:
+          missing: Le champ Spécification ne peut pas rester en blanc
+

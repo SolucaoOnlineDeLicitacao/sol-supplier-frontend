@@ -1,0 +1,38 @@
+﻿fr-FR:
+  covenants:
+    index:
+      title: Conventions
+      list:
+        title: Liste des conventions
+      button:
+        new: Nouvelle convention
+      search:
+        placeholder: Chercher par le nom ou par le numéro de la convention
+
+      notifications:
+        destroy:
+          success: Convention exclue avec succès
+          failure: Il y a eu une erreur lors de l'exclusion de la convention
+
+    show:
+      title: Détails de la Convention
+
+      general:
+        title: Données de la Convention
+
+      navbar:
+        title: 'Convention nº '
+
+      notifications:
+        destroy:
+          success: Groupe exclu avec succès
+          failure: Il y a eu une erreur lors de l'exclusion du groupe
+
+
+      work_plan:
+        title: Plan de travail
+
+        groups:
+          empty: Aucun groupe de postes
+          button:
+            new: Nouveau groupe de postes

@@ -25,6 +25,7 @@
 
       index:
         title: Proposals
+        sub_title: List of proposals
         empty: No proposal received
         cant_see: Proposals will be cleared for viewing after the procurement process is completed.
         lot_group_items_count: 'Items: %{value}'

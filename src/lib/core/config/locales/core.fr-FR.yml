@@ -1,0 +1,120 @@
+﻿fr-FR:
+  date:
+    abbr_day_names:
+    - Dim
+    - Lun
+    - Mar
+    - Mer
+    - Jeu
+    - Ven
+    - Sáb
+    abbr_month_names:
+    -
+    - Jan
+    - Fév
+    - Mars
+    - Avr
+    - Mai
+    - Juin
+    - Juil
+    - Août
+    - Sept
+    - Oct
+    - Nov
+    - Déc
+    day_names:
+    - Dimanche
+    - Lundi
+    - Mardi
+    - Mercredi
+    - Jeudi
+    - Vendredi
+    - Samedi
+    formats:
+      default: "%d/%m/%Y"
+      long: "%e %B %Y"
+      short: "%e %b"
+      iso: '%Y-%m-%d'
+    month_names:
+    -
+    - Janvier
+    - Février
+    - Mars
+    - Avril
+    - Mai
+    - Juin
+    - Juillet
+    - Août
+    - Septembre
+    - Octobre
+    - Novembre
+    - Décembre
+
+  number:
+    currency:
+      format:
+        delimiter: " "
+        format: "%u %n" # specific for pt-BR implantation
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "€"
+
+    format:
+      delimiter: " "
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+
+    human:
+      decimal_units:
+        format: '%n %u'
+        units:
+          billion:
+            one: millard
+            other: millards
+          million:
+            one: million
+            other: millions
+          quadrillion:
+            one: quadrillion
+            other: quadrillions
+          thousand: mille
+          trillion:
+            one: trillion
+            other: trillions
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: '%n %u'
+        units:
+          byte:
+            one: Octet
+            other: Octets
+          eb: EO
+          gb: GO
+          kb: KO
+          mb: MO
+          pb: PO
+          tb: TO
+
+    percentage:
+      format:
+        delimiter: ''
+        format: '%n%'
+
+  time:
+    am: am
+    formats:
+      default: "%d %B %Y %Hh %Mmin %Ss"
+      long: "%A %d %B %Y %Hh%M"
+      short: "%d %b %Hh%M"
+      micro: '%d/%m/%Y %H:%M'
+      iso: '%Y-%m-%dT%H:%M:%S%z'
+    pm: pm

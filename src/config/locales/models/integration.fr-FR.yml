@@ -1,0 +1,23 @@
+﻿fr-FR:
+  models:
+    integration:
+      one: Intégration
+      other: Intégrations
+
+      attributes:
+        id: Code (ID)
+        endpointUrl: Endpoint
+        token: Token
+        schedule: Fréquence (cron)
+        status: Situation
+        statuses:
+          queued: À la queue
+          in_progress: En progrès
+          success: Succès
+          fail: Erreur
+      errors:
+        endpoint:
+          missing: Le champ Endpoint ne peut pas rester en blanc
+        token:
+          missing: Le champ Token ne peut pas rester en blanc
+

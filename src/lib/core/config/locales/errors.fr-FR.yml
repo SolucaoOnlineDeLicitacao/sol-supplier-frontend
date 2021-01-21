@@ -1,0 +1,16 @@
+﻿fr-FR:
+  # apoia o i18n.error() e i18n.errify()
+  errors:
+    # codes
+    invalid: n'est pas valable
+    missing: ne peut pas rester en blanc
+    taken:   est déjà utilisé
+
+    #
+    # global attributes
+    #
+    # Registre aqui "fallbacks" globais para nomes de atributos.
+    # Ex:
+    # email:
+    #   invalid: não é valido. Siga o formato 'usuario@dominio.servidor'
+    #

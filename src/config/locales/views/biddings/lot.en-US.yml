@@ -88,3 +88,6 @@
             destroy:
               failure: Unable to delete proposal.
               success: Proposal successfully deleted!
+
+        attachment-list-fields:
+          title: Lot files

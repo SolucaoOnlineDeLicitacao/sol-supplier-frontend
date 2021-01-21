@@ -1,0 +1,33 @@
+﻿fr-FR:
+  biddings:
+    proposals:
+      new:
+        title: Nouvelle offre
+
+        button:
+          submit: Envoyer l'offre
+          submitting: Envoi de l'offre...
+
+        notifications:
+          failure: Il a été impossible d'envoyer l'offre
+          success: Offre envoyée avec succès !
+
+      edit:
+        title: Mettre à jour l'offre
+
+        button:
+          submit: Mettre à jour l'offre
+          submitting: Mise à jour de l'offre...
+
+        notifications:
+          failure: Il a été impossible de mettre à jour l'offre
+          success: Offre mise à jour avec succès
+
+      index:
+        title: Offres
+        sub_title: Liste des offres
+        empty: Aucune offre n'a été reçue
+        cant_see: Les offres seront libérées pour consultation une fois l'appel d'offres terminé.
+        lot_group_items_count: 'Postes : %{value}'
+        total: 'Valeur totale : R$ %{value}'
+

@@ -6,7 +6,7 @@ import moment from 'moment'
 /**
  * Nosso módulo de I18n é basicamente a lib i18n-js (@https://github.com/fnando/i18n-js)
  */
-i18n.availableLocales = ['pt-BR', 'en-US', 'es-PY']
+i18n.availableLocales = ['pt-BR', 'en-US', 'es-PY', 'fr-FR']
 i18n.defaultLocale = 'pt-BR'
 
 let locale = store.get('user') && store.get('user').locale || i18n.defaultLocale
@@ -62,6 +62,7 @@ i18n.error = function i18nError(code, attribute, model) {
 
 
 i18n.fromNow = function i18nFromNow(value) {
+  moment.locale(this.locale)
   return moment(value).fromNow()
 }
 

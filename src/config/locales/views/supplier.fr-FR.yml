@@ -1,0 +1,47 @@
+﻿fr-FR:
+  suppliers:
+    index:
+      title: Utilisateurs de fournisseur
+      list:
+        title: Liste des Utilisateurs de fournisseur
+      button:
+        new: Nouvel utilisateur de Fournisseur
+      search:
+        placeholder: Chercher par le nom, cpf, téléphone ou adresse e-mail de l'utilisateur
+
+      notifications:
+        destroy:
+          success: Utilisateur exclu avec succès
+          failure: Il y a eu une erreur lors de l'exclusion de l'utilisateur
+
+    new:
+      title: Nouvel utilisateur de Fournisseur
+      general:
+        title: Données de l'utilisateur
+
+      fields:
+        name:
+          placeholder: Informez le nom de l'utilisateur
+        cnpj:
+          placeholder: Informez le document
+
+      button:
+        submit: Créer utilisateur de Fournisseur
+        submitting: Création utilisateur de Fournisseur
+
+      notifications:
+        failure: Il y a eu une erreur lors de la création de l'utilisateur
+
+
+    edit:
+      title: Editer l'utilisateur
+
+      notifications:
+        failure: Il y a eu une erreur lors de l'édition de l'utilisateur
+
+      button:
+        submit: Editer utilisateur de Fournisseur
+        submitting: Edition Utilisateur du fournisseur
+
+    show:
+      title: Données de l'utilisateur

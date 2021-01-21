@@ -1,0 +1,47 @@
+﻿fr-FR:
+  biddings:
+    lots:
+      lot_proposals:
+        new:
+          title: Nouvelle offre
+
+          button:
+            submit: Sauvegarder l'offre
+            submitting: Sauvegarde de l'offre...
+
+          notifications:
+            failure: Il a été impossible de sauvegarder l'offre
+            success: Offre sauvegardée avec succès
+
+        edit:
+          title: Mettre à jour l'offre
+
+          button:
+            submit: Mettre à jour l'offre
+            submitting: Mise à jour de l'offre...
+
+          notifications:
+            failure: Il a été impossible de mettre à jour l'offre
+            success: Offre mise à jour avec succès
+
+        index:
+          title: Offres
+          empty: Aucune offre n'a été reçue
+          cant_see: Les offres seront libérées pour consultation une fois l'appel d'offres terminé.
+          lot_group_items_count: 'Postes : %{value}'
+          total: 'Valeur totale : R$ %{value}'
+
+        _form:
+          lot-group-item-proposal-fields:
+            my_quote: 'Ma cotation : '
+            per_unit: ' par %{unit}'
+            inform_proposal: Cliquez pour soumettre une offre
+            unique_price: La modification de la valeur de ce poste répercutera sur tous les autres lots de cet appel d'offres pour lesquels le poste a déjà été informé.
+            count: ' (En %{count} lots)'
+
+          lot-group-item-proposal-overlay:
+            title: Ma cotation
+            lot_group_item_count: "Ce poste est présent en %{count} lots de cet appel d'offres. La modification de la valeur de ce poste répercutera sur tous les autres lots de cet appel d'offres pour lesquels le poste a déjà été informé."
+            button: Sauvegarder la cotation
+            label: Valeur unitaire
+            total: 'Valeur totale : '

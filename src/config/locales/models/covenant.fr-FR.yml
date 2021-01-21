@@ -1,0 +1,42 @@
+﻿fr-FR:
+  models:
+    covenant:
+      one: Convention
+      other: Conventions
+
+      attributes:
+        id: Code (ID)
+        name: Nom
+        number: Numéro
+        status: Situation
+        cooperativeId: Association
+        cooperative: Association
+        adminId: Réviseur
+        admin: Réviseur
+        adminName: Réviseur
+        estimatedCost: Valeur de la Convention (R$)
+        validityDate: Date de validité
+        signatureDate: Date de signature
+        cooperativeAddressCityName: Commune
+        link: Annexes
+        statuses:
+          waiting: En attente
+          running: En cours
+          completed: Complété
+          canceled: Annulé
+
+      errors:
+        admin:
+          missing: Le champ Réviseur ne peut pas rester en blanc
+        name:
+          missing: Le champ Nom ne peut pas rester en blanc
+        number:
+          missing: Le champ Numéro ne peut pas rester en blanc
+        status:
+          missing: Le champ Situation ne peut pas rester en blanc
+        signature_date:
+          missing: Le champ Date de signature ne peut pas rester en blanc
+        validity_date:
+          missing: Le champ Date de validité ne peut pas rester en blanc
+        cooperative:
+          missing: Le champ Association ne peut pas rester en blanc

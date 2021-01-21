@@ -1,0 +1,18 @@
+﻿fr-FR:
+  profile:
+    edit:
+      title: Editer profil
+      languages: Langue
+      locale:
+        spanish: Espagnol
+        english: Anglais
+        portuguese: Portugais
+        french: Français
+
+      button:
+        submit: Editer
+        submitting: Edition...
+
+      notifications:
+        success: Profil édité avec succès !
+        failure: Il y a eu une erreur lors de l'édition du profil.

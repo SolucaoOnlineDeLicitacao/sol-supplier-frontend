@@ -1,0 +1,31 @@
+﻿fr-FR:
+  models:
+    supplier:
+      one: Utilisateur
+      other: Utilisateurs
+
+      attributes:
+        id: Code (ID)
+        name: Nom
+        email: E-mail
+        cpf: CPF
+        phone: Téléphone
+        providerId: Fournisseur
+        providerName: Fournisseur
+        password: Code d'accès
+        passwordConfirmation: Confirmation du code d'accès
+
+      errors:
+        supplier:
+          not_found: E-mail non enregistré
+        name:
+          missing: Le champ Nom ne peut pas rester en blanc
+        cpf:
+          missing: Le champ CPF ne peut pas rester en blanc
+          invalid: Ce CPF n'est pas valable (000.000.000-00)
+        phone:
+          missing: Le champ Téléphone ne peut pas rester en blanc
+          invalid: "Ce Téléphone n'est pas valable. Format : (00) 00000-0000"
+        provider:
+          missing: Le champ Fournisseur ne peut pas rester en blanc
+

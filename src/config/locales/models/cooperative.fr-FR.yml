@@ -1,0 +1,17 @@
+﻿fr-FR:
+  models:
+    cooperative:
+      one: Association
+      other: Associations
+
+      attributes:
+        id: Code (ID)
+        name: Nom
+        cnpj: CNPJ
+        city: Ville
+
+      errors:
+        name:
+          missing: Le champ Nom ne peut pas rester en blanc
+        cnpj:
+          missing: Le champ CNPJ ne peut pas rester en blanc

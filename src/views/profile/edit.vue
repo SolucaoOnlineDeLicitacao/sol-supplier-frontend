@@ -98,7 +98,8 @@
         locales: [
           { id: 'es-PY', text: this.$t('profile.edit.locale.spanish') },
           { id: 'en-US', text: this.$t('profile.edit.locale.english') },
-          { id: 'pt-BR', text: this.$t('profile.edit.locale.portuguese') }
+          { id: 'pt-BR', text: this.$t('profile.edit.locale.portuguese') },
+          { id: 'fr-FR', text: this.$t('profile.edit.locale.french') }
         ],
         locale: app.auth.user.locale
       }

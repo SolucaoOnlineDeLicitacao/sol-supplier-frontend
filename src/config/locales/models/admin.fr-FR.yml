@@ -1,0 +1,21 @@
+﻿fr-FR:
+  models:
+    admin:
+      one: Administrateur
+      other: Administrateurs
+
+      attributes:
+        id: Code (ID)
+        name: Nom
+        email: E-mail
+        covenantId: Convention
+        covenantName: Convention
+
+      errors:
+        name:
+          missing: Le champ Nom ne peut pas rester en blanc
+        covenant:
+          missing: Le champ Convention ne peut pas rester en blanc
+        email:
+          missing: Le champ E-mail ne peut pas rester en blanc
+

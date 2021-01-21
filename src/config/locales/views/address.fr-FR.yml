@@ -1,0 +1,12 @@
+﻿fr-FR:
+  address:
+    address-fields:
+      search:
+        placeholder: Chercher par le nome de la commune
+      item:
+        empty: Aucune commune n'a été trouvée.
+      overlay_title: Chercher la commune
+      button:
+        select_city: Sélectionner la commune
+      labels:
+        city: Commune*

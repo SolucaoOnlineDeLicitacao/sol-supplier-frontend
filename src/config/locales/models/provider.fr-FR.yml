@@ -1,0 +1,21 @@
+﻿fr-FR:
+  models:
+    provider:
+      one: Fournisseur
+      other: Fournisseurs
+
+      attributes:
+        id: Code (ID)
+        name: Nom / Raison sociale
+        document: Document
+        type: Type
+        city: Ville
+        types:
+          individual: Personne physique
+          company: Personne morale
+
+      errors:
+        name:
+          missing: Le champ Nom ne peut pas rester en blanc
+        document:
+          missing: Le champ Document ne peut pas rester en blanc

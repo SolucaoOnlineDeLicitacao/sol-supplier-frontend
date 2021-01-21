@@ -25,6 +25,7 @@
 
       index:
         title: Propuestas
+        sub_title: Lista de propuestas
         empty: Ninguna propuesta recibida
         cant_see: Las propuestas serán liberadas para su visualización al finalizar el proceso de licitación.
         lot_group_items_count: 'Ítems: %{value}'

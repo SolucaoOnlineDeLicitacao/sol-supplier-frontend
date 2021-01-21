@@ -1,0 +1,80 @@
+﻿fr-FR:
+  biddings:
+    lots:
+      proposals:
+        new:
+          title: Nouvelle offre
+          alert: Vérifiez les informations avant d'envoyer l'offre. Il est impossible d'éditer l'offre après l'envoi.
+
+          lot_name: 'Lot : %{name}'
+
+          button:
+            submit: Envoyer l'offre
+            submitting: Envoi de l'offre...
+
+          notifications:
+            failure: Il a été impossible d'envoyer l'offre
+            success: Offre envoyée avec succès !
+
+        edit:
+          title: Mettre à jour l'offre
+          alert: Vérifiez les informations avant d'envoyer l'offre. Il est impossible d'éditer l'offre après l'envoi.
+
+          success_overlay:
+            draft: Offre envoyée avec succès !
+            sent: Offre mise à jour avec succès !
+
+          button:
+            final_submit: Envoyer l'offre
+            submit: Mettre à jour l'offre
+            submitting: Mise à jour de l'offre...
+            submit_draft: Envoyer l'offre
+            submitting_draft: Envoi de l'offre...
+
+          notifications:
+            failure: Il a été impossible de mettre à jour l'offre
+            success: Offre mise à jour avec succès
+
+        index:
+          title: Offres
+          empty: Aucune offre n'a été reçue
+          cant_see: Les offres seront libérées pour consultation une fois l'appel d'offres terminé.
+          lot_group_items_count: 'Postes : %{value}'
+          total: 'Valeur totale : R$ %{value}'
+
+        show:
+          proposals:
+            title: Liste des éléments et des offres
+
+        _form:
+          lot-group-item-proposal-fields:
+            my_quote: 'Ma cotation : '
+            per_unit: ' par %{unit}'
+            inform_proposal: Cliquez pour soumettre une offre
+
+        _show:
+          general-fields:
+            title: Résumé de l'offre
+            provider: 'Fournisseur : %{name}'
+            total: 'Valeur totale : %{value}'
+
+            proposal:
+              refused: Offre refusée
+              accepted: Offre gagnante
+
+          proposal-list-fields:
+            price: 'Valeur unitaire :'
+            delivery: Valeur du fret
+
+        _index:
+          proposal-list-fields:
+            badge: Meilleur offre
+            provider: 'Fournisseur : %{name}'
+            total: 'Valeur totale : %{value}'
+
+            status:
+              refused: Offre refusée
+              accepted: Offre gagnante
+
+            button: Visualiser
+

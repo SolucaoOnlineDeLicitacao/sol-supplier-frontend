@@ -88,3 +88,6 @@
             destroy:
               failure: No se pudo eliminar la propuesta.
               success: ¡La propuesta ha sido eliminada con éxito!
+
+        attachment-list-fields:
+          title: Archivos del lote

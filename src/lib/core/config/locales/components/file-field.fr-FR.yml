@@ -1,0 +1,16 @@
+﻿fr-FR:
+  components:
+    file-field:
+      button:
+        attach:
+          tooltip: Annexer fichier...
+        download:
+          tooltip: "Télécharger %{name}"
+        destroy:
+          tooltip: "Supprimer %{name}..."
+          confirmation: |-
+            Vous confirmez l'exclusion de %{name} ?
+            (Le fichier ne sera supprimé que lorsque vous aurez terminé et envoyé toutes les modifications)
+
+      empty: Aucun fichier n'a été annexé
+      markedForDestruction: Signalé pour suppression

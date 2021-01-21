@@ -1,0 +1,102 @@
+﻿fr-FR:
+  terms:
+    heading: Solution Online d'Appel d'offres
+
+    title: TERMES D'UTILISATION et POLITIQUE DE CONFIDENTIALITÉ
+
+    section1:
+      p1: Ces Termes d'Utilisation déterminent les règles, responsabilités et obligations pour l'UTILISATEUR de la plateforme SOL (Solution Online d'Appel d'offres).
+      p2: La politique de confidentialité établit les règles relatives au traitement des informations de l'UTILISATEUR et intègrent ce document dans ses clauses 24 à 29.
+      p3: À l'exception des dispositions spécifiques à chaque type d'UTILISATEUR, toutes les autres dispositions du présent document sont applicables à tout UTILISATEUR.
+      p4: L'UTILISATEUR déclare avoir lu et manifesté son consentement avec toutes les clauses contenues dans ce document, et qu'il n'y a aucun doute à résoudre.
+
+    section2:
+      header: DES DÉFINITIONS
+      p1: "Pour une compréhension complète et correcte de ce document, les définitions suivantes seront utilisées :"
+      p2: "Administrateur : Organisme d'administration publique, pour lequel la plateforme a été licenciée ;"
+      p3: "Plateforme : désigne la plateforme SOL, licenciée par l'ADMINISTRATEUR ;"
+      p4: "Utilisateur : désigne tout utilisateur ayant l'autorisation de l'ADMINISTRATEUR pour accéder et utiliser la plateforme, ce qui comprend l'utilisateur association, l'utilisateur fournisseur, l'utilisateur administrateur ;"
+      p5: "Utilisateur Association : personne morale autorisée par l'ADMINISTRATEUR à accéder et à utiliser la plateforme, dans la permission d'Association ;"
+      p6: "Utilisateur fournisseur : personne morale autorisée par l'ADMINISTRATEUR à accéder et à utiliser la plateforme, dans la permission de fournisseur ;"
+      p7: "Utilisateur Administrateur : personne liée à l'ADMINISTRATEUR et autorisée par ce dernier à accéder et à utiliser la Plateforme."
+
+    section3:
+      header: DE LA PLATEFORME
+      p1: L'accès à la plateforme se fait par la communication, par l'UTILISATEUR, d'un login et d'un code d'accès.
+      p2: Les données d'accès seront envoyées à l'adresse e-mail enregistrée par l'UTILISATEUR.
+      p3: L'UTILISATEUR aura accès à certaines sections, pages et fonctionnalités de la plateforme, selon sa permission.
+
+    section4:
+      header: DES OBLIGATIONS DES UTILISATEURS
+      p1: "Ce sont des obligations de l'UTILISATEUR, en plus des autres obligations mentionnées dans ce document :"
+      p2: I - Effectuer des procédures de sécurité afin que l'accès aux données de la plateforme ne soit pas accessible à des personnes non autorisées ;
+      p3: II - Créer un code d'accès long et difficile à deviner, en utilisant des lettres, des chiffres et des symboles ;
+      p4: III - Ne pas utiliser la Plateforme pour la pratique d'actes illégaux, immoraux ou qui caractérisent la tentative de fraude ;
+      p5: IV - Vérifier toutes les notifications qui peuvent être consultées sur la plateforme ;
+      p6: V - Disposer des conditions techniques appropriées pour l'accès et la navigation sur la plateforme ;
+      p7: VI - Vérifier et configurer son compte e-mail utilisé pour l'accès, afin que tout message lié à la plateforme soit délivré dans la boîte de réception et ne soit pas qualifié de courrier indésirable.
+
+    section5:
+      header: DES DISPOSITIONS SPÉCIFIQUES POUR L'UTILISATEUR ASSOCIATION
+      p1: La plateforme permet à l'UTILISATEUR ASSOCIATION de créer un appel d'offres comprenant la fourniture de produits, en établissant le critère du moindre prix, unitaire ou global, pour définir le gagnant de l'appel d'offres, à condition que les spécifications du cahier des charges soient respectées.
+      p2: L'UTILISATEUR ASSOCIATION doit justifier toute offre rejetée et l'annulation d'un appel d'offres.
+      p3: Tout appel d'offres créé par l'UTILISATEUR ASSOCIATION ne sera rendu public sur la Plateforme qu'après approbation de l'ADMINISTRATEUR.
+      p4: Tout appel d'offres créé par l'UTILISATEUR ASSOCIATION ne pourra être annulé qu'après approbation de l'ADMINISTRATEUR.
+      p5: Après la définition du gagnant, l'homologation, et l'adjudication de l'objet de l'appel d'offres, l'UTILISATEUR ASSOCIATION et le soumissionnaire doivent formaliser le contrat respectif.
+
+    section6:
+      header: DES DISPOSITIONS SPÉCIFIQUES POUR L'UTILISATEUR FOURNISSEUR
+      p1: La plateforme permet à l'UTILISATEUR FOURNISSEUR de déposer des offres comprenant la fourniture de produits, en établissant le critère du moindre prix, unitaire ou global, pour définir le gagnant de l'appel d'offres, à condition que les spécifications du cahier des charges soient respectées.
+      p2: En envoyant toute offre, l'UTILISATEUR FOURNISSEUR déclare avoir toute la qualification technique et économique nécessaire pour l'accomplissement des exigences du Cahier des Charges, étant également légalement qualifié et avec des obligations fiscales et de travail en régularité, étant le seul et exclusif responsable de tout dommage, perte, demande ou réclamation découlant de son inexécution.
+      p3: Pendant la période de dépôt des offres, l'UTILISATEUR FOURNISSEUR peut modifier ou supprimer l'offre déjà envoyée, étant considérée comme valable, à des fins de vérification, la dernière offre déposée avant la fin de cette période.
+      p4: Si le montant de l'offre envoyée par l'UTILISATEUR FOURNISSEUR est égal au montant de la proposition envoyée par un autre participant, l'UTILISATEUR FOURNISSEUR et cet autre participant seront invités à envoyer une nouvelle offre de départage, étant considéré comme le gagnant celui qui aura envoyé la nouvelle offre avec le plus petit prix. Si l'égalité persiste, l'UTILISATEUR FOURNISSEUR qui aura envoyé la nouvelle offre dans le délai le plus court après l'ouverture du délai à cet effet sera le gagnant.
+      p5: Toute offre ne satisfaisant pas aux exigences énoncées dans le Cahier des Charges sera exclue.
+      p6: Toutes les offres déposées par l'intermédiaire de la plateforme, relatives à un appel d'offres donné, seront diffusées pour consultation par l'UTILISATEUR FOURNISSEUR après la conclusion de la soumission.
+      p7: Après la définition du gagnant, l'homologation, et l'adjudication de l'objet de l'appel d'offres, l'UTILISATEUR FOURNISSEUR et le soumissionnaire doivent formaliser le contrat respectif.
+
+    section7:
+      header: DES RESPONSABILITÉS
+      p1: L'UTILISATEUR est le seul et unique responsable de l'utilisation de la Plateforme, et porte la responsabilité unique et exclusive de tout dommage, perte, demande ou réclamation découlant de son utilisation en désaccord avec les dispositions du présent document et les dispositions légales.
+      p2: L'UTILISATEUR déclare posséder les droits de propriété intellectuelle sur tout contenu qu'il envoie et publie sur la plateforme, étant le seul et unique responsable de tout dommage, perte, demande ou réclamation découlant de cet envoi et de cette publication. Si le contenu n'appartient pas à l'UTILISATEUR, celui-ci déclare avoir l'autorisation du titulaire des droits sur ce contenu, pour l'envoi et la publication sur la Plateforme.
+      p3: Il est interdit à l'UTILISATEUR de partager ou de divulguer, à un tiers, toute donnée ou information existant sur la Plateforme, à laquelle il a eu accès grâce à sa permission, étant responsable de tout dommage, perte, demande ou réclamation découlant de ce partage ou de cette divulgation.
+
+    section8:
+      header: DE LA PROPRIÉTÉ INTELECTUELLE
+      p1: L'accès et l'utilisation de la plateforme par l'UTILISATEUR n'implique pas l'acquisition, la cession ou le transfert des droits de propriété intellectuelle de la plateforme à l'UTILISATEUR.
+      p2: Il est interdit à l'UTILISATEUR d'accomplir tout acte qui caractérise une violation des droits de propriété intellectuelle sur la Plateforme, y compris, mais sans s'y limiter, la reproduction et/ou la commercialisation des codes sources, protocoles, scripts, mises en page, exigences, flux et concepts liés à la Plateforme, dont il aura pu avoir connaissance du fait de son accès et de son utilisation.
+      p3: Il est interdit à l'UTILISATEUR d'effectuer toute procédure d'ingénierie inverse de la plateforme.
+
+    section9:
+      header: DE LA POLITIQUE DE CONFIDENTIALITÉ
+      p1: "Seront collectées les données relatives à l'accès et à l'utilisation de la plateforme, notamment"
+      p2: "l'adresse IP de l'UTILISATEUR dans les actions suivantes : (i) connexion/déconnexion sur la plateforme, (ii) actions effectuées sur la plateforme et (iii) manifestation de consentement concernant ce document ;"
+      p3: "les dates et heures de : (i) connexion/déconnexion sur la Plateforme, (ii) actions entreprises par l'UTILISATEUR sur la Plateforme et (iii) manifestation de consentement concernant ce document ;"
+      p4: Actions effectuées sur la Plateforme ;
+      p5: Informations sur le dispositif ou le navigateur utilisé pour accéder à la plateforme, en plus de la version du navigateur et du système opérationnel ;
+      p6: Informations sur l'utilisation et/ou la consultation des sections, éléments, pages et fonctionnalités disponibles sur la plateforme.
+      p7: "Les registres d'accès et d'utilisation peuvent être utilisés ADMINISTRATEUR aux fins suivantes :"
+      p8: Utilisation dans le cadre de procédures d'audit ou d'enquêtes sur la survenance de tout acte illégal ou en violation d'une disposition du présent document ;
+      p9: Vérification du comportement de l'UTILISATEUR ;
+      p10: Amélioration de la plateforme ;
+      p11: Utilisation comme preuve dans une procédure ou un procès administratif et/ou judiciaire.
+      p12: "L'adresse e-mail fournie par l'UTILISATEUR peut être utilisée aux fins suivantes :"
+      p13: Permettre l'accès à la plateforme, ensemble avec le code d'accès ;
+      p14: Envoyer une réponse à toute question, demande ou information ;
+      p15: Informer l'UTILISATEUR de l'actualité, des nouveautés et des développements.
+      p16: Les données de l'UTILISATEUR ne peuvent être transférées ou mises à la disposition de tiers sans le consentement approprié de l'UTILISATEUR.
+      p17: Les dispositions de la clause qui précède immédiatement ne sont pas applicables en cas de nécessité d'exécuter une décision de justice.
+      p18: Les registres d'accès et d'utilisation et les données de l'UTILISATEUR seront stockés dans un serveur sécurisé, en respectant l'état de l'art disponible.
+
+    section10:
+      header: DES DISPOSITIONS COMPLÉMENTAIRES
+      p1: L'accès de l'UTILISATEUR à la plateforme peut être suspendu ou annulé en cas de non-respect d'une obligation légale ou contractuelle ou de pratique d'actes qui sont en désaccord avec ce qui est établi dans ce document ou dans la législation nationale.
+      p2: "La plateforme peut devenir indisponible pour les raisons suivantes (i) maintenance préalablement informée ; (ii) attaques de logiciels malveillants, attaques DDoS et actions de tiers qui empêchent sa disponibilité ; (iii) problèmes dans le serveur d'hébergement ; (iv) problèmes dans la base de données ou (v) survenance d'événements fortuits ou de force majeure, et l'ADMINISTRATEUR n'est pas responsable des dommages, pertes, demandes ou réclamations de l'UTILISATEUR découlant de l'une de ces situations."
+      p3: La tolérance du non-respect par l'UTILISATEUR de toute disposition du présent document n'implique pas que l'ADMINISTRATEUR renonce à ce qui a été établi dans ce document.
+
+    section11:
+      header: DU CONTACT
+      p1: "L'UTILISATEUR doit utiliser le canal de communication suivant de l'ADMINISTRATEUR, au cas où il aurait besoin de précisions sur une certaine disposition du présent document : atendimento-sol@EMAIL."
+
+    section12:
+      header: DU FORUM
+      p1: Les tribunaux de district de Salvador/Natal et de Bahia/Rio Grande do Norte sont élus pour régler tout litige ou controverse lié à ce document, avec renonciation expresse à tout autre, aussi privilégié soit-il.

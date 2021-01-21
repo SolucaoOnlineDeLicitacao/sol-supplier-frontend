@@ -1,0 +1,13 @@
+﻿fr-FR:
+  models:
+    work_plan:
+      one: Plan de travail
+      other: Plans de travail
+
+      attributes:
+        id: Code (ID)
+        name: Nom du Plan de travail
+
+      errors:
+        name:
+          missing: Le champ Nom ne peut pas rester en blanc

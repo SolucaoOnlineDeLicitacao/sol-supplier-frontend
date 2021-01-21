@@ -1,0 +1,22 @@
+﻿fr-FR:
+  models:
+    group_item:
+      one: Poste du groupe
+      other: Éléments du groupe
+
+      attributes:
+        id: Code (ID)
+        itemName: Élement de coût
+        itemId: Élement de coût
+        item: Élement de coût
+        quantity: Quantité
+        estimated_cost: Coût estimé (R$)
+        estimatedCost: Coût estimé (R$)
+
+      errors:
+        item:
+          missing: Le champ élement de coût ne peut pas rester en blanc
+        quantity:
+          missing: Le champ Quantité ne peut pas rester en blanc
+        estimatedCost:
+          missing: Le champ Coût estimé ne peut pas rester en blanc
