@@ -47,6 +47,14 @@
         label {{ $t('models.address.attributes.address') }}
         span {{ address.address }}, {{ address.neighborhood }}, {{ address.reference_point }} - {{ address.cep }}
 
+      .row
+        label {{ $t('models.address.attributes.phone') }}
+        span {{ address.phone }}
+
+      .row
+        label {{ $t('models.address.attributes.email') }}
+        span {{ address.email }}
+
     .card.mt-2
       .row
         label {{ $t('models.bidding.attributes.title') }}
